@@ -1,0 +1,60 @@
+#fixed {
+    position: fixed; /* 要素の位置を固定する */
+    bottom: 10px; /* 基準の位置を画面の一番下に指定する */
+    right: 10px; /* 基準の位置を画面の一番右に指定する */
+    width: 100px; /* 幅を指定する */
+    }
+#fontz {
+    font-family: 'Amatic SC', cursive;
+    /* font-size: 50px; */
+}
+p.sample img:hover {
+    opacity: 0.6; /* 40％ほど透過させる */
+}
+
+div{
+    margin-top: 30px;
+    font-family: serif; 
+    /* position: absolute; */
+    z-index: 1;
+}
+.aaa{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    /* min-width: 100%;
+    min-height: 100%; */
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+@media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.video-wrap {
+    position: relative;
+  }
+p {
+    font-family: serif;          
+    color: rgb(113, 113, 113);
+    /* position: absolute; */
+    left: 30%;
+    top: 200px;
+    z-index: 1;
+}
+video {
+    position: absolute;
+    display: block;
+    margin: 0 0 0 auto;
+}
+.css-br::before {
+    content: "\A" ;
+    white-space: pre;
+  }

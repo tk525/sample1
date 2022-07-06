@@ -38,12 +38,46 @@ $(window).on('load', function () {
 
 
 
+
 // プログレスバー スクロールに合わせて%進める
+// https://web-dev.tech/front-end/javascript/page-scroll-progress-bar/
 const progressBar = document.querySelector('.progress__bar');
+const progressBar1 = document.querySelector('.progress__bar1');
+const progressBar2 = document.querySelector('.progress__bar2');
+const progressBar3 = document.querySelector('.progress__bar3');
+const progressBar4 = document.querySelector('.progress__bar4');
+const progressBar5 = document.querySelector('.progress__bar5');
+
 
 window.addEventListener('scroll', () => {
   const windowYPos = window.pageYOffset;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (windowYPos / height) * 100;
+  var scrolled = (windowYPos / height) * 120;
   progressBar.style.width = scrolled + "%";
+  var scrolled = scrolled - 5;
+  progressBar1.style.width = scrolled + "%";
+  var scrolled = scrolled - 10;
+  progressBar2.style.width = scrolled + "%";
+  var scrolled = scrolled - 15;
+  progressBar3.style.width = scrolled + "%";
+  var scrolled = scrolled - 5;
+  progressBar4.style.width = scrolled + "%";
+  var scrolled = scrolled - 5;
+  progressBar5.style.width = scrolled + "%";
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

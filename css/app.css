@@ -301,9 +301,20 @@ label {
     font: 13px "Vibur";
     font-family: "HiraginoSans-W0";
     color: #fff;
+    width: 100%;
+    height: 50px;
     border: 1px solid #fff;      /* わかりやすくボーダーを引く */
     overflow-y: scroll;          /* 縦方向にスクロール可能にする */
   }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -348,42 +359,24 @@ label {
 
 
 
-
-
-
-.progress {
+/* // プログレスバー スクロールに合わせて%進める */
+.progress .progress1 .progress2 .progress3 .progress4 .progress5{
   /* position: fixed; */
   top: 0;
   left: 0;
-  /* width: 100%; */
+  width: 100%;
   height: 8px; /* バーの高さを指定 */
+  background-color: #f3f3f3; /* バーの背景色を指定 */
   z-index: 100;
 }
-
-.progress__bar {
+.progress__bar .progress__bar1 .progress__bar2 .progress__bar3 .progress__bar4 .progress__bar5 {
   /* position: absolute; */
   top: 0;
   left: 0;
-  background-color:firebrick; 
+  background-color: #1fa2ff; /* バーの色を指定 */
   height: 100%;
   width: 0; /* 初期値は0 */
-  color:darkred;
-
 }
-/* 
-
-*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -415,6 +408,15 @@ label {
     }
   }
   
+
+  
+
+
+
+
+
+
+
 
   
 

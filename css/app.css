@@ -289,7 +289,7 @@ label {
 
 /* 新しいセクター */
 .blanks {
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 
@@ -412,21 +412,7 @@ label {
   
 
 
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
+/* 背景動画 */
 @media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
   video {
     width: 100%;
@@ -455,3 +441,57 @@ video {
     content: "\A" ;
     white-space: pre;
   }
+
+
+
+
+
+/* 自己紹介文の文字がサッと出てくる */
+.fadeUp{
+  opacity:0;
+  }
+.fadeUp.fadeUpappear {
+  animation-name:fadeUpAnime;
+  animation-duration:0.4s;
+  animation-fill-mode:forwards;
+  }
+    
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+    
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.fadeDown{
+  opacity:0;
+}
+.fadeDown.fadeDownappear {
+  animation-name:fadeDownAnime;
+  animation-duration:0.4s;
+  animation-fill-mode:forwards;
+  }
+      
+  @keyframes fadeDownAnime{
+    from {
+      opacity: 0;
+    transform: translateY(-100px);
+    }
+      
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+
+
+
+
+
+  

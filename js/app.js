@@ -170,6 +170,6 @@ window.onload = function() {
 
 
 
-
+// パーティクルで文字形成
 
 

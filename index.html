@@ -12,6 +12,7 @@
         <meta property="og:image" content="rabbit.png">
         <meta property="og:url" content="https://www.google.com/"> <!--sample-->
         <link rel="stylesheet" href="/css/app.css" type="text/css">
+        <link rel="stylesheet" href="/css/app.scss" type="text/css">
         <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -35,9 +36,7 @@
 
 
       <!-- メニュー 画像ぐるぐる -->
-      <div>
-          <img id="fixed" src="image/T.png" class="logo moving-logo" alt="myname">
-      </div>
+      <img id="changingicon_area" src="image/起動中アイコン.png" class="change-icon" style="position: fixed; top: 10px; right: 10px; width: 70px; height: 70px;" alt="myname">
 
       <div class="neon">
         <b>
@@ -55,9 +54,81 @@
               <p class="fadeUp"><a>高校在籍時・スクールのカリキュラム、現在までの経験、<span>趣味</span>と独学で<a style="color: deepskyblue;">HTMLとCSS</a>コーディングを行っており、独学を続けて参りました。高校卒業後、カワノ会社の製造職を約3年と半年経験したのち、SOMPOケア株式会社の介護職や株式会社サンヴィレッジの障がい者支援職を経験。</a></p>
               <p class="fadeDown"><a>2019年よりNEXSEEDに入学、プログラミング(<a style="color: deepskyblue;">PHP</a>)を学習。その過程で、四六時中<span>コード</span>を考えている癖や、「自身の知識を増やししつつ、未知のエラーや<span>実装経験がない</span>機能で更に何かを作りたい」と強い思いから、転職を決意いたしました。</a></p>
               <p class="fadeUp"><a>その後、独学で<a style="color: deepskyblue;">P<span>YT</span>HON</a>、現在は自然言語処理・<span>英語</span>・WEBサイトから取得したファイルを<span>エクセル</span>で加工してWEBサイトにアップロードするまでを<span>全て</span>Pythonで<span>開発</span>したりと、現在も学習を行っております。</a></p>
-              <p class="fadeDown"><a><span>2021年6月</span>から<a style="color: deepskyblue;"><span>IT</span>企業</a>に入社し、7月から<a style="color: deepskyblue;">案件</a>に<span>参画中</span>です。</a></p>
+              <p class="fadeDown"><a><span>2021年6月</span>から上京と同時に、<a style="color: deepskyblue;"><span>IT</span>企業</a>に入社し、7月から<a style="color: deepskyblue;">案件</a>に<span>参画中</span>です。</a></p>
 
             </div>
+
+
+
+          <!-- 好きな物と嫌いな物 -->
+          <div class="blanks">
+            <p class="text-left"><a class="big-letter50">好きな物と<span>得意</span>な事<br>嫌いな物と<span>苦手</span>な事</a></p>
+            <div class="cell-r">
+              <p><a>好きな物は、たまご料理、<span>挑戦やリベンジ</span>、<a style="color: deepskyblue;">コーディング</a>、海外</a></p>
+              <p><a>挑戦は、<span>留学中</span>に現地の先生方と数km程歩いて現地解散した際に、国内の<a style="color: deepskyblue;">インターネット</a>が<span>使用不可</span>になる日だったのでGooglemapや物理的な地図なども手元になく、帰宅する<a style="color: deepskyblue;">術がない</a>状態でした。
+                自分の<a style="color: deepskyblue;">直感</a>と建物と進んだ方向を少しだけ覚えていたで、それを頼りに進んだところ、帰宅出来ました。その経験を通して得たものは、自分が<span>知らない事</span>に挑戦する際の<a style="color: deepskyblue;"><span>リスク</span>マネジメント</a>・成功した際の感覚でした。この経験や感覚は<span>現場</span>でも同じ様に感じており、お問合せで初めて確認された<a style="color: deepskyblue;">エラー</a>が表示された際や、PCキッティングの手順の<span>効率化</span>を図る際も同様に常にリスクを考慮しつつ挑戦しております。
+              </a></p>
+              <p><a>苦手な物は、<a style="color: deepskyblue;">運動</a>、非合理的な対処、<span>待機</span>、人に関心を持つ事</a></p>
+              <p><a>人に関心を持つ事について、指示がない限りは<span>干渉</span>しません。また、一定の距離を保つ事で、仕事やプライベートでも<span>人間関係</span>の<a style="color: deepskyblue;">トラブル回避</a>に役立っています。シェアハウスに住んでおり、全て聞こえる程の声量での会話が毎日聞こえますが、何の言語かという疑問以外は<span>全く気にならない</span>為、不要な部分で<a style="color: deepskyblue;">ストレス</a>を感じる事はありません。
+              </a></p>
+              <p><a>また、運動がとにかく<span>苦手</span>で、球技ではボールの<a style="color: deepskyblue;">コントロール</a>が全く出来ないため、テニスでは打ち返せばボールが<span>場外</span>に全て出てしまい、サッカーに至っては何故か<a style="color: deepskyblue;">人の顔</a>に当たることが多かったです。10分全力で走ると、次の日は<span>全身筋肉痛</span>になります。
+              </a></p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="glitch" style="background-image: url(https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&q=80);">
+            <div class="channel r"></div>
+            <div class="channel g"></div>
+            <div class="channel b"></div>
+          </div>
+          
+          <div class="glitch" style="background-image: url(https://images.unsplash.com/photo-1544794040-a6ab770bec83?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&q=80);">
+            <div class="channel r"></div>
+            <div class="channel g"></div>
+            <div class="channel b"></div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <!-- 休日・平日の余暇時間 -->
+          <div class="blanks">
+            <p class="text-right"><a style="color: deepskyblue;">休日・平日</a>の<a class="big-letter50">余暇時間</a></p>
+            <div class="cell-l">
+              <p>
+                <a>出勤退勤時の移動時間・<a style="color: deepskyblue;">休憩<span>中</span></a>は、弊社の対応などのタスクがなければ、英語と<a style="color: deepskyblue;">開発中</a>の<span>アプリ</span>ケーション改善方法の考案及び<span>模索</span>を行っています。稀に料理も行います。</a>
+              </p>
+              <p>
+                <a>開発については、Pythonで<a style="color: deepskyblue;">簡易<span>I</span>oT</a>アプリやExcelファイル作成アプリの開発・<a style="color: deepskyblue;">ラズベリーパイ</a>でミニPCを作成・<span>Android</span>のアプリを完全に<span>終了</span>させる簡易アプリ作成など行っています。</a>
+                <a>また、自宅の<span>Wi-Fi</span>の管理コンソールで設定や機能を確認、私物の<span>PC</span>からミニPCにある情報をネットワーク経由で<a style="color: deepskyblue;">奪取</a>するテストを行ったりしています。
+                </a>
+              </p>
+              <p>
+                <a><span>英語</span>については、教材のIELTS・アメリカ<span>国</span>営放送の<a style="color: deepskyblue;">Voice</a> Of America・<span>Instagram</span>で海外ユーザーの英語に関するポストの閲覧など行っています。<a style="color: deepskyblue;">業務でも</a>英文の<span>エラー</span>メッセージが表示された際に、即答したり、<a style="color: deepskyblue;">メンバー</a>から何が書いているのか<span>教えて</span>ほしいとの依頼を頂いた際に、その場で<span>確認</span>してお伝えしています。</a>
+              </p>
+              <p>
+                <a>料理は、卵を1パック全てスクランブルエッグにして食べたりしています。今は、たまごが沢山使われているマカロニサラダが好きです。</a>
+              </p>
+            </div>
+          </div>
+          <div class="error-base cell-l crush-image" style="position: relative;">
+            <img src="/image/eggs.jpg" class="crush-image" style="width: 500px;">
+            <pre><code onclick="changingicon_errormode()" style="position: absolute; color: white;  top: 150px; left: 250px">
+              <p><a>&lt;button style="border: solid;"&gtたまごボタン&lt;/button&gt</a></p>
+            </code></pre>
+          </div>
 
 
 
@@ -190,6 +261,8 @@
               <p class="box cell-r"></p>
             </div>
 
+            現場のソフトとか使える？
+
           </div>
 
 
@@ -197,26 +270,31 @@
           <!-- ポートフォリオ -->
           <div class="blanks">
             <p><a class="big-letter50">ポートフォリオ</a></p>
-            <p>
-              <a>入力された<span>悩み</span>から、sklearnの<a style="color: deepskyblue;"><span>アルゴリズム</span></a>を使用し、段階的に<span>解決方法</span>を提案します。</a>
-            </p>
-            <p>
-              <a>「<a style="color: deepskyblue;">A</a>」でログインして頂ければ、<span>中身</span>を確認できます。</a>
-            </p>
-            <p>
-              <a href= "https://sample3-20220503.herokuapp.com/" style="color:deepskyblue"><span>鬱</span>対策アプリ</a>
-            </p>
+            <div class="bgUD">
+              <a href="https://sample3-20220503.herokuapp.com/">
+                <span class="mask">
+                  <img src="/image/samplesite3.png" alt="">
+                  <div class="cap">
+                    <p>
+                      <a>入力された<span>悩み</span>から、sklearnの<a style="color: deepskyblue;"><span>アルゴリズム</span></a>を使用し、段階的に<span>解決方法</span>を提案します。</a>
+                    </p>
+                    <p>
+                      <a>「<a style="color: deepskyblue;">A</a>」でログインして頂ければ、<span>中身</span>を確認できます。</a>
+                    </p>              
+                  </div>
+                </span>
+              </a>
+            </div>
           </div>
           
 
             
-          
+
+          <!-- 今後の目標 -->
 
 
 
-
-
-          <div class="blanks">
+          <div class="blanks" style="padding-bottom: 50px;">
             <p><a>-END-</a></p>
           </div>
         </b>

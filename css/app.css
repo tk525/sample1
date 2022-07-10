@@ -46,31 +46,52 @@ div{
     left: 0;
     position: absolute;
 }
-.logo{
-    height: 100px;
+
+
+
+
+
+/* 起動中からエラーにロゴ切り替え */
+.change-icon {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  text-align: center;
+  animation: flash 2s linear infinite;
 }
-
-
-
-
-
-/* 動くロゴ */
-.moving-logo {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    text-align: center;
-    background: skyblue;
-    animation: rotate_anime 4s linear infinite;
-  }
-  @keyframes rotate_anime {
+  @keyframes flash {
     0% {
-      transform: rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
     }
     100% {
-      transform: rotate(360deg);
+      opacity: 1;
     }
   }
+
+/* 荒ぶる画像 */
+/* https://www.niugnep.net/webdesign-css-animation-move/ */
+.crush-image{
+  /* background-image: url(/image/eggs.jpg); */
+  /* animation: shaking .0001s  infinite; */
+  color: #000;
+
+}
+.crush-image.crush-imageOn {
+  animation: shaking .0001s  infinite;
+  animation-timing-function: ease;
+}
+@keyframes shaking {
+  50% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 
 
 
@@ -289,7 +310,13 @@ label {
 
 /* 新しいセクター */
 .blanks {
-    margin-top: 200px;
+    padding-top: 200px;
+}
+
+/* 画像と文字を縦並びにする */
+.column_txt_img{
+  display:flex;
+  flex-flow: column;
 }
 
 
@@ -306,15 +333,6 @@ label {
     border: 1px solid #fff;      /* わかりやすくボーダーを引く */
     overflow-y: scroll;          /* 縦方向にスクロール可能にする */
   }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -490,8 +508,80 @@ video {
   }
 
 
-
-
-
-
   
+
+
+
+/* 背景が上から出現＋テキスト */
+
+.bgUD{
+  position:relative;/*テキストの基点となる位置を定義*/
+}
+
+.bgUD span.mask{
+  position:relative;/*背景色の基点となる位置を定義*/
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+.bgUD span.mask::before{
+  content:"";
+  position: absolute;
+  z-index: 2;
+  left:0;
+  top:0;
+  opacity:0;
+  transition: .1s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+    transform: translateY(-100%);
+  background:rgb(0, 0, 0);/*背景色*/
+  width:100%;
+  height: 100%; 
+}
+
+.bgUD:hover span.mask::before{/*hoverした時の変化*/
+  opacity:1;
+  transform: translateY(0);
+}
+
+.bgUD .cap{
+  position: absolute;
+  opacity:0;
+  transition: .5s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+  z-index:3;/*テキストを前面に出す*/
+  top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;/*テキストの色を変えたい場合はここを修正*/
+    line-height: 1.5;/*行の高さを1.5にする*/
+}
+
+.bgUD:hover .cap{/*hoverした時の変化*/
+  opacity:1;
+}
+  /*画像のレスポンシブ*/
+
+img{
+  width:100%;
+  height: auto;
+}
+
+/* 横幅 */
+
+.bgUD{
+    width:70%;
+    margin: 0 auto;/*中央揃え*/
+}
+
+
+
+
+
+
+
+
+.rgb-horror{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

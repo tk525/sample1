@@ -170,6 +170,23 @@ window.onload = function() {
 
 
 
-// パーティクルで文字形成
+// 起動中アイコンをエラーモードに
+// https://seiai.ed.jp/sys/text/htm4/chp09/h09a03.html
+function changingicon_errormode(){
+  document.getElementById("changingicon_area").setAttribute("src","/image/エラーアイコン.png");
+  $('.crush-image').each(function () {
+    
+    $(this).addClass("crush-imageOn");
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+  });
+
+}
+
+
+
+
+
 
 

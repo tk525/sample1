@@ -378,7 +378,7 @@ label {
 
 
 /* // プログレスバー スクロールに合わせて%進める */
-.progress .progress1 .progress2 .progress3 .progress4 .progress5{
+.progress .progress1 .progress2 .progress3 .progress4 .progress5 .progress6{
   /* position: fixed; */
   top: 0;
   left: 0;
@@ -387,7 +387,7 @@ label {
   background-color: #f3f3f3; /* バーの背景色を指定 */
   z-index: 100;
 }
-.progress__bar .progress__bar1 .progress__bar2 .progress__bar3 .progress__bar4 .progress__bar5 {
+.progress__bar .progress__bar1 .progress__bar2 .progress__bar3 .progress__bar4 .progress__bar5 .progress__bar6 {
   /* position: absolute; */
   top: 0;
   left: 0;
@@ -450,11 +450,11 @@ p {
     top: 200px;
     z-index: 1;
 }
-video {
+/* video {
     position: absolute;
     display: block;
     margin: 0 0 0 auto;
-}
+} */
 .css-br::before {
     content: "\A" ;
     white-space: pre;
@@ -579,9 +579,177 @@ img{
 
 
 
+/* マーカーアニメーション */
+.marker {
+  display: inline-block;
+  background-image: linear-gradient(90deg, #787878, #3b8ca0); /* マーカーの色を指定 */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* マーカーの発生位置を左下に設定 */
+  background-size: 0 100%; /* マーカーの横幅 / 縦幅 */
+  transition: all 0.3s ease; /* マーカーを引く速度 */
 
-.rgb-horror{
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  /* color: rgba(0,0,0,0);
+  -webkit-background-clip: text; */
+}
+
+/* マーカーホバー時 */
+.marker.bgcOn {
+  background-size: 100% 100%; /* マーカーの横幅を100%にする */
+  /* color:transparent; */
+}
+.cleartext {
+  color: rgba(255,255,255,0); 
+  -webkit-background-clip: cleartext;  
+}
+
+
+
+
+
+/* 文字透過で背景画像見せる */
+/* https://www.i-ryo.com/entry/2018/09/13/131709 */
+/* ウィンドウサイズ変えたら文字が消える現象https://developer.mozilla.org/en-US/docs/Web/CSS/background-size */
+.textmask {
+  color: rgba(0,0,0,0);
+  -webkit-background-clip: text;
+   background-image: url(/image/silk.gif);
+   background-size: cover;}
+
+.textmask h5 {
+  text-align:left;
+  text-align:top;
+  font-size: 15px;
+  width: 100%;
+
+  /* background-color: rgba(0,0,0,0.2); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav {
+  list-style: none;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+ 
+/* 縦書き */
+/* https://www.webcreatorbox.com/tech/writing-mode */
+#nav li {
+  /* background-color: #fff; */
+  /* width: 140px; */
+  text-align: center;
+  border: solid;
+  float: left;
+  /* height: 50px; */
+  line-height: 22px;
+  margin-right: 2px;
+
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+ 
+#nav li a {
+  text-decoration: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: rgb(255, 255, 255);
+  /* font-weight: bold; */
+  /* padding: 10px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* メニューのネオン */
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(255, 0, 0),
+    0 0 92px rgb(255, 0, 0),
+    0 0 102px rgb(255, 0, 0),
+    0 0 151px rgb(255, 0, 0);
+}
+
+.neonAnime {
+  animation: pulsate_red 0.001s ease-in-out infinite alternate;     
+}
+
+@keyframes pulsate_red {
+  
+  100% {
+
+      text-shadow:
+      0 0 4px rgb(255, 0, 0),
+      0 0 11px rgb(255, 0, 0),
+      0 0 19px rgb(255, 0, 0),
+      0 0 40px rgb(255, 0, 0),
+      0 0 80px rgb(255, 0, 0),
+      0 0 90px rgb(255, 0, 0),
+      0 0 100px rgb(255, 0, 0),
+      0 0 150px rgb(255, 0, 0);
+
+  }
+
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px rgb(255, 255, 255),
+    0 0 73px rgb(255, 255, 255),
+    0 0 80px rgb(255, 255, 255),
+    0 0 94px rgb(255, 255, 255),
+    0 0 140px rgb(255, 255, 255);
+
+  }
 }

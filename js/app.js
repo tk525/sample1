@@ -47,23 +47,26 @@ const progressBar2 = document.querySelector('.progress__bar2');
 const progressBar3 = document.querySelector('.progress__bar3');
 const progressBar4 = document.querySelector('.progress__bar4');
 const progressBar5 = document.querySelector('.progress__bar5');
+const progressBar6 = document.querySelector('.progress__bar6');
 
 
 window.addEventListener('scroll', () => {
   const windowYPos = window.pageYOffset;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (windowYPos / height) * 120;
+  var scrolled = (windowYPos / height) * 95;
   progressBar.style.width = scrolled + "%";
-  var scrolled = scrolled - 5;
+  var scrolled = scrolled + 3;
   progressBar1.style.width = scrolled + "%";
-  var scrolled = scrolled - 10;
+  var scrolled = scrolled - 8;
   progressBar2.style.width = scrolled + "%";
-  var scrolled = scrolled - 15;
+  var scrolled = scrolled - 12;
   progressBar3.style.width = scrolled + "%";
-  var scrolled = scrolled - 5;
+  var scrolled = scrolled - 3;
   progressBar4.style.width = scrolled + "%";
-  var scrolled = scrolled - 5;
+  var scrolled = scrolled - 3;
   progressBar5.style.width = scrolled + "%";
+  var scrolled = scrolled + 2;
+  progressBar6.style.width = scrolled + "%";
 });
 
 
@@ -183,6 +186,69 @@ function changingicon_errormode(){
   });
 
 }
+
+
+
+
+
+
+// 文字がスッと表示される 上から下に
+function markerControl() {
+  $('.marker').each(function () {
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    console.log(elemPos, scroll, windowHeight)
+    if (scroll >= elemPos - windowHeight + 380) {//画面中間でマーカー引かれる様に調整
+      $(this).addClass("bgcOn");
+
+    } else {
+      $(this).removeClass("bgcOn");
+    }
+  });
+}
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  markerControl();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
+function markerzControl() {
+  $('.marker').each(function () {
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    console.log(elemPos, scroll, windowHeight)
+    if (scroll >= elemPos - windowHeight + 380) {//画面中間でマーカー引かれる様に調整
+      $(this).addClass("odakyu");
+
+    } else {
+      $(this).removeClass("odakyu");
+    }
+  });
+}
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  // markerzControl();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

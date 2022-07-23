@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
         <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/reset.css">
         <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-17/css/5-17.css">
 
@@ -42,22 +42,26 @@
         <b>
 
 
-
-      <!-- メニュー -->
-          <ul id="nav">
-            <li><a href="#likes_and_unlikes">好きな物と嫌いな物</a></li>
-            <li><a href="#free_times">余暇時間</a></li>
-            <li><a href="#additional_space">興味があるニュース</a></li>
-            <li><a href="#certification">資格</a></li>
-            <li><a href="#softwares_and_frameworks">ソフトウェア・フレームワーク</a></li>
-            <li><a href="#portfolio" class="neonText neonAnime">ポートフォリオ</a></li>
-            <!-- <li><a href="#"></a></li> -->
+          <!-- メニュー -->
+          <div class="openbtn1"><span></span><span></span><span></span></div>
+          <nav id="g-nav">
+          <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+          <ul>
+          <li><p><a href="#name">名前</a></p></li>
+          <li><p><a href="#likes_and_unlikes">好きな物と嫌いな物</a></p></li>
+          <li><p><a href="#free_times">余暇時間</a></p></li>
+          <li><p><a href="#additional_space">興味があるニュース</a></p></li>
+          <li><p><a href="#certification">資格</a></p></li>
+          <li><p><a href="#softwares_and_frameworks">ソフトウェア・フレームワーク</a></p></li>
+          <li><p><a href="#portfolio">ポートフォリオ</a></p></li>
           </ul>
+          </div>
+          </nav>
 
 
 
           <!-- メイン表示 自己紹介 -->
-          <p>
+          <p id="name">
             <a>私の<span>名前</span>は<a class="big-letter100 txt-rotate"
               data-period="2000"
               data-rotate='[ "Takiguchi Yui", "滝口 結", "たきぐち ゆい", "タキグチ ユイ"]'">滝口 <span>結</span></a>です。</a>
@@ -84,7 +88,7 @@
               <p class=" marker"><a>苦手な物は、<a style="color: deepskyblue;">運動</a>、非合理的な対処、<span>待機</span>、人に関心を持つ事</a></p>
               <p class=" marker"><a>人に関心を持つ事について、指示がない限りは<span>干渉</span>しません。また、一定の距離を保つ事で、仕事やプライベートでも<span>人間関係</span>の<a style="color: deepskyblue;">トラブル回避</a>に役立っています。シェアハウスに住んでおり、全て聞こえる程の声量での会話が毎日聞こえますが、何の言語かという疑問以外は<span>全く気にならない</span>為、不要な部分で<a style="color: deepskyblue;">ストレス</a>を感じる事はありません。
               </a></p>
-              <p class=" marker"><a>また、待機がとにかく<span>苦手</span>で、時間の浪費や非生産的な事をして過ごす事が少し苦手です。TOEICの結果が<span>1ヶ月後</span>に手元に届く状況がありましたが、待っていられなかった為、コーディングに加え、<span>自然言語処理</span>の勉強を追加するなど、会いた時間を無駄にする事なくタスクを作りました。通勤時間も、ゲームを行ったり動画を見たりする事が非生産的に感じてしまい出来ないので、英語の勉強と<a style="color: deepskyblue;">世界情勢</a>・最新のIT業界の<span>情報</span>を仕入れる為に、アメリカ国営のニュースをリスニングで聴いたりして、<span>ストレス</span>を感じない様にしています。
+              <p class=" marker"><a>また、待機がとにかく<span>苦手</span>で、時間の浪費や非生産的な事をして過ごす事が少し苦手です。TOEICの結果が<span>1ヶ月後</span>に手元に届く状況がありましたが、待っていられなかった為、コーディングに加え、<span>自然言語処理</span>の勉強を追加するなど、会いた時間を無駄にする事なくタスクを作りました。通勤時間も、英語の勉強と<a style="color: deepskyblue;">世界情勢</a>・最新のIT業界の<span>情報</span>を仕入れる為に、アメリカ国営のニュースを視聴するなど、<span>ストレス</span>を感じない様にしています。
               </a></p>
             </div>
           </div>
@@ -120,6 +124,7 @@
 
 
 
+
           <!-- 興味があるニュース -->
           <div class="blanks">
               <p class="text-left" id="additional_space">興味がある<a class="big-letter50"><span>ニュース</span></a></p>
@@ -128,7 +133,8 @@
                   <h5>Amazonがアメリカのロックフォードで無人機による配送を開始する事です</h5>
                   <h5>ロックフォードが小さい街で、畜産や農業をしている住民が多いので地域住民からは歓迎されておらず、秘密裏に計画実行されたので6月に知らされたとの記事を見ました。</h5>
                   <h5>同社で2018年にAmazon Goというレジ・販売員がいない店舗が、アメリカのシアトルを始め、今ではイギリスにも拡大している事から、Amazonの技術レベルの高さに興味があります。</h5>
-                  <h5>しかし、アノニマスのような団体に狙われた際のセキュリティの穴が人工的に作られる対策もどのようにしているのか興味があります。</h5>
+                  <h5>しかし、アノニマスのような団体に狙われた際のセキュリティの穴が人工的に作られる対策もどのようにしているのか興味があります。AI技術が組み込まれたAmazon Goも、どこかで人の介入があるはずなので、外部アクセス可能な環境を作ることは容易だと思います。</h5>
+                  <h5>しかし、私の頭では考えられないようなIT技術でセキュリティや保守を強固にしているのではないかと思うと、IT技術の進歩への期待が高まります。</h5>
                 </section>
               </div>
           </div>
@@ -145,39 +151,40 @@
 
             <div class="border">
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2021年4月 <span>TOEIC</span>公開テスト スコア<a style="color: deepskyblue;">655</a>取得</p>
-                <p class="box cell-r TextRandomAnime">2018年6月 日本商工会議所及び各地商工会議所主催 日商簿記 ３級</p>
+                <p class="box cell-l js_typing">2021年4月 <span>TOEIC</span>公開テスト スコア<a style="color: deepskyblue;">655</a>取得</p>
+                <p class="box cell-r js_typing">2018年6月 日本商工会議所及び各地商工会議所主催 日商簿記 ３級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime"><span>2016</span>年12月 介護職員初任者<span>研</span>修</p>
-                <p class="box cell-r TextRandomAnime">2012年12月 日本<a style="color: deepskyblue;">情報処理</a>検定協会 ホームページ作成検定 １級</p>
+                <p class="box cell-l js_typing"><span>2016</span>年12月 介護職員初任者<span>研</span>修</p>
+                <p class="box cell-r js_typing">2012年12月 日本<a style="color: deepskyblue;">情報処理</a>検定協会 ホームページ作成検定 １級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2012年7月 日本<span>情</span>報処理検定協会 <span>表計算</span> ２級</p>
-                <p class="box cell-r TextRandomAnime">2012年3月 全商 <a style="color: deepskyblue;">パソコン</a>入力スピード認定試験 １級</p>
+                <p class="box cell-l js_typing">2012年7月 日本<span>情</span>報処理検定協会 <span>表計算</span> ２級</p>
+                <p class="box cell-r js_typing">2012年3月 全商 <a style="color: deepskyblue;">パソコン</a>入力スピード認定試験 １級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2012年2月 日本漢字能力検定 ３級</p>
-                <p class="box cell-r TextRandomAnime">2012年2月 <span>日本</span>情報処理検定協会 文書デザイン検定 <span>１</span>級</p>
+                <p class="box cell-l js_typing">2012年2月 日本漢字能力検定 ３級</p>
+                <p class="box cell-r js_typing">2012年2月 <span>日本</span>情報処理検定協会 文書デザイン検定 <span>１</span>級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2012年1月 全商 <a style="color: deepskyblue;">プログラミング</a>部門 ２級</p>
-                <p class="box cell-r TextRandomAnime">2011年12月 日本<span>情報</span>処理検定協会 <span>プレ</span>ゼンテーション作成検定 １級</p>
+                <p class="box cell-l js_typing">2012年1月 全商 <a style="color: deepskyblue;">プログラミング</a>部門 ２級</p>
+                <p class="box cell-r js_typing">2011年12月 日本<span>情報</span>処理検定協会 <span>プレ</span>ゼンテーション作成検定 １級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2011年11月 文部科学省後援秘書技能検定試験 3級</p>
-                <p class="box cell-r TextRandomAnime">2011年<span>9</span>月 全商 <span>ビジネス</span>情報部門 ２級</p>
+                <p class="box cell-l js_typing">2011年11月 文部科学省後援秘書技能検定試験 3級</p>
+                <p class="box cell-r js_typing">2011年<span>9</span>月 全商 <span>ビジネス</span>情報部門 ２級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2011年2月 全商 ビジネス基礎 ３級</p>
-                <p class="box cell-r TextRandomAnime"><span>2010</span>年11月 珠算・<span>電卓</span>実務検定 ３級</p>
+                <p class="box cell-l js_typing">2011年2月 全商 ビジネス基礎 ３級</p>
+                <p class="box cell-r js_typing"><span>2010</span>年11月 珠算・<span>電卓</span>実務検定 ３級</p>
               </div>
               <div class="container">
-                <p class="box cell-l TextRandomAnime">2010年9月 全商 <a style="color: deepskyblue;">情報処理</a>検定 ３級</p>
+                <p class="box cell-l js_typing">2010年9月 全商 <a style="color: deepskyblue;">情報処理</a>検定 ３級</p>
               </div>
             </div>  
           </div>
-            
+          
+
 
 
           <!-- 経験のあるソフト・フレームワークなど -->
@@ -294,7 +301,7 @@
                       <a>入力された<span>悩み</span>から、sklearnの<a style="color: deepskyblue;"><span>アルゴリズム</span></a>を使用し、段階的に<span>解決方法</span>を提案します。</a>
                     </p>
                     <p>
-                      <a>「<a style="color: deepskyblue;">A</a>」でログインして頂ければ、<span>中身</span>を確認できます。</a>
+                      <a><a style="color: deepskyblue;">A</a>」でログインして頂ければ、<span>中身</span>を確認できます。</a>
                     </p>              
                   </div>
                 </span>
@@ -303,11 +310,6 @@
           </div>
           
 
-            
-
-          <!-- 今後の目標 -->
-
-
 
           <div class="blanks" style="padding-bottom: 50px;">
             <p><a>-END-</a></p>
@@ -315,17 +317,16 @@
         </b>
       </div>
       
-      
-      <!-- <div class="menu"><b>経<span>験</span>と<span>スキ</span>ル</b></div> 
-      <div class="menu" style="padding-top: 30px;"><b><span>保</span>有<span></span>資格</b></div> -->
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script src="/js/app.js"></script>
-
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+      <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-6/js/8-6.js"></script>
 
       <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
       </div>

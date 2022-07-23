@@ -310,7 +310,7 @@ label {
 
 /* 新しいセクター */
 .blanks {
-    padding-top: 200px;
+    padding-top: 500px;
 }
 
 /* 画像と文字を縦並びにする */
@@ -612,8 +612,10 @@ img{
 .textmask {
   color: rgba(0,0,0,0);
   -webkit-background-clip: text;
-   background-image: url(/image/silk.gif);
-   background-size: cover;}
+   background-image: url(/image/gumi2.jpg);
+   background-size: cover;
+   margin-top: -100px;
+  }
 
 .textmask h5 {
   text-align:left;
@@ -623,24 +625,6 @@ img{
 
   /* background-color: rgba(0,0,0,0.2); */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -684,72 +668,170 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* メニューのネオン */
-.neonText {
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(255, 0, 0),
-    0 0 82px rgb(255, 0, 0),
-    0 0 92px rgb(255, 0, 0),
-    0 0 102px rgb(255, 0, 0),
-    0 0 151px rgb(255, 0, 0);
+/* メニュー */
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+top:0;
+  left: -120%;
+width:15%;
+  height: 100vh;/*ナビの高さ*/
+background:rgba(255, 255, 255, 0.1);
+  /*動き*/
+transition: all 0.6s;
 }
 
-.neonAnime {
-  animation: pulsate_red 0.001s ease-in-out infinite alternate;     
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  left: 0;
 }
 
-@keyframes pulsate_red {
-  
-  100% {
 
-      text-shadow:
-      0 0 4px rgb(255, 0, 0),
-      0 0 11px rgb(255, 0, 0),
-      0 0 19px rgb(255, 0, 0),
-      0 0 40px rgb(255, 0, 0),
-      0 0 80px rgb(255, 0, 0),
-      0 0 90px rgb(255, 0, 0),
-      0 0 100px rgb(255, 0, 0),
-      0 0 150px rgb(255, 0, 0);
-
-  }
-
-  0% {
-
-    text-shadow:
-    0 0 4px #fff,
-    0 0 10px #fff,
-    0 0 18px #fff,
-    0 0 38px rgb(255, 255, 255),
-    0 0 73px rgb(255, 255, 255),
-    0 0 80px rgb(255, 255, 255),
-    0 0 94px rgb(255, 255, 255),
-    0 0 140px rgb(255, 255, 255);
-
-  }
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width:15%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+list-style: none;
+  text-align: center; 
+}
+
+#g-nav li a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding:10px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+/* font-weight: bold; */
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+top:10px;
+left: 10px;
+cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+
+/*×に変化*/  
+.openbtn1 span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 1px;
+background-color: #666;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+font-size:1.2rem;
+}
+
+h2{
+font-size:1.2rem;
+text-align: center;
+margin: 0 0 30px 0;
+}
+
+p{
+margin-top:20px;  
+}
+
+small{
+color:#fff;
+display: block;
+text-align: center;
+}
+
+#header{
+width:100%;
+background:#333;
+color:#fff;
+text-align: center;
+padding: 20px;
+}
+
+section{
+padding:100px 30px;
+}
+
+section:nth-child(2n){
+background:#f3f3f3; 
+}
+
+#footer{
+background:#333;
+padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+

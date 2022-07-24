@@ -35,9 +35,6 @@
 
 
 
-      <!-- メニュー 画像ぐるぐる -->
-      <img id="changingicon_area" src="image/起動中アイコン.png" class="change-icon" style="position: fixed; top: 10px; right: 10px; width: 70px; height: 70px;" alt="myname">
-
       <div class="neon">
         <b>
 
@@ -97,46 +94,51 @@
 
           <!-- 休日・平日の余暇時間 -->
           <div class="blanks">
-            <p class="text-right" id="free_times"><a style="color: deepskyblue;">休日・平日</a>の<a class="big-letter50">余暇時間</a></p>
-            <div class="cell-l">
-              <p>
-                <a>出勤退勤時の移動時間・<a style="color: deepskyblue;">休憩<span>中</span></a>は、弊社の対応などのタスクがなければ、英語と<a style="color: deepskyblue;">開発中</a>の<span>アプリ</span>ケーション改善方法の考案及び<span>模索</span>を行っています。稀に料理も行います。</a>
+            <div class="bgc-change">
+            <p class="text-right" id="free_times"><a style="color: deepskyblue;">休日・平日</a>の<a class="big-letter50"><span>余暇時間</span></a></p>
+            <div class="cell-l wrapper">
+              <p class="rollAnime">
+                <a>出退勤時の移動時間・<a style="color: deepskyblue;">休憩<span>中</span></a>は、弊社の対応などのタスクがなければ、英語と<a style="color: deepskyblue;">開発中</a>の<span>アプリ</span>ケーション改善方法の考案及び<span>模索</span>を行っています。</a>
               </p>
-              <p>
+              <p class="rollAnime">
                 <a>開発については、Pythonで<a style="color: deepskyblue;">簡易<span>I</span>oT</a>アプリやExcelファイル作成アプリの開発・<a style="color: deepskyblue;">ラズベリーパイ</a>でミニPCを作成・<span>Android</span>のアプリを完全に<span>終了</span>させる簡易アプリ作成など行っています。</a>
+              </p>
+              <p class="rollAnime">
                 <a>また、自宅の<span>Wi-Fi</span>の管理コンソールで設定や機能を確認、私物の<span>PC</span>からミニPCにある情報をネットワーク経由で<a style="color: deepskyblue;">奪取</a>するテストを行ったりしています。
                 </a>
               </p>
-              <p>
-                <a><span>英語</span>については、教材のIELTS・アメリカ<span>国</span>営放送の<a style="color: deepskyblue;">Voice</a> Of America・<span>Instagram</span>で海外ユーザーの英語に関するポストの閲覧など行っています。<a style="color: deepskyblue;">業務でも</a>英文の<span>エラー</span>メッセージが表示された際に、即答したり、<a style="color: deepskyblue;">メンバー</a>から何が書いているのか<span>教えて</span>ほしいとの依頼を頂いた際に、その場で<span>確認</span>してお伝えしています。</a>
+              <p class="rollAnime">
+                <a><span>英語</span>については、教材のIELTS・アメリカ<span>国</span>営放送の<a style="color: deepskyblue;">Voice</a> Of America・<span>Instagram</span>で海外ユーザーの英語に関するポストの閲覧など行っています。</a>
               </p>
-              <p>
-                <a>料理は、卵を1パック全てスクランブルエッグにして食べたりしています。今は、たまごが沢山使われているマカロニサラダが好きです。</a>
+              <p class="rollAnime">
+                <a style="color: deepskyblue;">業務でも</a>英文の<span>エラー</span>メッセージが表示された際に、即答したり、<a style="color: deepskyblue;">メンバー</a>から何が書いているのか<span>教えて</span>ほしいとの依頼を頂いた際に、その場で<span>確認</span>してお伝えしています。</a>
               </p>
+
             </div>
           </div>
-          <div class="error-base cell-l crush-image" style="position: relative;">
-            <img src="/image/eggs.jpg" class="crush-image" style="width: 500px;">
-            <pre><code onclick="changingicon_errormode()" style="position: absolute; color: white;  top: 150px; left: 250px">
-              <p><a>&lt;button style="border: solid;"&gtたまごボタン&lt;/button&gt</a></p>
-            </code></pre>
-          </div>
+        </div>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+          
 
 
-
-
+          
           <!-- 興味があるニュース -->
-          <div class="blanks">
-              <p class="text-left" id="additional_space">興味がある<a class="big-letter50"><span>ニュース</span></a></p>
-              <div class="cell-r">
-                <section class="textmask">
-                  <h5>Amazonがアメリカのロックフォードで無人機による配送を開始する事です</h5>
-                  <h5>ロックフォードが小さい街で、畜産や農業をしている住民が多いので地域住民からは歓迎されておらず、秘密裏に計画実行されたので6月に知らされたとの記事を見ました。</h5>
-                  <h5>同社で2018年にAmazon Goというレジ・販売員がいない店舗が、アメリカのシアトルを始め、今ではイギリスにも拡大している事から、Amazonの技術レベルの高さに興味があります。</h5>
-                  <h5>しかし、アノニマスのような団体に狙われた際のセキュリティの穴が人工的に作られる対策もどのようにしているのか興味があります。AI技術が組み込まれたAmazon Goも、どこかで人の介入があるはずなので、外部アクセス可能な環境を作ることは容易だと思います。</h5>
-                  <h5>しかし、私の頭では考えられないようなIT技術でセキュリティや保守を強固にしているのではないかと思うと、IT技術の進歩への期待が高まります。</h5>
-                </section>
-              </div>
+          <div style="padding-top: 400px;"></div>
+          <div style="position: relative;">
+            <p class="text-left" id="additional_space">興味がある<a class="big-letter50"><span>ニュース</span></a></p>
+            <div class="cell-r">
+              <section class="textmask">
+                <h5>Amazonがアメリカのロックフォードで無人機による配送を開始する事です</h5>
+                <h5>ロックフォードが小さい街で、畜産や農業をしている住民が多いので地域住民からは歓迎されておらず、秘密裏に計画実行されたので6月に知らされたとの記事を見ました。</h5>
+                <h5>同社で2018年にAmazon Goというレジ・販売員がいない店舗が、アメリカのシアトルを始め、今ではイギリスにも拡大している事から、Amazonの技術レベルの高さに興味があります。</h5>
+                <h5>しかし、アノニマスのような団体に狙われた際のセキュリティの穴が人工的に作られる対策もどのようにしているのか興味があります。AI技術が組み込まれたAmazon Goも、どこかで人の介入があるはずなので、外部アクセス可能な環境を作ることは容易だと思います。</h5>
+                <h5>しかし、私の頭では考えられないようなIT技術でセキュリティや保守を強固にしているのではないかと思うと、IT技術の進歩への期待が高まります。</h5>
+              </section>
+            </div>
+            <div class="item-group" xyz="fade-100% thick-100% narrow-100%  duration-10">
+              <div class="square xyz-in bgc-news"></div>
+            </div>
           </div>
 
 

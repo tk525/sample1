@@ -51,51 +51,6 @@ div{
 
 
 
-/* 起動中からエラーにロゴ切り替え */
-.change-icon {
-  width: 100px;
-  height: 100px;
-  margin: 50px;
-  text-align: center;
-  animation: flash 2s linear infinite;
-}
-  @keyframes flash {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-/* 荒ぶる画像 */
-/* https://www.niugnep.net/webdesign-css-animation-move/ */
-.crush-image{
-  /* background-image: url(/image/eggs.jpg); */
-  /* animation: shaking .0001s  infinite; */
-  color: #000;
-
-}
-.crush-image.crush-imageOn {
-  animation: shaking .0001s  infinite;
-  animation-timing-function: ease;
-}
-@keyframes shaking {
-  50% {
-    left: 200px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-
-
-
-
 
 /* 文字ネオン */
   @import url(//fonts.googleapis.com/css?family=Vibur);
@@ -310,7 +265,7 @@ label {
 
 /* 新しいセクター */
 .blanks {
-    padding-top: 500px;
+    padding-top: 400px;
 }
 
 /* 画像と文字を縦並びにする */
@@ -612,7 +567,7 @@ img{
 .textmask {
   color: rgba(0,0,0,0);
   -webkit-background-clip: text;
-   background-image: url(/image/gumi2.jpg);
+   background-image: url(/image/ocean.jpg);
    background-size: cover;
    margin-top: -100px;
   }
@@ -829,9 +784,53 @@ padding:20px;
 
 
 
+/* 文字が1文字ずつ回転する */
+.rollAnime.roll span{
+  animation: initial;
+  transition-property: opacity,transform;
+  transform: rotateY(360deg);
+  transition: all .9s cubic-bezier(.77,0,.175,1);
+  transition-timing-function: cubic-bezier(.77,0,.175,1);
+  display: inline-block;
+}
+
+
+
+/* 背景の色を時間経過で変化 */
+.bgc-change {
+  animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@keyframes bgchange{
+      0%   {background: rgba(255, 255, 255, 0.1);}/*変化させたい色*/
+      25%  {background: rgb(37, 190, 224, 0.5);}/*変化させたい色*/
+      50%  {background: rgba(179, 179, 179, 0.7);}/*変化させたい色*/
+      75%  {background:#3fb6c8;}/*変化させたい色*/
+      90%  {background:#8e8e8e;}/*変化させたい色*/
+      100% {background: rgba(255, 255, 255, 0.1);}/*変化させたい色*/
+ }
 
 
 
 
 
+/* ニュースのバックグラウンドカラー */
+.bgc-news{
+  opacity: 1;
+}
+.bgc-news.bgcOn{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: -20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid;
 
+  position: absolute;
+  bottom: 70px;
+  height: 100%;
+  width: 100%;
+ }

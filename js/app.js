@@ -53,7 +53,7 @@ const progressBar6 = document.querySelector('.progress__bar6');
 window.addEventListener('scroll', () => {
   const windowYPos = window.pageYOffset;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (windowYPos / height) * 95;
+  var scrolled = (windowYPos / height) * 80;
   progressBar.style.width = scrolled + "%";
   var scrolled = scrolled + 3;
   progressBar1.style.width = scrolled + "%";
@@ -358,3 +358,11 @@ function bgcNewsControl() {
 $(window).scroll(function () {
   bgcNewsControl();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+
+
+
+
+
+
+

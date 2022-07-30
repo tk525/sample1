@@ -569,7 +569,7 @@ img{
   -webkit-background-clip: text;
    background-image: url(/image/ocean.jpg);
    background-size: cover;
-   margin-top: -100px;
+   /* margin-top: -100px; */
   }
 
 .textmask h5 {
@@ -768,7 +768,7 @@ padding: 20px;
 }
 
 section{
-padding:100px 30px;
+/* padding:100px 30px; */
 }
 
 section:nth-child(2n){
@@ -805,12 +805,17 @@ padding:20px;
   padding-right: 10px;
 }
 @keyframes bgchange{
-      0%   {background: rgba(255, 255, 255, 0.1);}/*変化させたい色*/
-      25%  {background: rgb(37, 190, 224, 0.5);}/*変化させたい色*/
-      50%  {background: rgba(179, 179, 179, 0.7);}/*変化させたい色*/
-      75%  {background:#3fb6c8;}/*変化させたい色*/
-      90%  {background:#8e8e8e;}/*変化させたい色*/
-      100% {background: rgba(255, 255, 255, 0.1);}/*変化させたい色*/
+      0%   {background: rgba(255, 255, 255, 0.1);}
+      10%  {background: rgb(37, 190, 224, 0.5);}
+      20%  {background: rgba(179, 179, 179, 0.7);}
+      30%  {background:#3fb6c8;}
+      40%  {background:rgba(255, 255, 255, 0.1);}
+      50%  {background:#8e8e8e;}
+      60%  {background:rgb(37, 190, 224, 0.5);}
+      70%  {background:#3fb6c8;}
+      80%  {background:rgba(179, 179, 179, 0.7);}
+      90% {background: #8e8e8e;}
+      100% {background: rgba(255, 255, 255, 0.1);}
  }
 
 
@@ -823,14 +828,71 @@ padding:20px;
 }
 .bgc-news.bgcOn{
   background-color: rgba(255, 255, 255, 0.1);
-  padding-top: -20px;
-  padding-bottom: 10px;
+  /* padding-top: -100px; */
+  padding-bottom: 100px;
   padding-left: 10px;
   padding-right: 10px;
   border: solid;
 
   position: absolute;
-  bottom: 70px;
-  height: 100%;
+  bottom: -30px;
+  height: 110%;
   width: 100%;
  }
+
+
+
+ 
+
+ /*タブ切り替えでポートフォリオの説明*/
+section.typeA{
+	display: flex;
+	flex-wrap: wrap;
+}
+section.typeA::after {
+	content: '';
+	width: 100%;
+	height: 3px;
+	order: -1;
+	display: block;
+	background: rgba(0, 191, 255, 0.4);
+}
+section.typeA .tabLabel {	/* タブ */
+	margin-right: 3px;
+	padding: 3px 12px;
+	flex: 1;
+	order: -1;
+	border-radius: 3px 3px 0 0;
+	color: #444;
+	/* background: rgba(0,137,167,.3); */
+  border: solid;
+	transition: .5s ;
+	cursor: pointer;
+}
+section.typeA .tabLabel:nth-last-of-type(1){ margin-right: 0; }
+section.typeA input {		/* ラジオボタン非表示 */
+	display: none;
+}
+section.typeA .content {	/* 本文 */
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+/*アクティブ設定*/
+section.typeA input:checked + .tabLabel {
+	color: #fff;
+	/* background: rgba(255, 255, 255, 0.7); */
+  border: solid;
+}
+section.typeA input:checked + .tabLabel + .content {
+	padding: 15px;
+	height: auto;
+	overflow: auto;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	transition: .5s opacity;
+	opacity: 1;
+}
+.text-scroller{
+  
+}

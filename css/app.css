@@ -565,7 +565,7 @@ img{
 .textmask {
   color: rgba(0,0,0,0);
   -webkit-background-clip: text;
-   background-image: url(/image/ocean.jpg);
+   background-image: url(/image/text_mask.jpg);
    background-size: cover;
    /* margin-top: -100px; */
   }

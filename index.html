@@ -25,13 +25,18 @@
     </head>
     <body>
 
-      <!-- 背景 -->
+      <!-- 背景 -->      
       <div>
-        <div class="aaa" style="margin-top: 0px; background-size: cover;">
+        <div class="aaa"">
           <!-- <video src="image/video.mp4" autoplay loop muted></video> -->
           <img src="image/dark_made.jpg" class="img-main"  >
         </div>
       </div>
+
+      <!-- 背景 紙吹雪 -->
+      <div id="particles-js"></div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/js/5-8.js"></script>
 
 
 
@@ -108,7 +113,7 @@
                 </a>
               </p>
               <p class="rollAnime">
-                <a><span>英語</span>については、教材のIELTS・アメリカ<span>国</span>営放送の<a style="color: deepskyblue;">Voice</a> Of America・<span>Instagram</span>で海外ユーザーの英語に関するポストの閲覧など行っています。</a>
+                <a><span>英語</span>については、教材のIELTS・アメリカ<span>国</span>営放送の<a style="color: deepskyblue;">Voice</a> Of America・<span>Instagram</span>で海外ユーザーの英語に関するポストの視聴など行っています。</a>
               </p>
               <p class="rollAnime">
                 <a style="color: deepskyblue;">業務でも</a>英文の<span>エラー</span>メッセージが表示された際に、即答したり、<a style="color: deepskyblue;">メンバー</a>から何が書いているのか<span>教えて</span>ほしいとの依頼を頂いた際に、その場で<span>確認</span>してお伝えしています。</a>
@@ -200,10 +205,8 @@
                     ・sample/x2/x3の中身を、より細かく分類する必要があり(人を励ましてるのか、又は自分のことをただ言っているだけかなど)<br>
                     ・sample/recommend_concreteの詳細を暇な時に調べ尽くす必要があり<br>
                     ・sample/calm_the_mind_pgとアンガーマネジメントも心のレベルで提案を変えてみる?<br>
-                    DBはuser_id（ipアドレス）で紐付けbr>
-                    <br>
-                    
-                    
+                    DBはuser_id（ipアドレス）で紐付け<br>
+                    <br><br>
                     [Level1  初期は文字は最小限 -free]<br>
                     ✅愚痴聞きAI-beginner  入力されたテキストから、落ち込み度判定<br>
                     &ensp;&ensp;テキストデータの処理→落ち込み度スコア化→合計で一定条件満たしたら次のステップに移行？<br>
@@ -222,9 +225,7 @@
                     &ensp;&ensp;サイトを開いただけでも、大きな一歩とカウントしたいので別にDBを設置する<br>
                     &ensp;&ensp;ログインボーナスで3つで有料機能1つ解除<br>
                     &ensp;&ensp;サイトを開いた時点でIPアドレス・タイムスタンプで仮DB？<br>
-                    <br>
-                    
-                    
+                    <br><br>
                     [Level2  ある程度元気な状態になったら他の機能紹介 -free] [0~80%]<br>
                     &ensp;&ensp;<a style="background-color: rgba(97, 255, 165, 0.3);">l1_userにテキスト内容も挿入できるように変更</a><br>
                       &ensp;&ensp;<a style="background-color: rgba(97, 255, 165, 0.3);">l2_aiに愚痴聞きトータルスコアを引き継ぎできるように、personal_scoreでclass化</a><br>
@@ -255,7 +256,7 @@
                     &ensp;&ensp;例)旅行、諦めていた目標に取り組む、より良い人間関係を築く、自身を改善する<br>
                     <br>
                     ・<a style="background-color: rgba(252, 97, 255, 0.3);"><s>鬱対策</a>  テキスト参照</s><br>
-                    <br>
+                    <br><br>
 
                     [Level3  さらに元気になったら提案 -lease $1~/month] [80%~100%]<br>
                     &ensp;&ensp;<a style="background-color: rgba(97, 255, 165, 0.3);">l1_userに汚い単語を使った回数を入れれるようにカラム追加</a><br>
@@ -307,7 +308,7 @@
                     &ensp;&ensp;メンターにユーザーの情報開示<br>
                     &ensp;&ensp;l1_user  text/created_on、l2_personality  record、l2_endg  end_goal/end_goals_tasks、<br>
                     &ensp;&ensp;l3_bullentin_boadrd_text  bbs_txt_text、l3_bullentin_board_act  bbs_act<br>
-                    <br>
+                    <br><br>
                     
                     
                     [追加機能]<br>
@@ -332,7 +333,7 @@
                     &ensp;&ensp;&ensp;&ensp;・AI文字自動作成のやつ<br>
                     &ensp;&ensp;ボタンを押せば生成する、ページを開いた時に以前のものを書き出すようにしたい<br>
                     &ensp;&ensp;&ensp;&ensp;・画像  クリックしたら拡大<br>
-                    <br>
+                    <br><br>
                     
                     
                     [TO DO]<br>
@@ -374,11 +375,8 @@
                     &ensp;&ensp;varcharを廃止とか<br>
                     &ensp;&ensp;入力された文字を独自の暗号化ルールに沿って変換する<br>
                     &ensp;&ensp;自然言語処理？<br>
-                    <br>
-                    
-                    
-                    
-                    
+                    <br><br>
+
                     ・セキュリティ参考<br>
                     &ensp;&ensp;SQLインジェンクション対策  https://html-coding.co.jp/knowhow/security/sql/  <br>
                     &ensp;&ensp;位置情報取得  https://teratail.com/questions/214826<br>
@@ -398,16 +396,13 @@
                     ・対象の性格(デフォのキャパシティを判断)<br>
                     &ensp;&ensp;まじめで・責任感が強く・完ぺき主義で・人からの評価も高く・道徳観も強い人<br>
                     &ensp;&ensp;https://www.verywellmind.com/personality-trait-versus-mood-state-1067551#:~:text=Specific%20traits%20that%20are%20linked,is%20(or%20isn't)<br>
-                    <br>
-                    
-                    
-                    
+                    <br><br>
+
                     年収と鬱はリンクしている<br>
                     鬱になると、そのコミュニティのアプリに行く。twitterとかの外の人間と関わるアプリは使わない。けど、話は聞いてほしい。<br>
                     人間関係で失敗したっぽい人が多い？<br>
-                    <br>
-                    
-                    
+                    <br><br>
+
                     研究対象<br>
                     ・tensflowとkmean?のアルゴリズム<br>
                     ・ipアドレスの獲得方法<br>
@@ -428,7 +423,7 @@
           <div class="blanks">
             <div class="text-left" id="softwares_and_frameworks">
               <p><a>使用</a><a style="color: deepskyblue;">経験</a><a>のある</a><br><a class="big-letter50"><span>ソフトウェア</span>・<span>フレームワーク</span></a><a>等</a></p>
-              <p><a>使用経験のあるソフトウェア・フレームワークと言語の学習履歴を記載しました。</a></p>
+              <p><a>使用経験のあるソフトウェア・フレームワーク・メソッドと、言語の学習履歴を記載しました。</a></p>
             </div>
             
             <div class="container">
@@ -585,7 +580,6 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
       <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-6/js/8-6.js"></script>
-
       <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
       </div>
     </body>

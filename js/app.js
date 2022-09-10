@@ -23,6 +23,8 @@ function TextRandomAnimeControl() {
   });
 }
 
+
+
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
   TextRandomAnimeControl();/* アニメーション用の関数を呼ぶ*/

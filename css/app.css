@@ -398,6 +398,7 @@ p {
     font: 13px "Vibur";
     font-family: "HiraginoSans-W0";
     color: #fff;
+    font-size: 18px;
     /* position: absolute; */
     left: 30%;
     top: 200px;
@@ -573,7 +574,7 @@ img{
 .textmask h5 {
   text-align:left;
   text-align:top;
-  font-size: 15px;
+  font-size: 18px;
   width: 100%;
 
   /* background-color: rgba(0,0,0,0.2); */
@@ -790,6 +791,7 @@ padding:20px;
   transition: all .9s cubic-bezier(.77,0,.175,1);
   transition-timing-function: cubic-bezier(.77,0,.175,1);
   display: inline-block;
+  font-size: 18px;;
 }
 
 

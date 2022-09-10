@@ -1,3 +1,13 @@
+// エラーログ非表示
+// エラーにあったhtmlの<script>を削除したらアニメーションが動かないので
+// https://www.kaasan.info/archives/1610
+function TigilError() {
+	return true;
+}
+window.onerror = TigilError;
+
+
+
 // 1文字ずつランダムに表示
 function TextRandomAnimeControl() {
   $('.TextRandomAnime').each(function () {
@@ -53,19 +63,19 @@ const progressBar6 = document.querySelector('.progress__bar6');
 window.addEventListener('scroll', () => {
   const windowYPos = window.pageYOffset;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (windowYPos / height) * 80;
+  var scrolled = (windowYPos / height) * 100;
   progressBar.style.width = scrolled + "%";
-  var scrolled = scrolled + 3;
+  var scrolled = scrolled + 8;
   progressBar1.style.width = scrolled + "%";
-  var scrolled = scrolled - 8;
+  var scrolled = scrolled - 6;
   progressBar2.style.width = scrolled + "%";
-  var scrolled = scrolled - 12;
+  var scrolled = scrolled - 14;
   progressBar3.style.width = scrolled + "%";
   var scrolled = scrolled - 3;
   progressBar4.style.width = scrolled + "%";
   var scrolled = scrolled - 3;
   progressBar5.style.width = scrolled + "%";
-  var scrolled = scrolled + 2;
+  var scrolled = scrolled + 7;
   progressBar6.style.width = scrolled + "%";
 });
 
@@ -195,7 +205,7 @@ function markerzControl() {
     var elemPos = $(this).offset().top - 50;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
-    console.log(elemPos, scroll, windowHeight)
+    // console.log(elemPos, scroll, windowHeight)
     if (scroll >= elemPos - windowHeight + 380) {//画面中間でマーカー引かれる様に調整
       $(this).addClass("odakyu");
 

@@ -45,18 +45,18 @@
           <ul>
           <li><p><a class="big-letter25" href="#me">私について</a></p></li>
           <li>
-            <p><a class="big-letter25" href="#likes_and_unlikes">得意な物事と</a></p>
-            <p><a class="big-letter25" href="#likes_and_unlikes">苦手な物事</a></p>
+            <p><a class="big-letter25" href="#likes_and_unlikes">得意なもの</a></p>
+            <p><a class="big-letter25" href="#likes_and_unlikes">苦手なもの</a></p>
           </li>
           <li><p><a class="big-letter25" href="#free_times">余暇時間</a></p></li>
           <li>
             <p><a class="big-letter25" href="#news">興味がある</a></p>
             <p><a class="big-letter25" href="#news">ニュース</a></p>
           </li>
-          <li>
+          <!-- <li>
             <p><a class="big-letter25" href="#portfolio">ポート</a></p>
             <p><a class="big-letter25" href="#portfolio">フォリオ</a></p>
-          </li>
+          </li> -->
           <li>
             <p><a class="big-letter25" href="#softwares_and_frameworks">使用経験</a></p>
             <p><a class="big-letter25" href="#softwares_and_frameworks">がある</a></p>
@@ -75,11 +75,13 @@
 
 
           <!-- メイン表示 自己紹介 -->
-          <p>
-            <a class="big-letter50">私の名前は</a>
-            <a class="big-letter150 js_typing">滝口 結</a>
-            <a class="big-letter50">です</a>
-          </p>
+          <div class="blanks">
+            <p>
+              <a class="big-letter50">私の名前は</a>
+              <a class="big-letter150 js_typing">滝口 結</a>
+              <a class="big-letter50">です</a>
+            </p>
+          </div>
 
             <div class="blanks" id="me">
               <p class="text-right"><a class="big-letter100 js_typing">私について</a></p>
@@ -151,7 +153,7 @@
             <p class="text-right"><a class="big-letter100 js_typing">余暇時間</a></p>
 
             <div class="cell-l">
-              <p style=" margin-top: 30px;">出退勤時の移動時間・休憩中は、弊社のタスクがなければ、英語の勉強や</a></p>
+              <p style=" margin-top: 30px;"><a class="big-letter50">出退勤時の移動時間・休憩中は、英語の勉強や</a></p>
               <p><a class="big-letter50">開発中のアプリケーション改善方法の考案及び模索を行っています。</a></p>
 
               <p style=" margin-top: 30px;"><a class="big-letter50">開発について、Pythonで簡易IoTアプリ開発や、Excelファイル作成アプリ開発、</a></p>
@@ -196,98 +198,6 @@
 
 
 
-
-          <!-- ポートフォリオ -->
-          <div class="blanks" id="portfolio">
-            <p><a class="big-letter100 js_typing" id="portfolio">ポートフォリオ</a></p>
-
-              <p><a class="big-letter50 js_typing" href="https://sample3-20220503.herokuapp.com/">鬱対策アプリ</a></p>
-              <p><a class="big-letter50">入力された悩みから、sklearnのアルゴリズムを使用し、</a></p>
-              <p><a class="big-letter50">段階的に解決方法を提案します。</a></p>
-              <p><a class="big-letter50">上記のリンクにアクセス後、Aでログインして頂ければ、確認可能です。</a></p>
-          </div>
-          
-          <div style="padding-top: 20px;">
-            <section class="typeA">
-
-              <input id="TAB-A01" type="radio" name="TAB-A" checked="checked">
-              <label class="tabLabel" for="TAB-A01"><p><a class="big-letter50">開発の動機と作業予定</a></p></label>
-              <div class="content">
-                <div style="border: solid; height: 700px; overflow-y: scroll; ">
-
-                  <div class="text-left">
-                  <p><a class="big-letter50">9月から12月初旬までPythonの機械学習の勉強を行いました。</a></p>
-                  <p><a class="big-letter50">学習の成果として、前職で培った知識を活かせるもので開発しました。</a></p>
-                  <p><a class="big-letter50">機能に重視した為、デザインは必要最低限にしています。</a></p>
-                  <p><a class="big-letter50">無料と有料会員との差別化に加え、有料会員の心の状態により</a></p>
-                  <p><a class="big-letter50">使用出来る機能の制限をかけています。</a></p>
-                  </a></p>
-                  </div>
-
-                  <div class="text-left">
-                    <p style=" margin-top: 50px;"><a class="big-letter50">開発期間と内容</a></p>
-                    <p style=" margin-top: 25px;"><a class="big-letter50">【12月初旬〜年末】簡易仕様書作成しました。</a></p>
-                    <p><a class="big-letter50">海外ユーザーが9割の気分が落ち込んだ時に使用するアプリで、</a></p>
-                    <p><a class="big-letter50">落ち込んでいる文を収集し、学習データとして設定しました。</a></p>
-                    <p><a class="big-letter50">次に、各機能ごとに適当なアルゴリズムを組み合わせました。</a></p>
-                    <p><a class="big-letter50">落ち込んでいる状況の改善方法を、日本語と英語で調べた結果を</a></p>
-                    <p><a class="big-letter50">正解として設定後、ユーザーの性格と現状を考慮した改善方法を、</a></p>
-                    <p><a class="big-letter50">海アルゴリズムで数値化し、適当な改善方法をいくつか提案するなど、</a></p>
-                    <p><a class="big-letter50">ユーザーの状況により、改善方法を変えて提案する機能を複数考案しました。</a></p>
-
-                    <p style=" margin-top: 25px;"><a class="big-letter50">【1月〜2月末】考案した機能の開発に加え、</a></p>
-                    <p><a class="big-letter50">ユーザーの心を数値化し、その値で使用できる機能に制限を設定しました。</a></p>
-                    <p><a class="big-letter50">また、セキュリティ対策として、エスケープ処置と、XSS対策で入力値制限</a></p>
-                    <p><a class="big-letter50">サニタイズ、プリペアドステートメントを加えました。</a></p>
-
-                    <p style=" margin-top: 25px;"><a class="big-letter50">【3月初旬】githubとHerokuにアップロードしました。</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <input id="TAB-A02" type="radio" name="TAB-A">
-              <label class="tabLabel" for="TAB-A02"><p><a class="big-letter50">簡易仕様書</a></p></label>
-              <div class="content">
-                <div class="text-left" style="border: solid; height: 700px; overflow-y: scroll;">
-                  <p><a class="big-letter50">[無料]</a></p>
-                  <p><a class="big-letter50">AIヒヤリング ミラーリング法でのヒヤリングのみ</a></p>
-                  <br><br>
-
-                  <p><a class="big-letter50">[連続ログイン数回で下記機能解除] ※以下、括弧内は心のスコアとします。</a></p>
-                  <p style=" margin-top: 25px;"><a class="big-letter50">AIヒヤリング(0~80%)...ユーザーから投稿された文章で、心の状態をスコア化し</a></p>
-                  <p><a class="big-letter50">ユーザー情報管理用のデータベースで基礎値として追加します。</a></p>
-                  <p><a class="big-letter50">加えて、現場の改善方法をユーザーに提案します。</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">性格診断(0%~)...心のスコアの基礎値を修正します。</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">日記(0%)...今の気持ちを五段階で評価する機能と文章で投稿出来ます。</a></p>
-                  <p><a class="big-letter50">投稿された内容に対して、ポジティブな言葉を表示します。</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">最終目的(50%)...最終的に何を達成したいか決める事が出来ます。</a></p>
-                  <p><a class="big-letter50">また、心のスコアが75%を超えた場合、最終目的の画面内で</a></p>
-                  <p><a class="big-letter50">短期目標を表示し、決めることが出来ます。</a></p>
-                  <br><br>
-
-                  <p><a class="big-letter50">[心のスコア80%~]</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">短期目標チェックリスト化(80%)...最終目的でヒヤリングした</a></p>
-                  <p><a class="big-letter50">短期目標をチェックリスト化します。</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">掲示板(80%)...文章を投稿できます。</a></p>
-                  <p><a class="big-letter50">返信不可ですが、イイネ機能で他のユーザーと交流出来ます。</a></p>
-                  <p><a class="big-letter50">また、攻撃的な文章にはペナルティとして、心のスコアを下げます。</a></p>
-
-                  <p style=" margin-top: 25px;"><a class="big-letter50">カウンセラーとチャット(80%)...カウンセラー(管理者画面にアクセス権限が</a></p>
-                  <p><a class="big-letter50">ある人)とユーザーがチャット可能です。</a></p>
-                  <p><a class="big-letter50">加えて、カウンセラーのチャット画面で、ユーザーの心のスコアや</a></p>
-                  <p><a class="big-letter50">心のスコアの変化をグラフ等で可視化出来るようにしています。</a></p>
-              </div>
-            </section>
-          </div>
-            
-                
-
-
           
           <!-- 経験のあるソフト・フレームワークなど -->
           <div class="blanks" id="softwares_and_frameworks">
@@ -305,19 +215,19 @@
             <p><a class="big-letter50">ソフトウェア使用履歴</a></p>
 
               <div class="cell-l" style="width: 100%;">
-                <p><a class="big-letter50">Python</a></p>
+                <p><a class="big-letter50 marker">Python</a></p>
                 <p><a class="big-letter50">Flask flask-paginate Flask-SocketIO Flask-WTF Django</a></p>
                 <p><a class="big-letter50">scikit-learn numpy pandas slack-bolt selenium openpyxlなど</a></p>
               </div>
 
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">HTMLとCSS・JS・PHP・データベース</a></p>
+                <p><a class="big-letter50 marker">HTMLとCSS・JS・PHP・データベース</a></p>
                 <p><a class="big-letter50">Laravel / ajax Foundation Bootstrap</a></p>
                 <p><a class="big-letter50">MySQL PostgreSQL SQLite Heroku など</a></p>
               </div>
 
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">インフラ系</a></p>
+                <p><a class="big-letter50 marker">インフラ系</a></p>
                 <p><a class="big-letter50">OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager</a></p>
                 <p><a class="big-letter50">MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee</a></p>
                 <p><a class="big-letter50">CiscoAnyConnect VMwareSSL-VPN TeamViewer など</a></p>
@@ -329,7 +239,7 @@
               <p><a class="big-letter50">言語学習履歴</a></p>
               
               <div class="cell-l" style="width: 100%;">
-                <p><a class="big-letter50">英語</a></p>
+                <p><a class="big-letter50 marker">英語</a></p>
                 <p><a class="big-letter50">【2019年10月〜2020年1月】</a></p>
                 <p><a class="big-letter50">英語が全くできない状態で、フィリピンに留学しました。</a></p>
                 <p><a class="big-letter50">語彙力・発音・リスニングに注力しました。</a></p>
@@ -343,7 +253,7 @@
               </div>
               
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">HTML/CSS、JS</a></p>
+                <p><a class="big-letter50 marker">HTML/CSS、JS</a></p>
                 <p><a class="big-letter50">【2010年〜2013年】</a></p>
                 <p><a class="big-letter50">高校在学中に、独学でHTMLとCSSを学習しました。</a></p>
                 <p><a class="big-letter50">【2019年10月〜】</a></p>
@@ -353,14 +263,14 @@
               </div>
               
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">PHP</a></p>
+                <p><a class="big-letter50 marker">PHP</a></p>
                 <p><a class="big-letter50">【2019年10月〜2020年1月】</a></p>
                 <p><a class="big-letter50">HTMLからデータをPHPで取得し、加工後は、</a></p>
                 <p><a class="big-letter50">SQLで新規追加・値取得・更新・削除を学習しました。</a></p>
               </div>
               
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">Python</a></p>
+                <p><a class="big-letter50 marker">Python</a></p>
                 <p><a class="big-letter50">【2020年3月〜】</a></p>
                 <p><a class="big-letter50">独学で基礎技術を取得し、web系フレームワーク、</a></p>
                 <p><a class="big-letter50">アルゴリズム・統計学を学習を学習しました。</a></p>
@@ -369,7 +279,7 @@
               </div>
               
               <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50">SQL</a></p>
+                <p><a class="big-letter50 marker">SQL</a></p>
                 <p><a class="big-letter50">【2019年10月〜】</a></p>
                 <p><a class="big-letter50">留学先にて、授業の一環でSQL及びデータベースを勉強しました。</a></p>
                 <p><a class="big-letter50">勉強後、チーム開発時にデータベースを使用する必要があった為、</a></p>
@@ -381,8 +291,8 @@
             </div>
           </div>
           
-            
-          
+
+
 
 
           <!-- 保有資格 -->
@@ -391,95 +301,77 @@
               <p><a class="big-letter100 js_typing">保有資格</a></p>
             </div>
     
+
+            
               <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2021年4月】TOEIC公開テスト スコア655取得</a></p>
+                <div class="cell-l">
+                  <table border="1">
+
+                    <tr>
+                        <th><p><a class="big-letter50">2021年4月</a></p></th>
+                        <td><p><a class="big-letter50">TOEIC公開テスト スコア655取得</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2018年6月</a></p></th>
+                        <td><p><a class="big-letter50">日本商工会議所及び各地商工会議所主催 日商簿記 ３級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2016年12月</a></p></th>
+                        <td><p><a class="big-letter50">介護職員初任者研修</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年12月</a></p></th>
+                        <td><p><a class="big-letter50">日本情報処理検定協会 ホームページ作成検定 １級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年7月</a></p></th>
+                        <td><p><a class="big-letter50">日本情報処理検定協会 表計算 ２級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年3月</a></p></th>
+                        <td><p><a class="big-letter50">全商 パソコン入力スピード認定試験 １級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年2月</a></p></th>
+                        <td><p><a class="big-letter50">日本漢字能力検定 ３級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年2月</a></p></th>
+                        <td><p><a class="big-letter50">日本情報処理検定協会 文書デザイン検定 １級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2012年1月</a></p></th>
+                        <td><p><a class="big-letter50">全商 プログラミング部門 ２級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2011年12月</a></p></th>
+                        <td><p><a class="big-letter50">日本情報処理検定協会 プレゼンテーション作成検定 １級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2011年11月</a></p></th>
+                        <td><p><a class="big-letter50">文部科学省後援秘書技能検定試験 3級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2011年9月</a></p></th>
+                        <td><p><a class="big-letter50">全商 ビジネス情報部門 ２級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2011年2月</a></p></th>
+                        <td><p><a class="big-letter50">全商 ビジネス基礎 ３級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2010年11月</a></p></th>
+                        <td><p><a class="big-letter50">珠算・電卓実務検定 ３級</a></p></td>
+                    </tr>
+                    <tr>
+                        <th><p><a class="big-letter50">2010年9月</a></p></th>
+                        <td><p><a class="big-letter50">全商 情報処理検定 ３級</a></p></td>
+                    </tr>
+
+                </table>
                 </div>
               </div>
 
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2018年6月】日本商工会議所及び各地商工会議所主催 日商簿記 ３級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2016年12月】介護職員初任者研修</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年12月】日本情報処理検定協会 ホームページ作成検定 １級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年7月】日本情報処理検定協会 表計算 ２級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年3月】全商 パソコン入力スピード認定試験 １級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年2月】日本漢字能力検定 ３級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年2月】日本情報処理検定協会 文書デザイン検定 １級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2012年1月】全商 プログラミング部門 ２級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2011年12月】日本情報処理検定協会 プレゼンテーション作成検定 １級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2011年11月】文部科学省後援秘書技能検定試験 3級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2011年9月】全商 ビジネス情報部門 ２級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2011年2月】全商 ビジネス基礎 ３級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2010年11月】珠算・電卓実務検定 ３級</a></p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="box cell-l rollAnime">
-                  <p><a class="big-letter50">【2010年9月】全商 情報処理検定 ３級</a></p>
-                </div>
-              </div>
 
           </div>
           
@@ -488,7 +380,7 @@
 
 
           <div class="blanks" style="padding-bottom: 50px;">
-            <p><a class="big-letter50 js_typing">-END-</a>
+            <p><a class="big-letter50">-END-</a>
           </div>
         </b>
       </div>

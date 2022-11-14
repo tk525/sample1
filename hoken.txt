@@ -1,0 +1,91 @@
+
+
+          <!-- ポートフォリオ -->
+          <div class="blanks" id="portfolio">
+            <p><a class="big-letter100 js_typing" id="portfolio">ポートフォリオ</a></p>
+
+              <p><a class="big-letter50 js_typing" href="https://sample3-20220503.herokuapp.com/">鬱対策アプリ</a></p>
+              <p><a class="big-letter50">入力された悩みから、sklearnのアルゴリズムを使用し、</a></p>
+              <p><a class="big-letter50">段階的に解決方法を提案します。</a></p>
+              <p><a class="big-letter50">上記のリンクにアクセス後、Aでログインして頂ければ、確認可能です。</a></p>
+          </div>
+          
+          <div style="padding-top: 20px;">
+            <section class="typeA">
+
+              <input id="TAB-A01" type="radio" name="TAB-A" checked="checked">
+              <label class="tabLabel" for="TAB-A01"><p><a class="big-letter50">開発の動機と作業予定</a></p></label>
+              <div class="content">
+                <div style="border: solid; height: 700px; overflow-y: scroll; ">
+
+                  <div class="text-left">
+                  <p><a class="big-letter50">9月から12月初旬までPythonの機械学習の勉強を行いました。</a></p>
+                  <p><a class="big-letter50">学習の成果として、前職で培った知識を活かせるもので開発しました。</a></p>
+                  <p><a class="big-letter50">機能に重視した為、デザインは必要最低限にしています。</a></p>
+                  <p><a class="big-letter50">無料と有料会員との差別化に加え、有料会員の心の状態により</a></p>
+                  <p><a class="big-letter50">使用出来る機能の制限をかけています。</a></p>
+                  </a></p>
+                  </div>
+
+                  <div class="text-left">
+                    <p style=" margin-top: 50px;"><a class="big-letter50">開発期間と内容</a></p>
+                    <p style=" margin-top: 25px;"><a class="big-letter50">【12月初旬〜年末】簡易仕様書作成しました。</a></p>
+                    <p><a class="big-letter50">海外ユーザーが9割の気分が落ち込んだ時に使用するアプリで、</a></p>
+                    <p><a class="big-letter50">落ち込んでいる文を収集し、学習データとして設定しました。</a></p>
+                    <p><a class="big-letter50">次に、各機能ごとに適当なアルゴリズムを組み合わせました。</a></p>
+                    <p><a class="big-letter50">落ち込んでいる状況の改善方法を、日本語と英語で調べた結果を</a></p>
+                    <p><a class="big-letter50">正解として設定後、ユーザーの性格と現状を考慮した改善方法を、</a></p>
+                    <p><a class="big-letter50">海アルゴリズムで数値化し、適当な改善方法をいくつか提案するなど、</a></p>
+                    <p><a class="big-letter50">ユーザーの状況により、改善方法を変えて提案する機能を複数考案しました。</a></p>
+
+                    <p style=" margin-top: 25px;"><a class="big-letter50">【1月〜2月末】考案した機能の開発に加え、</a></p>
+                    <p><a class="big-letter50">ユーザーの心を数値化し、その値で使用できる機能に制限を設定しました。</a></p>
+                    <p><a class="big-letter50">また、セキュリティ対策として、エスケープ処置と、XSS対策で入力値制限</a></p>
+                    <p><a class="big-letter50">サニタイズ、プリペアドステートメントを加えました。</a></p>
+
+                    <p style=" margin-top: 25px;"><a class="big-letter50">【3月初旬】githubとHerokuにアップロードしました。</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <input id="TAB-A02" type="radio" name="TAB-A">
+              <label class="tabLabel" for="TAB-A02"><p><a class="big-letter50">簡易仕様書</a></p></label>
+              <div class="content">
+                <div class="text-left" style="border: solid; height: 700px; overflow-y: scroll;">
+                  <p><a class="big-letter50">[無料]</a></p>
+                  <p><a class="big-letter50">AIヒヤリング ミラーリング法でのヒヤリングのみ</a></p>
+                  <br><br>
+
+                  <p><a class="big-letter50">[連続ログイン数回で下記機能解除] ※以下、括弧内は心のスコアとします。</a></p>
+                  <p style=" margin-top: 25px;"><a class="big-letter50">AIヒヤリング(0~80%)...ユーザーから投稿された文章で、心の状態をスコア化し</a></p>
+                  <p><a class="big-letter50">ユーザー情報管理用のデータベースで基礎値として追加します。</a></p>
+                  <p><a class="big-letter50">加えて、現場の改善方法をユーザーに提案します。</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">性格診断(0%~)...心のスコアの基礎値を修正します。</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">日記(0%)...今の気持ちを五段階で評価する機能と文章で投稿出来ます。</a></p>
+                  <p><a class="big-letter50">投稿された内容に対して、ポジティブな言葉を表示します。</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">最終目的(50%)...最終的に何を達成したいか決める事が出来ます。</a></p>
+                  <p><a class="big-letter50">また、心のスコアが75%を超えた場合、最終目的の画面内で</a></p>
+                  <p><a class="big-letter50">短期目標を表示し、決めることが出来ます。</a></p>
+                  <br><br>
+
+                  <p><a class="big-letter50">[心のスコア80%~]</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">短期目標チェックリスト化(80%)...最終目的でヒヤリングした</a></p>
+                  <p><a class="big-letter50">短期目標をチェックリスト化します。</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">掲示板(80%)...文章を投稿できます。</a></p>
+                  <p><a class="big-letter50">返信不可ですが、イイネ機能で他のユーザーと交流出来ます。</a></p>
+                  <p><a class="big-letter50">また、攻撃的な文章にはペナルティとして、心のスコアを下げます。</a></p>
+
+                  <p style=" margin-top: 25px;"><a class="big-letter50">カウンセラーとチャット(80%)...カウンセラー(管理者画面にアクセス権限が</a></p>
+                  <p><a class="big-letter50">ある人)とユーザーがチャット可能です。</a></p>
+                  <p><a class="big-letter50">加えて、カウンセラーのチャット画面で、ユーザーの心のスコアや</a></p>
+                  <p><a class="big-letter50">心のスコアの変化をグラフ等で可視化出来るようにしています。</a></p>
+              </div>
+            </section>
+          </div>
+            
+                

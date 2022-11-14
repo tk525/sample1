@@ -16,6 +16,16 @@ div{
   /* font-family: serif;  */
   z-index: 1;
 }
+
+th{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+td{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .bg-image{
   position: fixed;
   right: 0;
@@ -110,7 +120,12 @@ padding-bottom: -100%; */
   text-align: left;
 }
 
-
+/* マーカー */
+.marker{
+  background-color: rgba(248, 255, 105, 0.505);
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 label {
   font: 13px "Vibur";
@@ -198,7 +213,7 @@ label {
 
 /* 新しいセクター */
 .blanks {
-  padding-top: 400px;
+  padding-bottom: 400px;
 }
 
 /* 画像と文字を縦並びにする */
@@ -328,7 +343,7 @@ transition: all 0.6s;
   position: fixed;
   z-index: 999; 
   width: 12%;
-  padding-left: 13px;
+  left: 13px;
   height: 100vh;/*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;

@@ -1,3 +1,12 @@
+// エラーログ非表示
+// https://www.kaasan.info/archives/1610
+function TigilError() {
+	return true;
+}
+window.onerror = TigilError;
+
+
+
 // メニュー
 $(".openbtn1").click(function () {//ボタンがクリックされたら
   $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
@@ -11,18 +20,7 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 
 
 
-
-
-// エラーログ非表示
-// エラーにあったhtmlの<script>を削除したらアニメーションが動かないので
-// https://www.kaasan.info/archives/1610
-function TigilError() {
-	return true;
-}
-window.onerror = TigilError;
-
-
-// テキストランダム変換 https://coco-factory.jp/ugokuweb/move02/8-6/
+// テキストランダム変換
 var arr = []
 //初期値の設定
 function TypingInit() {

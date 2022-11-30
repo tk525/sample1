@@ -1,66 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>サンプルサイト</title>
-        <meta property="og:title" content="sample site">
-        <meta property="og:site_name" content="sample site">
+        <title>ポートフォリオ</title>
+        <meta property="og:title" content="ポートフォリオ">
+        <meta property="og:site_name" content="ポートフォリオ">
         <meta name="keywords" content="about me, ABOUT ME">
         <meta name="description" content="you can know a new information about me">
         <link rel="apple-touch-icon" sizes="180x180" href="rabbit.png">
         <meta property="og:image" content="rabbit.png">
         <meta property="og:url" content="https://www.google.com/">
 
-        <link rel="icon" href="/image/favicon.ico">
-
-        <link rel="stylesheet" href="/css/app.css" type="text/css">
-        <link rel="stylesheet" href="/css/reset.css" type="text/css">
+        <link rel="icon" href="./image/favicon.ico">
+        <link rel="stylesheet" href="./css/app.css" type="text/css">
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
-
     </head>
     <body>
 
       <!-- 背景 -->      
       <div>
-        <div class="bg-image"">
-          <!-- <video src="image/video.mp4" autoplay loop muted></video> -->
-          <img src="image/dark_made.jpg" class="img-main"  >
+        <div class="bg-image">
+          <img src="./image/dark_mode.jpg" class="img-main">
         </div>
       </div>
 
 
       <div class="body">
-        <b>
-
 
           <!-- メニュー -->
           <div class="openbtn1"><span></span><span></span><span></span></div>
           <nav id="g-nav">
-          <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-          <ul>
-          <li><p><a class="big-letter25" href="#me">私について</a></p></li>
-          <li>
-            <p><a class="big-letter25" href="#likes_and_unlikes">得意と苦手</a></p>
-          </li>
-          <li><p><a class="big-letter25" href="#free_times">余暇時間</a></p></li>
-          <li>
-            <p><a class="big-letter25" href="#news">興味がある事</a></p>
-          </li>
-          <!-- <li>
-            <p><a class="big-letter25" href="#portfolio">ポート</a></p>
-            <p><a class="big-letter25" href="#portfolio">フォリオ</a></p>
-          </li> -->
-          <li>
-            <p><a class="big-letter25" href="#softwares_and_frameworks">言語学習履歴</a></p>
-          </li>
-          <li><p><a class="big-letter25" href="#certification">保有資格</a></p></li>
-          </ul>
-          </div>
+            <div id="g-nav-list">
+              <ul>
+              <li><p><a class="big-letter25" href="#me">私について</a></p></li>
+              <li>
+                <p><a class="big-letter25" href="#likes_and_unlikes">得意と苦手</a></p>
+              </li>
+              <li><p><a class="big-letter25" href="#free_times">余暇時間</a></p></li>
+              <li>
+                <p><a class="big-letter25" href="#news">興味がある事</a></p>
+              </li>
+              <!-- <li>
+                <p><a class="big-letter25" href="#portfolio">ポート</a></p>
+                <p><a class="big-letter25" href="#portfolio">フォリオ</a></p>
+              </li> -->
+              <li>
+                <p><a class="big-letter25" href="#softwares_and_frameworks">言語学習履歴</a></p>
+              </li>
+              <li><p><a class="big-letter25" href="#certification">保有資格</a></p></li>
+              </ul>
+            </div>
           </nav>
 
           <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
@@ -68,403 +63,402 @@
 
 
 
-
-
           <!-- メイン表示 自己紹介 -->
           <div class="blanks">
-            <p>
-              <a class="big-letter50">私の名前は</a>
-              <a class="big-letter150 js_typing">滝口 結</a>
-              <a class="big-letter50">です</a>
-            </p>
+            <p class="big-letter150 js_typing">私はT.Yです</p>
           </div>
 
-            <div class="blanks" id="me">
-              <p class="text-right"><a class="big-letter100 js_typing">私について</a></p>
+          <div class="blanks" id="me">
+            <p class="text-right big-letter100 js_typing">私について</p>
+            <div class="cell-l">
 
-              <div class="cell-l">
+              <h1 class="marker big-letter50 min-blanks">高校在籍時</h1>
+              <p><pre class="style-for-pre">
+              学校の授業で、プログラミング(COBOL)・Excel関数を学習しました。
+              当時ブログが流行しており、自分でレイアウトを替える
+              技術が欲しかった為、学校から帰宅してから、
+              HTML/CSSを独学で学習しておりました。
+              フロントエンドの技術を触れる度に、将来は、
+              IT企業で働きたいと考えていました。
+              </pre></p>
 
-                <p style="margin-top: 30px;"><a class="big-letter50 marker" >高校在籍時</a></p>
-                <p><a class="big-letter50">学校の授業で、プログラミング(COBOL)・Excel関数を学習しました。</a></p>
-                <p><a class="big-letter50">当時ブログが流行しており、自分でレイアウトを替える技術が欲しかった為、学校から帰宅してから、HTML/CSSを独学で学習しておりました。</a></p>
-                <p><a class="big-letter50">フロントエンドの技術を触れる度に、将来は、</a></p>
-                <p><a class="big-letter50">IT企業で働きたいと考えていました。</a></p>
+              <h1 class="marker big-letter50 min-blanks">高校卒業後～就職</h1>
+              <p><pre class="style-for-pre">
+              IT企業で働くために、大学や専門学校の入学を目指していましたが、
+              家庭の都合で断念しました。
+              しかし、IT企業で働くことは諦めず、少しでも次に繋げるために、
+              製造職を約3年半、介護職・障がい者支援職を約2年経験しました。
+              製造職では、社会人としてのマナーを、介護職・障がい者支援職では、
+              コミュニケーション能力を習得できたと考えています。
+              </pre></p>
 
-                <p style=" margin-top: 30px;"><a class="big-letter50 marker">高校卒業後～就職</a></p>
-                <p><a class="big-letter50">IT企業で働くために、大学や専門学校の入学を目指していましたが、</a></p>
-                <p><a class="big-letter50">家庭の都合で断念しました。</a></p>
-                <p><a class="big-letter50">しかし、IT企業で働くことは諦めず、少しでも次に繋げるために、</a></p>
-                <p><a class="big-letter50">製造職を約3年半、介護職・障がい者支援職を約2年経験しました。</a></p>
-                <p><a class="big-letter50">製造職では、社会人としてのマナーを、介護職・障がい者支援職では、</a></p>
-                <p><a class="big-letter50">コミュニケーション能力を習得できたと考えています。</a></p>
+              <h1 class="marker big-letter50 min-blanks">退職～留学</h1>
+              <p><pre class="style-for-pre">
+              次に、IT企業で働くためには、肝心なIT知識が乏しい為、
+              プログラミングを学べる学校への入学を決めました。
+              しかし、ただ学校へ行くだけではもったいないと感じたため、
+              今後必ず必要となるであろう英語の習得も目標にしました。
+              この２つを満たす場所として、比較的費用が安く綺麗な英語が学べる、
+              フィリピンへの留学を決断しました。
+              </pre></p>
 
-                <p style=" margin-top: 30px;"><a class="big-letter50 marker">退職～留学</a></p>
-                <p><a class="big-letter50">次に、IT企業で働くためには、肝心なIT知識が乏しい為、</a></p>
-                <p><a class="big-letter50">プログラミングを学べる学校への入学を決めました。</a></p>
-                <p><a class="big-letter50">しかし、ただ学校へ行くだけではもったいないと感じたため、</a></p>
-                <p><a class="big-letter50">今後必ず必要となるであろう英語の習得も目標にしました。</a></p>
-                <p><a class="big-letter50">この２つを満たす場所として、比較的費用が安く綺麗な英語が学べる、</a></p>
-                <p><a class="big-letter50">フィリピンへの留学を決断しました。</a></p>
+              <pre class="style-for-pre min-blanks">留学先の授業は、英語1日4時間、
+              プログラミングを1日3時間というカリキュラムで学習しました。
+              英語は、主に発音・文章作成・リスニング・英単語増加で、
+              現地の英語の先生と1対1の授業でした。
+              プログラミングは、1ヶ月目にHTML/CSSとJavaScript
+              2ヶ月目はPHPを学習し、3ヶ月目はチーム開発と
+              プレゼンテーション作成の学習をしました。
+              </pre></p>
 
-                <p style=" margin-top: 30px;"><a class="big-letter50">留学先の授業は、英語1日4時間、</a></p>
-                <p><a class="big-letter50">プログラミングを1日3時間というカリキュラムで学習しました。</a></p>
-                <p><a class="big-letter50">英語は、主に発音・文章作成・リスニング・英単語増加で、</a></p>
-                <p><a class="big-letter50">現地の英語の先生と1対1の授業でした。</a></p>
-                <p><a class="big-letter50">プログラミングは、1ヶ月目にHTML/CSSとJavaScript、2ヶ月目はPHPを学習し</a></p>
-                <p><a class="big-letter50">3ヶ月目はチーム開発とプレゼンテーション作成の学習をしました。</a></p>
+              <h1 class="marker big-letter50 min-blanks">留学～帰国後再就職</h1>
+              <p><pre class="style-for-pre">
+              本来、長期留学を予定していましたが、コロナの世界的流行の影響で、
+              帰国せざるを得ない状況となりました。
+              IT知識も英語力も、中途半端と感じていた為、
+              帰国後もスキルアップに注力しました。
+              IT知識については、Javaと類似していて、
+              比較的学びやすいと言われているPythonを学習し、
+              AIにも興味があった為、機械学習も、
+              それぞれ独学で行いました。
+              学習した知識で、靴のECサイトを1ヶ月で開発し、
+              鬱病を改善するアプリを3ヶ月で開発しました。
+              合わせて英語力の強化の為に英会話学校に週3日で通いました。
+              開発後、様々な現場でITに関する知識を、
+              より深めることに集中する為、就職活動を再開し、
+              現所属会社に入社しました。
+              </pre></p>
 
-                <p style=" margin-top: 30px;"><a class="big-letter50 marker">留学～帰国後再就職</a></p>
-                <p><a class="big-letter50">本来、長期留学を予定していましたが、コロナの世界的流行の影響で、</a></p>
-                <p><a class="big-letter50">帰国せざるを得ない状況となりました。</a></p>
-                <p><a class="big-letter50">IT知識も英語力も、中途半端と感じていたため、</a></p>
-                <p><a class="big-letter50">帰国後もスキルアップに注力しました。</a></p>
-                <p><a class="big-letter50">IT知識については、Javaと類似していて、比較的学びやすいと言われている</a></p>
-                <p><a class="big-letter50">Pythonを学習し、AIにも興味があった為、機械学習も、</a></p>
-                <p><a class="big-letter50">それぞれ独学で行いました。</a></p>
-                <p><a class="big-letter50">学習した知識で、靴のECサイトを1ヶ月で開発し、</a></p>
-                <p><a class="big-letter50">鬱病を改善するアプリを3ヶ月で開発しました。</a></p>
-                <p><a class="big-letter50">合わせて英語力の強化の為に英会話学校に週3日で通いました。</a></p>
-                <p><a class="big-letter50">開発後、様々な現場でITに関する知識を、より深めることに集中する為、</a></p>
-                <p><a class="big-letter50">就職活動を再開し、現所属会社に入社しました。</a></p>
+              <h1 class="marker big-letter50 min-blanks">入社後</h1>
+              <p><pre class="style-for-pre">
+              現在は、サポートデスク部門の業務に参画し、
+              PCキッティングや、問い合わせ対応を行っています。
+              業務中は様々なPCの不具合に対処しており、
+              難解な不具合が改善した時に楽しさをとても感じています。
+              プライベートの時間も、開発に使う事が多く、
+              社内ポータルサイトの予定表に、現場シフト(Excelファイル)を
+              登録する作業を、全てPythonで実行できるようにしました。
+              また、その開発したコードを、外出先でも実行出来るよう、
+              SNSから命令すると実行できるようにもしました。
+              </pre></p>
 
-                <p style=" margin-top: 30px;"><a class="big-letter50 marker">入社後</a></p>
-                <p><a class="big-letter50">現在は、サポートデスク部門の業務に参画し、</a></p>
-                <p><a class="big-letter50">PCキッティングや、問い合わせ対応を行っています。</a></p>
-                <p><a class="big-letter50">業務中は様々なPCの不具合に対処しており、</a></p>
-                <p><a class="big-letter50">難解な不具合が改善した時に楽しさをとても感じています。</a></p>
-                <p><a class="big-letter50">プライベートの時間も、開発に使う事が多く、</a></p>
-                <p><a class="big-letter50">社内ポータルサイトの予定表に、現場シフト(Excelファイル)を</a></p>
-                <p><a class="big-letter50">登録する作業を、全てPythonで実行できるようにしました。</a></p>
-                <p><a class="big-letter50">また、その開発したコードを、外出先でも実行出来るよう、</a></p>
-                <p><a class="big-letter50">SNSから命令すると実行できるようにもしました。</a></p>
-
-              </div>
             </div>
-
-
+          </div>
 
 
 
           <!-- 好きな物と嫌いな物 -->
           <div class="blanks" id="likes_and_unlikes">
-            <p class="text-left"><a class="big-letter100 js_typing">得意と苦手</a></p>
-
+            <p class="text-left big-letter100 js_typing">得意と苦手</p>
             <div class="cell-l">
-              <p style="margin-top: 70px;"><a class="big-letter50">好きなものは、挑戦・コーディング・海外に関する事です。</a></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">挑戦について</a></p>
-              <p><a class="big-letter50">留学中に、インターネットの地図や物理的な地図が使用不可で、</a></p>
-              <p><a class="big-letter50">現在地不明な状態になった事があります。</a></p>
-              <p><a class="big-letter50">やってみなければ結果は分からないと思い、自分の直感を頼りに</a></p>
-              <p><a class="big-letter50">進んだところ、帰宅する事が出来ました。</a></p>
-              <p><a class="big-letter50">その経験により、自分を信じて未経験のことに挑戦する事の楽しさと、</a></p>
-              <p><a class="big-letter50">リスクを考える面白さを学びました。</a></p>
-              <p><a class="big-letter50">この経験や感覚は、初めて確認されたエラーが表示した際も同様に</a></p>
-              <p><a class="big-letter50">楽しみつつ、日々挑戦しております。</a></p>
+              <p class="min-blanks">好きなものは、挑戦・コーディング・海外に関する事です。</p>
+              <h1 class="marker big-letter50">挑戦について</h1>
+              <p><pre class="style-for-pre">
+              留学中に、インターネットの地図や物理的な地図が使用不可で、
+              現在地不明な状態になった事があります。
+              やってみなければ結果は分からないと思い、自分の直感を頼りに
+              進んだところ、帰宅する事が出来ました。
+              その経験により、自分を信じて未経験のことに挑戦する事の楽しさと、
+              リスクを考える面白さを学びました。
+              この経験や感覚は、初めて確認されたエラーが表示した際も同様に
+              楽しみつつ、日々挑戦しております。
+              </pre></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">プログラミングについて</a></p>
-              <p><a class="big-letter50">開発の案が思い浮かんでしまうと、土日祝日はもちろん、</a></p>
-              <p><a class="big-letter50">平日の移動時間・お昼休憩・帰宅後もご飯食べずにコーディングや、</a></p>
-              <p><a class="big-letter50">プログラミングの方法を考える程、プログラミング作業が好きです。</a></p>
-              <p><a class="big-letter50">留学中にリゾート地に遊びに行った際、PCを持ち込み、</a></p>
-              <p><a class="big-letter50">海を眺めながらコーディングを行っていました。</a></p>
-              <p><a class="big-letter50">友人からは少し呆れられましたが、自身はとても満足しました。</a></p>
-              
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">海外に関する事について</a></p>
-              <p><a class="big-letter50">自分の想像を超える現象を見たり経験する事が好きなので、</a></p>
-              <p><a class="big-letter50">日本では絶対にありえない事をする海外に、良くも悪くも</a></p>
-              <p><a class="big-letter50">面白さを感じているので、海外の情報好きです。</a></p>
-              <p><a class="big-letter50">例えばテスラ社のCEOがTwitterの株主になり、従業員を</a></p>
-              <p><a class="big-letter50">大量解雇したことです。結果、Twitterのトレンドの内容が激変し、</a></p>
-              <p><a class="big-letter50">ユーザーからは称賛の声が多数上がっていると記事を見ました。</a></p>
-              <p><a class="big-letter50">Twitter側である程度印象操作を行っているとは思っていましたが、</a></p>
-              <p><a class="big-letter50">厳重注意程度で事が終息すると思っていましたが、</a></p>
-              <p><a class="big-letter50">大量に従業員を解雇すると思っておらず、実行力に対しての驚きと、</a></p>
-              <p><a class="big-letter50">自分の予想とは違う結果に面白さを感じました。</a></p>
-              <p><a class="big-letter50">上記の理由により、日頃から海外に関する情報の収集し、</a></p>
-              <p><a class="big-letter50">常に違う視点を持つようにしています。</a></p>
-              <p><a class="big-letter50"></a></p>
-              <p><a class="big-letter50"></a></p>
+              <h1 class="marker big-letter50 min-blanks">プログラミングについて</h1>
+              <p><pre class="style-for-pre">
+              開発の案が思い浮かんでしまうと、土日祝日はもちろん、
+              平日の移動時間・お昼休憩・帰宅後もご飯食べずにコーディングや、
+              プログラミングの方法を考える程、プログラミング作業が好きです。
+              留学中にリゾート地に遊びに行った際、PCを持ち込み、
+              海を眺めながらコーディングを行っていました。
+              友人からは少し呆れられましたが、自身はとても満足しました。
+              </pre></p>
 
+              <h1 class="marker big-letter50 min-blanks">海外に関する事について</h1>
+              <p><pre class="style-for-pre">
+              自分の想像を超える現象を見たり経験する事が好きなので、
+              日本では絶対にありえない事をする海外に、良くも悪くも
+              面白さを感じているので、海外の情報好きです。
+              例えばテスラ社のCEOがTwitterの株主になり、従業員を
+              大量解雇したことです。結果、Twitterのトレンドの内容が激変し、
+              ユーザーからは称賛の声が多数上がっていると記事を見ました。
+              Twitter側である程度印象操作を行っているとは思っていましたが、
+              厳重注意程度で事が終息すると思っていましたが、
+              大量に従業員を解雇すると思っておらず、実行力に対しての驚きと、
+              自分の予想とは違う結果に面白さを感じました。
+              上記の理由により、日頃から海外に関する情報の収集し、
+              常に違う視点を持つようにしています。
+              </pre></p>
 
-              <p style="margin-top: 70px;"><a class="big-letter50">苦手なものは、運動、時間の浪費です</a></p>
+              <p class="min-blanks">苦手なものは、運動、時間の浪費です</p>
+              <h1 class="marker big-letter50">運動について</h1>
+              <p><pre class="style-for-pre">
+              運動は全般苦手です。例えば、私の元に飛んできたボールは
+              全て場外に転がしてしまう程、苦手です。
+              水泳もいくらやっても泳げなかった為、学校の授業は
+              なるべく目立たないようにしていました。
+              </pre></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">運動について</a></p>
-              <p><a class="big-letter50">運動は全般苦手です。例えば、私の元に飛んできたボールは</a></p>
-              <p><a class="big-letter50">全て場外に転がしてしまう程、苦手です。</a></p>
-              <p><a class="big-letter50">水泳もいくらやっても泳げなかった為、学校の授業は</a></p>
-              <p><a class="big-letter50">なるべく目立たないようにしていました。</a></p>
-              
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">時間の浪費について</a></p>
-              <p><a class="big-letter50">何もせず、無意味に過ごす事が苦手です。</a></p>
-              <p><a class="big-letter50">例えば、TOEICのスコアが手元に届くまで1ヶ月自由な時間がありました。</a></p>
-              <p><a class="big-letter50">その際に、生産的な事を行って時間を過ごしたかった為、</a></p>
-              <p><a class="big-letter50">自然言語処理の勉強をしていました。</a></p>
+              <h1 class="marker big-letter50 min-blanks">時間の浪費について</h1>
+              <p><pre class="style-for-pre">
+              何もせず、無意味に過ごす事が苦手です。
+              例えば、TOEICのスコアが手元に届くまで
+              1ヶ月自由な時間がありました。
+              その際に、生産的な事を行って時間を過ごしたかった為、
+              自然言語処理の勉強をしていました。
+              </pre></p>
 
-              </a></p>
             </div>
           </div>
-
-
 
 
 
           <!-- 休日・平日の余暇時間 -->
           <div class="blanks" id="free_times">
-            <p class="text-right"><a class="big-letter100 js_typing">余暇時間</a></p>
-
+            <p class="text-right big-letter100 js_typing">余暇時間</p>
             <div class="cell-l">
-              <p style=" margin-top: 30px;"><a class="big-letter50">主に、英語の勉強や開発中のアプリケーション改善方法の</a></p>
-              <p><a class="big-letter50">考案及び模索を行っています。</a></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">開発について</a></p>
-              <p><a class="big-letter50">世の中に同じ物は無い、オリジナルな物を開発する発想で、</a></p>
-              <p><a class="big-letter50">日々模索し、コーディングをしています。</a></p>
-              <p><a class="big-letter50">現在は、VBAでJavaScriptのようなゲームが作成できるとの情報を聞いて、</a></p>
-              <p><a class="big-letter50">VBAでイラストが障害物を避ける横スクロールのゲームを作成しています。</a></p>
+              <p><pre class="style-for-pre min-blanks">
+              主に、英語の勉強や開発中のアプリケーション改善方法の
+              考案及び模索を行っています。
+              </pre></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50 marker">英語について</a></p>
-              <p><a class="big-letter50">IELTSの参考書やアメリカ国営放送を視聴しリスニングの強化</a></p>
-              <p><a class="big-letter50">SNSの海外ユーザーの英語に関するポストで認識の習性や</a></p>
-              <p><a class="big-letter50">ニュアンスの違いなど、勉強しています。</a></p>
-              <p><a class="big-letter50">現在参画中の業務でも、英文のエラーメッセージが表示されたという</a></p>
-              <p><a class="big-letter50">お問い合わせを頂いてもすぐに回答ができ、</a></p>
-              <p><a class="big-letter50">同僚から翻訳の依頼を受けることも多くあります。</a></p>
+              <h1 class="marker big-letter50 min-blanks">開発について</h1>
+              <p><pre class="style-for-pre">
+              世の中に同じ物は無い、オリジナルな物を開発する発想で、
+              日々模索し、コーディングをしています。
+              現在は、VBAでJavaScriptのようなゲームが作成可能と聞いて、
+              VBAでイラストが障害物を避ける横スクロールのゲームを作成中です。
+              </pre></p>
+
+              <h1 class="marker big-letter50 min-blanks">英語について</h1>
+              <p><pre class="style-for-pre">
+              IELTSの参考書やアメリカ国営放送を視聴しリスニングの強化
+              SNSの海外ユーザーの英語に関するポストで認識の習性や
+              ニュアンスの違いなど、勉強しています。
+              現在参画中の業務でも、英文のエラーメッセージが表示されたという
+              お問い合わせを頂いてもすぐに回答ができ、
+              同僚から翻訳の依頼を受けることも多くあります。
+              </pre></p>
 
             </div>
           </div>
-
-
 
 
           
           <!-- 興味があるニュース -->
           <div class="blanks" id="news">
-            <p class="text-left"><a class="big-letter100 js_typing">興味があるニュース</a></p>
-
+            <p class="text-left big-letter100 js_typing">興味があるニュース</p>
             <div class="cell-l">
-              <p style=" margin-top: 30px;"><a class="big-letter50">Amazon Goという、レジ・販売員がいない店舗の導入を開始した事です。</a></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50">店舗内にいるお客様が持つ鞄に商品を入れた後、店舗を出ると、</a></p>
-              <p><a class="big-letter50">お客様のAmazonのアカウントから</a></p>
-              <p><a class="big-letter50">商品分の料金が引き落とされる仕組みでした。</a></p>
-              <p><a class="big-letter50">機械学習を勉強していたので、私が得た知識が使用されているのか、</a></p>
-              <p><a class="big-letter50">もしくは別の技術が使用されているのか、興味があります。</a></p>
+              <p><pre class="style-for-pre min-blanks">
+              Amazon Goという、レジ・販売員がいない店舗の導入を
+              開始した事です。
+              </pre></p>
 
-              <p style=" margin-top: 30px;"><a class="big-letter50">また、ハッキング集団にAmazon Goの情報が狙われた際</a></p>
-              <p><a class="big-letter50">セキュリティホールの対策やクラッキングを行われた際の対策や修復等</a></p>
-              <p><a class="big-letter50">どのように対処しているのか興味が尽きません。</a></p>
-              <p><a class="big-letter50">例えば、システムの管理コンソール操作可能な権限を持っている且つ</a></p>
-              <p><a class="big-letter50">クラッカーに協力的な人間がいれば、セキュリティホールを作ることは</a></p>
-              <p><a class="big-letter50">容易だと思います。</a></p>
-              <p><a class="big-letter50">しかし、セキュリティホールを作らせない事を目的に、</a></p>
-              <p><a class="big-letter50">定期的に人事異動を行ったとしても、情報漏洩のリスクが高まり、</a></p>
-              <p><a class="big-letter50">全体的な技術力は上昇しないと思います。</a></p>
-              <p><a class="big-letter50">しかし、人事異動を行わないとすれば、負の感情を持っている人間により、</a></p>
-              <p><a class="big-letter50">セキュリティホールを作られる事は時間の問題だと思います。</a></p>
-              <p><a class="big-letter50">このように、私の考えでは完璧に近い対策を思い付く事が難しい為、</a></p>
-              <p><a class="big-letter50">対策方法に興味があります。</a></p>
+              <p class="min-blanks">店舗内にいるお客様が持つ鞄に商品を入れた後、店舗を出ると、</p>
+              <p><pre class="style-for-pre">
+              お客様のAmazonのアカウントから
+              商品分の料金が引き落とされる仕組みでした。
+              機械学習を勉強していたので、私が得た知識が使用されているのか、
+              もしくは別の技術が使用されているのか、興味があります。
+              </pre></p>
+
+              <p class="min-blanks">また、ハッキング集団にAmazon Goの情報が狙われた際</p>
+              <p><pre class="style-for-pre">
+              セキュリティホールの対策やクラッキングを行われた際の対策や修復等
+              どのように対処しているのか興味が尽きません。
+              例えば、システムの管理コンソール操作可能な権限を持っている且つ
+              クラッカーに協力的な人間がいれば、セキュリティホールを作ることは
+              容易だと思います。
+              しかし、セキュリティホールを作らせない事を目的に、
+              定期的に人事異動を行ったとしても、情報漏洩のリスクが高まり、
+              全体的な技術力は上昇しないと思います。
+              しかし、人事異動を行わないとすれば、不満を持っている人間により、
+              セキュリティホールを作られる事は時間の問題だと思います。
+              このように、私の考えでは完璧に近い対策を思い付く事が難しい為、
+              対策方法に興味があります。
+              </pre></p>
 
             </div>
-
           </div>
 
 
 
-
-          
           <!-- 経験のあるソフト・フレームワークなど -->
           <div class="blanks" id="softwares_and_frameworks">
-            <div class="text-right" id="softwares_and_frameworks">
-              <p><a class="big-letter100 js_typing">言語学習履歴</a></p>
-            </div>
+            <p class="text-right big-letter100 js_typing">言語学習履歴</p>
+            <div class="cell-l">
 
-            <div class="cell-l" style="width: 100%;">
-              <p><a class="big-letter50">今まで学習した言語の履歴や、</a></p>
-              <p><a class="big-letter50">使用経験のあるソフトウェア・フレームワークを記載しました。</a></p>
-            </div>
+              <p><pre class="style-for-pre">
+              今まで学習した言語の履歴や、
+              使用経験のあるソフトウェア・フレームワークを記載しました。
+              </pre></p>
             
-            <div style="margin-top: 70px;">
-            <p><a class="big-letter50">ソフトウェア使用履歴</a></p>
+              <h1 class="big-letter50 min-blanks style-for-pre">ソフトウェア使用履歴</h1>
+              <h1 class="marker big-letter50">Python</h1>
+              <p><pre class="style-for-pre">
+              Flask flask-paginate Flask-SocketIO Flask-WTF Django
+              scikit-learn numpy pandas slack-bolt selenium openpyxlなど
+              </pre></p>
 
-              <div class="cell-l" style="width: 100%;">
-                <p><a class="big-letter50 marker">Python</a></p>
-                <p><a class="big-letter50">Flask flask-paginate Flask-SocketIO Flask-WTF Django</a></p>
-                <p><a class="big-letter50">scikit-learn numpy pandas slack-bolt selenium openpyxlなど</a></p>
-              </div>
+              <h1 class="marker big-letter50">HTMLとCSS・JS・PHP・データベース</h1>
+              <p><pre class="style-for-pre">
+              Laravel / ajax Foundation Bootstrap
+              MySQL PostgreSQL SQLite Heroku など
+              </pre></p>
 
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">HTMLとCSS・JS・PHP・データベース</a></p>
-                <p><a class="big-letter50">Laravel / ajax Foundation Bootstrap</a></p>
-                <p><a class="big-letter50">MySQL PostgreSQL SQLite Heroku など</a></p>
-              </div>
+              <h1 class="marker big-letter50">インフラ系</h1>
+              <p><pre class="style-for-pre">
+              OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager
+              MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee
+              CiscoAnyConnect VMwareSSL-VPN TeamViewer など
+              </pre></p>
 
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">インフラ系</a></p>
-                <p><a class="big-letter50">OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager</a></p>
-                <p><a class="big-letter50">MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee</a></p>
-                <p><a class="big-letter50">CiscoAnyConnect VMwareSSL-VPN TeamViewer など</a></p>
-              </div>
+              <h1 class="big-letter50 min-blanks style-for-pre">言語学習履歴</h1>
+              <h1 class="marker big-letter50">英語</h1>
+              <p><pre class="style-for-pre">
+              【2019年10月〜2020年1月】
+              英語が全くできない状態で、フィリピンに留学しました。
+              語彙力・発音・リスニングに注力しました。
+              【2020年2月〜2021年3月】
+              帰国後、更なる英語力をつける為、語学学校に週3通学で通学し、
+              スピーキング・リスニング・ライティング・リーディングを
+              ネイティブと行いました。
+              【2021年4月〜】
+              TOEIC スコア655取得しました。
+              現在は洋書やアメリカのサイトにて勉強中です。
+              </pre></p>
 
-            </div>
+              <h1 class="marker big-letter50">HTML/CSS、JS</h1>
+              <p><pre class="style-for-pre">
+              【2010年〜2013年】
+              高校在学中に、独学でHTMLとCSSを学習しました。
+              【2019年10月〜】
+              留学先にて、HTML/CSSの基礎・フレームワーク、
+              JSの基礎・ajaxを学習しました。
+              サーバーにアップロードを行う際、未経験の技術を試行しました。
+              </pre></p>
 
-            <div style="margin-top: 70px;">
-              <p><a class="big-letter50">言語学習履歴</a></p>
-              
-              <div class="cell-l" style="width: 100%;">
-                <p><a class="big-letter50 marker">英語</a></p>
-                <p><a class="big-letter50">【2019年10月〜2020年1月】</a></p>
-                <p><a class="big-letter50">英語が全くできない状態で、フィリピンに留学しました。</a></p>
-                <p><a class="big-letter50">語彙力・発音・リスニングに注力しました。</a></p>
-                <p><a class="big-letter50">【2020年2月〜2021年3月】</a></p>
-                <p><a class="big-letter50">帰国後、更なる英語力をつける為、語学学校に週3通学で通学し、</a></p>
-                <p><a class="big-letter50">ネイティブとスピーキング・リスニング・ライティング・リーディングを</a></p>
-                <p><a class="big-letter50">行いました。</a></p>
-                <p><a class="big-letter50">【2021年4月〜】</a></p>
-                <p><a class="big-letter50">TOEIC スコア655取得しました。</a></p>
-                <p><a class="big-letter50">現在は洋書やアメリカのサイトにて勉強中です。</a></p>
-              </div>
-              
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">HTML/CSS、JS</a></p>
-                <p><a class="big-letter50">【2010年〜2013年】</a></p>
-                <p><a class="big-letter50">高校在学中に、独学でHTMLとCSSを学習しました。</a></p>
-                <p><a class="big-letter50">【2019年10月〜】</a></p>
-                <p><a class="big-letter50">留学先にて、HTML/CSSの基礎・フレームワーク、</a></p>
-                <p><a class="big-letter50">JSの基礎・ajaxを学習しました。</a></p>
-                <p><a class="big-letter50">サーバーにアップロードを行う際、未経験の技術を試行しました。</a></p>
-              </div>
-              
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">PHP</a></p>
-                <p><a class="big-letter50">【2019年10月〜2020年1月】</a></p>
-                <p><a class="big-letter50">HTMLからデータをPHPで取得し、加工後は、</a></p>
-                <p><a class="big-letter50">SQLで新規追加・値取得・更新・削除を学習しました。</a></p>
-              </div>
-              
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">Python</a></p>
-                <p><a class="big-letter50">【2020年3月〜】</a></p>
-                <p><a class="big-letter50">独学で基礎技術を取得し、web系フレームワーク、</a></p>
-                <p><a class="big-letter50">アルゴリズム・統計学を学習を学習しました。</a></p>
-                <p><a class="big-letter50">自然言語処理の学習しつつ、Webから取得したファイルをエクセルで加工後、</a></p>
-                <p><a class="big-letter50">Webにアップロードするまでを、全てPythonで開発しました。</a></p>
-              </div>
-              
-              <div class="cell-l" style="width: 100%; margin-top: 30px;">
-                <p><a class="big-letter50 marker">SQL</a></p>
-                <p><a class="big-letter50">【2019年10月〜】</a></p>
-                <p><a class="big-letter50">留学先にて、授業の一環でSQL及びデータベースを勉強しました。</a></p>
-                <p><a class="big-letter50">勉強後、チーム開発時にデータベースを使用する必要があった為、</a></p>
-                <p><a class="big-letter50">未経験の技術を試行しました。</a></p>
-                <p><a class="big-letter50">帰国後、開発時にデータベースを使用する為、SQLインジェクション等を</a></p>
-                <p><a class="big-letter50">学ぶ為、MySQL・PostgreSQL、SQLiteなど使用しました。</a></p>
-              </div>
+              <h1 class="marker big-letter50">PHP</h1>
+              <p><pre class="style-for-pre">
+              【2019年10月〜2020年1月】
+              HTMLからデータをPHPで取得し、加工後は、
+              SQLで新規追加・値取得・更新・削除を学習しました。
+              </pre></p>
+
+              <h1 class="marker big-letter50">Python</h1>
+              <p><pre class="style-for-pre">
+              【2020年3月〜】
+              独学で基礎技術を取得し、web系フレームワーク、
+              アルゴリズム・統計学を学習を学習しました。
+              自然言語処理の学習しつつ、Webから取得したファイルを
+              エクセルで加工後、Webにアップロードするまでを、
+              全てPythonで開発しました。
+              </pre></p>
+
+              <h1 class="marker big-letter50">SQL</h1>
+              <p><pre class="style-for-pre">
+              【2019年10月〜】
+              留学先にて、授業の一環でSQL及びデータベースを勉強しました。
+              勉強後、チーム開発時にデータベースを使用する必要があった為、
+              未経験の技術を試行しました。
+              帰国後、開発時にデータベースを使用する為、
+              SQLインジェクション等を学ぶ為、MySQL・PostgreSQL、SQLite等
+              使用しました。
+              </pre></p>
 
             </div>
           </div>
           
-
-
 
 
           <!-- 保有資格 -->
           <div id="certification">
-            <div class="text-left" id="certification">
-              <p><a class="big-letter100 js_typing">保有資格</a></p>
-            </div>
-    
-
-            
-              <div class="container">
-                <div class="cell-l">
-                  <table border="1">
-
-                    <tr>
-                        <th><p><a class="big-letter50">2021年4月</a></p></th>
-                        <td><p><a class="big-letter50">TOEIC公開テスト スコア655取得</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2018年6月</a></p></th>
-                        <td><p><a class="big-letter50">日本商工会議所及び各地商工会議所主催 日商簿記 ３級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2016年12月</a></p></th>
-                        <td><p><a class="big-letter50">介護職員初任者研修</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年12月</a></p></th>
-                        <td><p><a class="big-letter50">日本情報処理検定協会 ホームページ作成検定 １級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年7月</a></p></th>
-                        <td><p><a class="big-letter50">日本情報処理検定協会 表計算 ２級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年3月</a></p></th>
-                        <td><p><a class="big-letter50">全商 パソコン入力スピード認定試験 １級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年2月</a></p></th>
-                        <td><p><a class="big-letter50">日本漢字能力検定 ３級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年2月</a></p></th>
-                        <td><p><a class="big-letter50">日本情報処理検定協会 文書デザイン検定 １級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2012年1月</a></p></th>
-                        <td><p><a class="big-letter50">全商 プログラミング部門 ２級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2011年12月</a></p></th>
-                        <td><p><a class="big-letter50">日本情報処理検定協会 プレゼンテーション作成検定 １級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2011年11月</a></p></th>
-                        <td><p><a class="big-letter50">文部科学省後援秘書技能検定試験 3級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2011年9月</a></p></th>
-                        <td><p><a class="big-letter50">全商 ビジネス情報部門 ２級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2011年2月</a></p></th>
-                        <td><p><a class="big-letter50">全商 ビジネス基礎 ３級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2010年11月</a></p></th>
-                        <td><p><a class="big-letter50">珠算・電卓実務検定 ３級</a></p></td>
-                    </tr>
-                    <tr>
-                        <th><p><a class="big-letter50">2010年9月</a></p></th>
-                        <td><p><a class="big-letter50">全商 情報処理検定 ３級</a></p></td>
-                    </tr>
-
+            <p class="text-left big-letter100 js_typing">保有資格</p>
+            <div class="container">
+              <div class="cell-l">
+                <table border="1">
+                  <tr>
+                    <th><p>2021年4月</a></th>
+                    <td><p>TOEIC公開テスト スコア655取得</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2018年6月</a></th>
+                    <td><p>日本商工会議所及び各地商工会議所主催 日商簿記 ３級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2016年12月</a></th>
+                    <td><p>介護職員初任者研修</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年12月</a></th>
+                    <td><p>日本情報処理検定協会 ホームページ作成検定 １級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年7月</a></th>
+                    <td><p>日本情報処理検定協会 表計算 ２級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年3月</a></th>
+                    <td><p>全商 パソコン入力スピード認定試験 １級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年2月</a></th>
+                    <td><p>日本漢字能力検定 ３級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年2月</a></th>
+                    <td><p>日本情報処理検定協会 文書デザイン検定 １級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2012年1月</a></th>
+                    <td><p>全商 プログラミング部門 ２級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2011年12月</a></th>
+                    <td><p>日本情報処理検定協会 プレゼンテーション作成検定 １級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2011年11月</a></th>
+                    <td><p>文部科学省後援秘書技能検定試験 3級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2011年9月</a></th>
+                    <td><p>全商 ビジネス情報部門 ２級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2011年2月</a></th>
+                    <td><p>全商 ビジネス基礎 ３級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2010年11月</a></th>
+                    <td><p>珠算・電卓実務検定 ３級</a></td>
+                  </tr>
+                  <tr>
+                    <th><p>2010年9月</a></th>
+                    <td><p>全商 情報処理検定 ３級</a></td>
+                  </tr>
                 </table>
-                </div>
               </div>
-
-
+            </div>
           </div>
-          
-          
-
-
 
           <div class="end-setting">
-            <p><a class="big-letter50">-END-</a>
+            <p>-END-</a>
           </div>
-        </b>
+
       </div>
       
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="/js/app.js"></script>
+      <!-- JS -->
+      <script src="./js/app.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+      <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-13/js/5-1-13.js"></script>
 
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 
-      </div>
     </body>
 </html>

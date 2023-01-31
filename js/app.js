@@ -41,10 +41,14 @@ function TypingAnime() {
 // スマホ用にメニュー文字縦並び
 function For_smartphone(){
 
-  console.log("Width:" + window.innerWidth);
-  
+  // window.addEventListener('DOMContentLoaded', function(){
+  //   window.addEventListener('resize', function(){
+  //     console.log("Width:" + window.innerWidth);
+  //     console.log("Height:" + window.innerHeight);
+  //   });
+  // });
   var window_fullWidth = window.parent.screen.width;
-  var window_halfWidth = window_fullWidth / 2;
+  var window_halfWidth = window_fullWidth / 1.5;
   
   if (window.innerWidth <= window_halfWidth){
     $('.for_smartphone').addClass("implement");
@@ -53,6 +57,10 @@ function For_smartphone(){
   }else{
     $('.for_smartphone').removeClass("implement");
   };
+
+  
+
+
 };
  
 

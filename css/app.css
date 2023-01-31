@@ -1,4 +1,4 @@
-.body {
+.display {
   text-align: center;
   width: 65%;
   height: 250px;
@@ -19,7 +19,6 @@ p {
 
 
 
-
 /* 背景画像 */
 .bg-image{
   position: fixed;
@@ -27,24 +26,14 @@ p {
   bottom: 0;
   top: 0;
   left: 0;
-  width: auto;
-  height: auto;
-  z-index: -100;
+  z-index: -1;
 }
 .img-main{    
-  height: 100%;
-  display:block;
-  margin:auto;
-  align-items: center;
   position: relative;
   width: 100%;
+  height: 100%;
   top: 50%;
   transform: translateY(-50%);
-}
-.img-filter{
-  top: 0;
-  left: 0;
-  position: absolute;
 }
 
 
@@ -55,6 +44,7 @@ p {
 }
 
 .min-blanks {
+  display: inline-block;
   margin-top: 50px;
 }
 
@@ -62,21 +52,25 @@ p {
 
 /* 文字サイズ特大 */
 .big-letter150 {
+  color: #fff;
   font: 100px "Vibur";
   font-family: 'Zen Maru Gothic', sans-serif;
 }
 /* 文字サイズ大 */
 .big-letter100 {
+  color: #fff;
   font: 75px "Vibur";
   font-family: 'Zen Maru Gothic', sans-serif;
 }
 /* 文字サイズ大きめ */
 .big-letter50 {
+  color: #fff;
   font: 28px "Vibur";
   font-family: 'Zen Maru Gothic', sans-serif;
 }
 /* 文字サイズ標準あたり */
 .big-letter25 {
+  color: #fff;
   font: 20px "Vibur";
   font-family: 'Zen Maru Gothic', sans-serif;
 }
@@ -84,18 +78,11 @@ p {
 
 
 /* 文字右よせ */
-.text-right{
-  text-align: right;
-}
 .cell-r{
   vertical-align: top;
   text-align: right;
 }
-
 /* 文字左よせ */
-.text-left{
-  text-align: left;
-}
 .cell-l{
   vertical-align: top;
   text-align: left;
@@ -114,12 +101,21 @@ p {
 
 
 
-/* テキスト内容 */
-pre {
-  white-space: pre-line;
+/* 保有資格 エクセル式 左右寄せ */
+.container{
+  width: 600px;
 }
-
-.style-for-pre {
+/* 表の枠 */
+th{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
+  font-size: 28px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+td{
+  padding-left: 5px;
+  padding-right: 5px;
   color: #fff;
   font-size: 28px;
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -127,66 +123,21 @@ pre {
 
 
 
-
-/* ボタン表示切り替え */
-.hidden_box {
-  margin: 2em 0;/*前後の余白*/
-  padding: 0;
+/* トップに戻る */
+.back-to-top{
+  position:fixed;
+  right:50px;
+  bottom:50px;
 }
-
-/*ボタン装飾*/
-.hidden_box label {
-  padding: 15px;
-  font-weight: bold;
-  cursor :pointer;
+.link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
-
-/*ボタンホバー時*/
-.hidden_box label:hover {
-  /* background: #efefef; */
-  color: deepskyblue;
-}
-
-/*チェックは見えなくする*/
-.hidden_box input {
-  display: none;
-}
-
-/*中身を非表示にしておく*/
-.hidden_box .hidden_show {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.8s;
-}
-
-/*クリックで中身表示*/
-.hidden_box input:checked ~ .hidden_show {
-  padding: 10px 0;
-  height: auto;
-  opacity: 1;
-}
-
-
-
-/* 保有資格 エクセル式 左右寄せ */
-.boder {
-  border: solid;
-}
-.container{
-  display: table;
-  width: 600px;
-}
-
-/* 表の枠 */
-th{
-  padding-left: 5px;
-  padding-right: 5px;
-}
-td{
-  padding-left: 5px;
-  padding-right: 5px;
+.link:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 
@@ -194,7 +145,7 @@ td{
 /* メニュー */
 #g-nav{
   position:fixed;
-  z-index: 999;
+  z-index: 1;
 
   top:0px;
   left: -120%;
@@ -202,7 +153,7 @@ td{
   height: 100vh;/*ナビの高さ*/
   background:rgba(120, 120, 120, 0.525);
 
-  transition: all 0.6s;
+  transition: all 0.5s;
 }
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive{
@@ -211,7 +162,7 @@ td{
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list{
   position: fixed;
-  z-index: 999; 
+  z-index: 1; 
   width: 12%;
   left: 13px;
   height: 100vh;
@@ -221,7 +172,7 @@ td{
 /*ナビゲーション*/
 #g-nav ul {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
   top: 7%;
 }
@@ -234,25 +185,25 @@ td{
 #g-nav li a{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding:10px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  padding: 10px;
+  letter-spacing: 0.1em; /*文字間隔*/
 }
+
 
 /* ボタン */
 .openbtn1{
 position:fixed;
-  z-index: 9999;
+  z-index: 2;
   top:10px;
   left: 10px;
   cursor: pointer;
   width: 50px;
   height:50px;
 }
-/*×に変化*/  
+/* ×に変化 */  
 .openbtn1 span{
   display: inline-block;
-  transition: all .4s;
+  transition: all 0.4s;
   position: absolute;
   left: 14px;
   height: 3px;
@@ -260,7 +211,7 @@ position:fixed;
   background-color: rgb(102, 102, 102);
   width: 45%;
 }
-
+/* バーガーラインの各線ポジション */
 .openbtn1 span:nth-of-type(1) {
   top:15px; 
 }
@@ -270,6 +221,7 @@ position:fixed;
 .openbtn1 span:nth-of-type(3) {
   top:31px;
 }
+/* クロス時の各線ポジション */
 .openbtn1.active span:nth-of-type(1) {
   top: 18px;
   left: 18px;
@@ -284,12 +236,4 @@ position:fixed;
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
-}
-
-
-
-/* -END- */
-.end-setting{
-  padding-top: 50px;
-  padding-bottom: 50px;
 }

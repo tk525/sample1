@@ -45,3 +45,33 @@ $(window).on('load', function () {
   TypingInit();
   TypingAnime();
 });
+
+
+
+
+
+// 
+window.addEventListener('DOMContentLoaded', function(){
+  window.addEventListener('resize', function(){
+    console.log("Width:" + window.innerWidth);
+
+    var window_fullWidth = window.parent.screen.width;
+    var window_halfWidth = window_fullWidth / 2;
+
+    if (window.innerWidth <= window_halfWidth){
+      $('.for_smartphone').addClass("implement");
+      
+      console.log("どない？？？")
+    }else{
+      $('.for_smartphone').removeClass("implement");
+    }
+  });
+});
+
+// var windowWidth = $(window).width();
+// var windowSm = 640;
+// if (windowWidth <= windowSm) {
+//     //横幅640px以下のとき（つまりスマホ時）に行う処理を書く
+// } else {
+//     //横幅640px超のとき（タブレット、PC）に行う処理を書く
+// }

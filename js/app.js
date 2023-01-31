@@ -41,25 +41,12 @@ function TypingAnime() {
 // スマホ用にメニュー文字縦並び
 function For_smartphone(){
 
-  // window.addEventListener('DOMContentLoaded', function(){
-  //   window.addEventListener('resize', function(){
-  //     console.log("Width:" + window.innerWidth);
-  //     console.log("Height:" + window.innerHeight);
-  //   });
-  // });
-  var window_fullWidth = window.parent.screen.width;
-  var window_halfWidth = window_fullWidth / 1.5;
-  
-  if (window.innerWidth <= window_halfWidth){
-    $('.for_smartphone').addClass("implement");
-    
-    console.log("どない？？？")
-  }else{
-    $('.for_smartphone').removeClass("implement");
-  };
-
-  
-
+    // UserAgentからのスマホ判定
+    if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+      $('.for_smartphone').addClass("implement");
+    } else {
+      $('.for_smartphone').removeClass("implement");
+    };
 
 };
  

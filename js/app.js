@@ -38,6 +38,8 @@ function TypingAnime() {
   });
 }
 
+
+
 // スマホ用にメニュー文字縦並び
 function For_smartphone(){
 
@@ -52,7 +54,6 @@ function For_smartphone(){
  
 
 
-
 $(window).scroll(function () {
   TypingInit();
   TypingAnime();
@@ -63,8 +64,3 @@ $(window).on('load', function () {
   TypingAnime();
   For_smartphone();
 });
-
-
-
-
-

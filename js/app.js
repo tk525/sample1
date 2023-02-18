@@ -40,27 +40,33 @@ function TypingAnime() {
 
 
 
-// スマホ用にメニュー文字縦並び
-function For_smartphone(){
+// スマホ用表示切り替え
+$(function(){
+  var ua = navigator.userAgent;
+  if(ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0){
+    // メニュー縦並び
+    $('.for_smartphone_menu').addClass("implement");
+    
+    // 資格縦並び
+    $('.for_smartphone_certification').addClass("implement");
+    
 
-    // UserAgentからのスマホ判定
-    if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-      $('.for_smartphone').addClass("implement");
-    } else {
-      $('.for_smartphone').removeClass("implement");
-    };
+  }else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+    // メニュー縦並び
+    $('.for_smartphone_menu').addClass("implement");
+    
+    // 資格縦並び
+    $('.for_smartphone_certification').addClass("implement");
+  }
+});
 
-};
- 
 
 
 $(window).scroll(function () {
   TypingInit();
   TypingAnime();
-  For_smartphone();
 });
 $(window).on('load', function () {
   TypingInit();
   TypingAnime();
-  For_smartphone();
 });

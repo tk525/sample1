@@ -4,13 +4,7 @@
       <title>ポートフォリオ</title>
       
       <meta charset="utf-8">
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-
-      <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=2.0, user-scalable=yes">
-
-
-
-
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes,">
       <meta name="description" content="T-YIの自己紹介です">
       <meta name="keywords" content="T-YIの自己紹介,T-YI,ポートフォリオ">
 
@@ -22,452 +16,448 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
+    </head>
+    
+    <header>
+
       <!-- 背景 -->      
-        <div class="bg-image">
-          <img src="./image/dark_mode.jpg" class="img-main">
+      <div class="bg-image">
+        <img src="./image/dark_mode.jpg" class="img-main" alt="background_image">
+      </div>
+
+      <!-- メニュー -->
+      <!-- バーガーメニューのライン -->
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+  
+      <nav id="g-nav">
+        <div id="g-nav-list">
+          <ul>
+            <li><a class="big-letter25 for_smartphone_menu" href="#me">私について</a></li>
+            <li><a class="big-letter25 for_smartphone_menu" href="#likes_and_unlikes">得意と苦手</a></li>
+            <li><a class="big-letter25 for_smartphone_menu" href="#free_times">余暇時間</a></li>
+            <li><a class="big-letter25 for_smartphone_menu" href="#news">興味がある事</a></li>
+            <li><a class="big-letter25 for_smartphone_menu" href="#softwares_and_frameworks">言語学習履歴</a></li>
+            <li><a class="big-letter25 for_smartphone_menu" href="#certification">保有資格</a></li>
+          </ul>
+        </div>
+      </nav>
+   
+      <!-- トップに戻る -->
+      <div class="back-to-top">
+        <a href="#" class="link">
+          <img src="image/back_to_top.png" alt="back_to_top">
+        </a>
+      </div>
+      
+    </header>
+    
+    <body>
+  
+      <div class="display">
+
+        <!-- メイン表示 自己紹介 -->
+        <div class="blanks">
+          <h1 class="big-letter150 js_typing">私はT-YIです</h1>
+        </div>
+
+        <div class="blanks">
+          <span id="me"></span>
+          <h2 class="cell-r big-letter100 js_typing">私について</h1>
+          <div class="cell-l">
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">高校在籍時</span></h3>
+            <p>
+            学校の授業で、プログラミング(COBOL)・Excel関数を学習しました。
+            当時ブログが流行しており、自分でレイアウトを替える
+            技術が欲しかった為、学校から帰宅してから、
+            HTML/CSSを独学で学習しておりました。
+            フロントエンドの技術を触れる度に、将来は、
+            IT企業で働きたいと考えていました。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">高校卒業後～就職</span></h3>
+            <p>
+            IT企業で働くために、大学や専門学校の入学を目指していましたが、
+            家庭の都合で断念しました。
+            しかし、IT企業で働くことは諦めず、少しでも次に繋げるために、
+            製造職を約3年半、介護職・障がい者支援職を約2年経験しました。
+            製造職では、社会人としてのマナーを、介護職・障がい者支援職では、
+            コミュニケーション能力を習得できたと考えています。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">退職～留学</span></h3>
+            <p>
+            次に、IT企業で働くためには、肝心なIT知識が乏しい為、
+            プログラミングを学べる学校への入学を決めました。
+            しかし、ただ学校へ行くだけではもったいないと感じたため、
+            今後必ず必要となるであろう英語の習得も目標にしました。
+            この２つを満たす場所として、比較的費用が安く綺麗な英語が学べる、
+            フィリピンへの留学を決断しました。
+            </p>
+            <br>
+            <p>
+            留学先の授業は、英語1日4時間、
+            プログラミングを1日3時間というカリキュラムで学習しました。
+            英語は、主に発音・文章作成・リスニング・英単語増加で、
+            現地の英語の先生と1対1の授業でした。
+            プログラミングは、1ヶ月目にHTML/CSSとJavaScript
+            2ヶ月目はPHPを学習し、3ヶ月目はチーム開発と
+            プレゼンテーション作成の学習をしました。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">留学～帰国後再就職</span></h3>
+            <p>
+            本来、長期留学を予定していましたが、コロナの世界的流行の影響で、
+            帰国せざるを得ない状況となりました。
+            IT知識も英語力も、中途半端と感じていた為、
+            帰国後もスキルアップに注力しました。
+            IT知識については、Javaと類似していて、
+            比較的学びやすいと言われているPythonを学習し、
+            AIにも興味があった為、機械学習も、
+            それぞれ独学で行いました。
+            学習した知識で、靴のECサイトを1ヶ月で開発し、
+            鬱病を改善するアプリを3ヶ月で開発しました。
+            合わせて英語力の強化の為に英会話学校に週3日で通いました。
+            開発後、様々な現場でITに関する知識を、
+            より深めることに集中する為、就職活動を再開し、
+            現所属会社に入社しました。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">入社後</span></h3>
+            <p>
+            現在は、サポートデスク部門の業務に参画し、
+            PCキッティングや、問い合わせ対応を行っています。
+            業務中は様々なPCの不具合に対処しており、
+            難解な不具合が改善した時に楽しさをとても感じています。
+            プライベートの時間も、開発に使う事が多く、
+            社内ポータルサイトの予定表に、現場シフト(Excelファイル)を
+            登録する作業を、全てPythonで実行できるようにしました。
+            また、その開発したコードを、外出先でも実行出来るよう、
+            SNSから命令すると実行できるようにもしました。
+            </p>
+
+          </div>
         </div>
 
 
-      <div class="display">
 
-          <!-- メニュー -->
-          <!-- バーガーメニューのライン -->
-          <div class="openbtn1"><span></span><span></span><span></span></div>
+        <!-- 好きな物と嫌いな物 -->
+        <div class="blanks">
+          <span id="likes_and_unlikes"></span>
+          <h2 class="cell-l big-letter100 js_typing">得意と苦手</h2>
+          <div class="cell-l">
 
-          <nav id="g-nav">
-            <div id="g-nav-list">
-              <ul>
-                <li><a class="big-letter25 for_smartphone" href="#me">私について</a></li>
-                <li><a class="big-letter25 for_smartphone" href="#likes_and_unlikes">得意と苦手</a></li>
-                <li><a class="big-letter25 for_smartphone" href="#free_times">余暇時間</a></li>
-                <li><a class="big-letter25 for_smartphone" href="#news">興味がある事</a></li>
-                <li><a class="big-letter25 for_smartphone" href="#softwares_and_frameworks">言語学習履歴</a></li>
-                <li><a class="big-letter25 for_smartphone" href="#certification">保有資格</a></li>
-              </ul>
-            </div>
-          </nav>
+            <h3 class="min-blanks big-letter50">好きなものは、挑戦・コーディング・海外に関する事です。</h3>
+            <h4 class="big-letter50"><span class="marker">挑戦について</span></h4>
+            <p>
+            留学中に、インターネットの地図や物理的な地図が使用不可で、
+            現在地不明な状態になった事があります。
+            やってみなければ結果は分からないと思い、自分の直感を頼りに
+            進んだところ、帰宅する事が出来ました。
+            その経験により、自分を信じて未経験のことに挑戦する事の楽しさと、
+            リスクを考える面白さを学びました。
+            この経験や感覚は、初めて確認されたエラーが表示した際も同様に
+            楽しみつつ、日々挑戦しております。
+            </p>
 
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-          <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-13/js/5-1-13.js"></script>
+            <h4 class="big-letter50 min-blanks"><span class="marker">プログラミングについて</span></h4>
+            <p>
+            開発の案が思い浮かんでしまうと、土日祝日はもちろん、
+            平日の移動時間・お昼休憩・帰宅後もご飯食べずにコーディングや、
+            プログラミングの方法を考える程、プログラミング作業が好きです。
+            留学中にリゾート地に遊びに行った際、PCを持ち込み、
+            海を眺めながらコーディングを行っていました。
+            友人からは少し呆れられましたが、自身はとても満足しました。
+            </p>
 
+            <h4 class="big-letter50 min-blanks"><span class="marker">海外に関する事について</span></h4>
+            <p>
+            自分の想像を超える現象を見たり経験する事が好きなので、
+            日本では絶対にありえない事をする海外に、良くも悪くも
+            面白さを感じているので、海外の情報好きです。
+            例えばテスラ社のCEOがTwitterの株主になり、従業員を
+            大量解雇したことです。結果、Twitterのトレンドの内容が激変し、
+            ユーザーからは称賛の声が多数上がっていると記事を見ました。
+            Twitter側である程度印象操作を行っているとは思っていましたが、
+            厳重注意程度で事が終息すると思っていましたが、
+            大量に従業員を解雇すると思っておらず、実行力に対しての驚きと、
+            自分の予想とは違う結果に面白さを感じました。
+            上記の理由により、日頃から海外に関する情報の収集し、
+            常に違う視点を持つようにしています。
+            </p>
 
-          <!-- トップに戻る -->
-          <div class="back-to-top">
-            <a href="#" class="link">
-              <img src="image/矢印ボタン上2.png">
-            </a>
+            <h3 class="min-blanks big-letter50">苦手なものは、運動、時間の浪費です。</h3>
+            <h4 class="big-letter50"><span class="marker">運動について</span></h4>
+            <p>
+            運動は全般苦手です。例えば、私の元に飛んできたボールは
+            全て場外に転がしてしまう程、苦手です。
+            水泳もいくらやっても泳げなかった為、学校の授業は
+            なるべく目立たないようにしていました。
+            </p>
+
+            <h4 class="big-letter50 min-blanks"><span class="marker">時間の浪費について</span></h4>
+            <p>
+            何もせず、無意味に過ごす事が苦手です。
+            例えば、TOEICのスコアが手元に届くまで
+            1ヶ月自由な時間がありました。
+            その際に、生産的な事を行って時間を過ごしたかった為、
+            自然言語処理の勉強をしていました。
+            </p>
+
           </div>
+        </div>
 
 
 
-          <!-- メイン表示 自己紹介 -->
-          <div class="blanks">
-            <h1 class="big-letter150 js_typing">私はT-YIです</h1>
+        <!-- 休日・平日の余暇時間 -->
+        <div class="blanks">
+          <span id="free_times"></span>
+          <h2 class="cell-r big-letter100 js_typing">余暇時間</h2>
+          <div class="cell-l">
+
+            <br>
+            <p>
+            主に、英語の勉強や開発中のアプリケーション改善方法の
+            考案及び模索を行っています。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">開発について</span></h3>
+            <p>
+            世の中に同じ物は無い、オリジナルな物を開発する発想で、
+            日々模索し、コーディングをしています。
+            現在は、VBAでJavaScriptのようなゲームが作成可能と聞いて、
+            VBAでイラストが障害物を避ける横スクロールのゲームを作成中です。
+            </p>
+
+            <h3 class="big-letter50 min-blanks"><span class="marker">英語について</span></h3>
+            <p>
+            IELTSの参考書やアメリカ国営放送を視聴しリスニングの強化
+            SNSの海外ユーザーの英語に関するポストで認識の習性や
+            ニュアンスの違いなど、勉強しています。
+            現在参画中の業務でも、英文のエラーメッセージが表示されたという
+            お問い合わせを頂いてもすぐに回答ができ、
+            同僚から翻訳の依頼を受けることも多くあります。
+            </p>
+
           </div>
+        </div>
 
-          <div class="blanks">
-            <span id="me"></span>
-            <h1 class="cell-r big-letter100 js_typing">私について</h1>
+
+              
+        <!-- 興味があるニュース -->
+        <div class="blanks">
+          <span id="news"></span>
+          <h2 class="cell-l big-letter100 js_typing">興味がある事</h2>
+          <div class="cell-l">
+
+            <p class="min-blanks">
+            Amazon Goという、レジ・販売員がいない店舗の導入を
+            開始した事です。
+            </p>
+
+            <p class="min-blanks">店舗内にいるお客様が持つ鞄に商品を入れた後、店舗を出ると、
+            お客様のAmazonのアカウントから
+            商品分の料金が引き落とされる仕組みでした。
+            機械学習を勉強していたので、私が得た知識が使用されているのか、
+            もしくは別の技術が使用されているのか、興味があります。
+            </p>
+
+            <p class="min-blanks">また、ハッキング集団にAmazon Goの情報が狙われた際
+            セキュリティホールの対策やクラッキングを行われた際の対策や修復等
+            どのように対処しているのか興味が尽きません。
+            例えば、システムの管理コンソール操作可能な権限を持っている且つ
+            クラッカーに協力的な人間がいれば、セキュリティホールを作ることは
+            容易だと思います。
+            しかし、セキュリティホールを作らせない事を目的に、
+            定期的に人事異動を行ったとしても、情報漏洩のリスクが高まり、
+            全体的な技術力は上昇しないと思います。
+            しかし、人事異動を行わないとすれば、不満を持っている人間により、
+            セキュリティホールを作られる事は時間の問題だと思います。
+            このように、私の考えでは完璧に近い対策を思い付く事が難しい為、
+            対策方法に興味があります。
+            </p>
+
+          </div>
+        </div>
+
+
+
+
+        <!-- 経験のあるソフト・フレームワークなど -->
+        <div class="blanks">
+          <span id="softwares_and_frameworks"></span>
+          <h2 class="big-letter100 js_typing">言語学習履歴</h2>
+          <div class="cell-l">
+
+            <p>
+            今まで学習した言語の履歴や、
+            使用経験のあるソフトウェア・フレームワークを記載しました。
+            </p>
+                
+            <h3 class="big-letter50 min-blanks">ソフトウェア使用履歴</h3>
+
+            <h4 class="big-letter50"><span class="marker">Python</span></h4>
+            <p>
+            Flask flask-paginate Flask-SocketIO Flask-WTF Django
+            scikit-learn numpy pandas slack-bolt selenium openpyxlなど
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">HTMLとCSS・JS・PHP・データベース</span></h4>
+            <p>
+            Laravel / ajax Foundation Bootstrap
+            MySQL PostgreSQL SQLite Heroku など
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">インフラ系</span></h4>
+            <p>
+            OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager
+            MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee
+            CiscoAnyConnect VMwareSSL-VPN TeamViewer など
+            </p>
+
+            <h3 class="big-letter50 min-blanks">言語学習履歴</h3>
+
+            <h4 class="big-letter50"><span class="marker">英語</span></h4>
+            <p>
+            【2019年10月〜2020年1月】
+            英語が全くできない状態で、フィリピンに留学しました。
+            語彙力・発音・リスニングに注力しました。
+            【2020年2月〜2021年3月】
+            帰国後、更なる英語力をつける為、語学学校に週3通学で通学し、
+            スピーキング・リスニング・ライティング・リーディングを
+            ネイティブと行いました。
+            【2021年4月〜】
+            TOEIC スコア655取得しました。
+            現在は洋書やアメリカのサイトにて勉強中です。
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">HTML/CSS、JS</span></h4>
+            <p>
+            【2010年〜2013年】
+            高校在学中に、独学でHTMLとCSSを学習しました。
+            【2019年10月〜】
+            留学先にて、HTML/CSSの基礎・フレームワーク、
+            JSの基礎・ajaxを学習しました。
+            サーバーにアップロードを行う際、未経験の技術を試行しました。
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">PHP</span></h4>
+            <p>
+            【2019年10月〜2020年1月】
+            HTMLからデータをPHPで取得し、加工後は、
+            SQLで新規追加・値取得・更新・削除を学習しました。
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">Python</span></h4>
+            <p>
+            【2020年3月〜】
+            独学で基礎技術を取得し、web系フレームワーク、
+            アルゴリズム・統計学を学習を学習しました。
+            自然言語処理の学習しつつ、Webから取得したファイルを
+            エクセルで加工後、Webにアップロードするまでを、
+            全てPythonで開発しました。
+            </p>
+
+            <h4 class="big-letter50"><span class="marker">SQL</span></h4>
+            <p>
+            【2019年10月〜】
+            留学先にて、授業の一環でSQL及びデータベースを勉強しました。
+            勉強後、チーム開発時にデータベースを使用する必要があった為、
+            未経験の技術を試行しました。
+            帰国後、開発時にデータベースを使用する為、
+            SQLインジェクション等を学ぶ為、MySQL・PostgreSQL、SQLite等
+            使用しました。
+            </p>
+
+          </div>
+        </div>
+              
+
+
+        <!-- 保有資格 -->
+        <div id="certification">
+          <h2 class="cell-l big-letter100 js_typing">保有資格</h2>
+          <div class="container">
             <div class="cell-l">
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">高校在籍時</span></h1>
-              <p>
-              学校の授業で、プログラミング(COBOL)・Excel関数を学習しました。
-              当時ブログが流行しており、自分でレイアウトを替える
-              技術が欲しかった為、学校から帰宅してから、
-              HTML/CSSを独学で学習しておりました。
-              フロントエンドの技術を触れる度に、将来は、
-              IT企業で働きたいと考えていました。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">高校卒業後～就職</span></h1>
-              <p>
-              IT企業で働くために、大学や専門学校の入学を目指していましたが、
-              家庭の都合で断念しました。
-              しかし、IT企業で働くことは諦めず、少しでも次に繋げるために、
-              製造職を約3年半、介護職・障がい者支援職を約2年経験しました。
-              製造職では、社会人としてのマナーを、介護職・障がい者支援職では、
-              コミュニケーション能力を習得できたと考えています。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">退職～留学</span></h1>
-              <p>
-              次に、IT企業で働くためには、肝心なIT知識が乏しい為、
-              プログラミングを学べる学校への入学を決めました。
-              しかし、ただ学校へ行くだけではもったいないと感じたため、
-              今後必ず必要となるであろう英語の習得も目標にしました。
-              この２つを満たす場所として、比較的費用が安く綺麗な英語が学べる、
-              フィリピンへの留学を決断しました。
-              </p>
-
-              <span class="min-blanks"></span>
-              <p>
-              留学先の授業は、英語1日4時間、
-              プログラミングを1日3時間というカリキュラムで学習しました。
-              英語は、主に発音・文章作成・リスニング・英単語増加で、
-              現地の英語の先生と1対1の授業でした。
-              プログラミングは、1ヶ月目にHTML/CSSとJavaScript
-              2ヶ月目はPHPを学習し、3ヶ月目はチーム開発と
-              プレゼンテーション作成の学習をしました。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">留学～帰国後再就職</span></h1>
-              <p>
-              本来、長期留学を予定していましたが、コロナの世界的流行の影響で、
-              帰国せざるを得ない状況となりました。
-              IT知識も英語力も、中途半端と感じていた為、
-              帰国後もスキルアップに注力しました。
-              IT知識については、Javaと類似していて、
-              比較的学びやすいと言われているPythonを学習し、
-              AIにも興味があった為、機械学習も、
-              それぞれ独学で行いました。
-              学習した知識で、靴のECサイトを1ヶ月で開発し、
-              鬱病を改善するアプリを3ヶ月で開発しました。
-              合わせて英語力の強化の為に英会話学校に週3日で通いました。
-              開発後、様々な現場でITに関する知識を、
-              より深めることに集中する為、就職活動を再開し、
-              現所属会社に入社しました。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">入社後</span></h1>
-              <p>
-              現在は、サポートデスク部門の業務に参画し、
-              PCキッティングや、問い合わせ対応を行っています。
-              業務中は様々なPCの不具合に対処しており、
-              難解な不具合が改善した時に楽しさをとても感じています。
-              プライベートの時間も、開発に使う事が多く、
-              社内ポータルサイトの予定表に、現場シフト(Excelファイル)を
-              登録する作業を、全てPythonで実行できるようにしました。
-              また、その開発したコードを、外出先でも実行出来るよう、
-              SNSから命令すると実行できるようにもしました。
-              </p>
-
+              <table border="1">
+                <tr>
+                  <th class="for_smartphone_certification">2021年 4月</th>
+                  <td class="for_smartphone_certification">TOEIC公開テスト スコア655取得</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2018年 6月</th>
+                  <td class="for_smartphone_certification">日本商工会議所及び各地商工会議所主催 日商簿記 ３級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2016年 12月</th>
+                  <td class="for_smartphone_certification">介護職員初任者研修</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 12月</th>
+                  <td class="for_smartphone_certification">日本情報処理検定協会 ホームページ作成検定 １級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 7月</th>
+                  <td class="for_smartphone_certification">日本情報処理検定協会 表計算 ２級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 3月</th>
+                  <td class="for_smartphone_certification">全商 パソコン入力スピード認定試験 １級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 2月</th>
+                  <td class="for_smartphone_certification">日本漢字能力検定 ３級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 2月</th>
+                  <td class="for_smartphone_certification">日本情報処理検定協会 文書デザイン検定 １級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2012年 1月</th>
+                  <td class="for_smartphone_certification">全商 プログラミング部門 ２級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2011年 12月</th>
+                  <td class="for_smartphone_certification">日本情報処理検定協会 プレゼンテーション作成検定 １級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2011年 11月</th>
+                  <td class="for_smartphone_certification">文部科学省後援秘書技能検定試験 3級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2011年 9月</th>
+                  <td class="for_smartphone_certification">全商 ビジネス情報部門 ２級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2011年 2月</th>
+                  <td class="for_smartphone_certification">全商 ビジネス基礎 ３級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2010年 11月</th>
+                  <td class="for_smartphone_certification">珠算・電卓実務検定 ３級</td>
+                </tr>
+                <tr>
+                  <th class="for_smartphone_certification">2010年 9月</th>
+                  <td class="for_smartphone_certification">全商 情報処理検定 ３級</td>
+                </tr>
+              </table>
             </div>
           </div>
+        </div>
 
-
-
-          <!-- 好きな物と嫌いな物 -->
-          <div class="blanks">
-            <span id="likes_and_unlikes"></span>
-            <h1 class="cell-l big-letter100 js_typing">得意と苦手</h1>
-            <div class="cell-l">
-
-              <h1 class="min-blanks big-letter50">好きなものは、挑戦・コーディング・海外に関する事です。</h1>
-              <h1 class="big-letter50"><span class="marker">挑戦について</span></h1>
-              <p>
-              留学中に、インターネットの地図や物理的な地図が使用不可で、
-              現在地不明な状態になった事があります。
-              やってみなければ結果は分からないと思い、自分の直感を頼りに
-              進んだところ、帰宅する事が出来ました。
-              その経験により、自分を信じて未経験のことに挑戦する事の楽しさと、
-              リスクを考える面白さを学びました。
-              この経験や感覚は、初めて確認されたエラーが表示した際も同様に
-              楽しみつつ、日々挑戦しております。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">プログラミングについて</span></h1>
-              <p>
-              開発の案が思い浮かんでしまうと、土日祝日はもちろん、
-              平日の移動時間・お昼休憩・帰宅後もご飯食べずにコーディングや、
-              プログラミングの方法を考える程、プログラミング作業が好きです。
-              留学中にリゾート地に遊びに行った際、PCを持ち込み、
-              海を眺めながらコーディングを行っていました。
-              友人からは少し呆れられましたが、自身はとても満足しました。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">海外に関する事について</span></h1>
-              <p>
-              自分の想像を超える現象を見たり経験する事が好きなので、
-              日本では絶対にありえない事をする海外に、良くも悪くも
-              面白さを感じているので、海外の情報好きです。
-              例えばテスラ社のCEOがTwitterの株主になり、従業員を
-              大量解雇したことです。結果、Twitterのトレンドの内容が激変し、
-              ユーザーからは称賛の声が多数上がっていると記事を見ました。
-              Twitter側である程度印象操作を行っているとは思っていましたが、
-              厳重注意程度で事が終息すると思っていましたが、
-              大量に従業員を解雇すると思っておらず、実行力に対しての驚きと、
-              自分の予想とは違う結果に面白さを感じました。
-              上記の理由により、日頃から海外に関する情報の収集し、
-              常に違う視点を持つようにしています。
-              </p>
-
-              <h1 class="min-blanks big-letter50">苦手なものは、運動、時間の浪費です。</h1>
-              <h1 class="big-letter50"><span class="marker">運動について</span></h1>
-              <p>
-              運動は全般苦手です。例えば、私の元に飛んできたボールは
-              全て場外に転がしてしまう程、苦手です。
-              水泳もいくらやっても泳げなかった為、学校の授業は
-              なるべく目立たないようにしていました。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">時間の浪費について</span></h1>
-              <p>
-              何もせず、無意味に過ごす事が苦手です。
-              例えば、TOEICのスコアが手元に届くまで
-              1ヶ月自由な時間がありました。
-              その際に、生産的な事を行って時間を過ごしたかった為、
-              自然言語処理の勉強をしていました。
-              </p>
-
-            </div>
-          </div>
-
-
-
-          <!-- 休日・平日の余暇時間 -->
-          <div class="blanks">
-            <span id="free_times"></span>
-            <h1 class="cell-r big-letter100 js_typing">余暇時間</h1>
-            <div class="cell-l">
-
-              <span class="min-blanks"></span>
-              <p>
-              主に、英語の勉強や開発中のアプリケーション改善方法の
-              考案及び模索を行っています。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">開発について</span></h1>
-              <p>
-              世の中に同じ物は無い、オリジナルな物を開発する発想で、
-              日々模索し、コーディングをしています。
-              現在は、VBAでJavaScriptのようなゲームが作成可能と聞いて、
-              VBAでイラストが障害物を避ける横スクロールのゲームを作成中です。
-              </p>
-
-              <h1 class="big-letter50 min-blanks"><span class="marker">英語について</span></h1>
-              <p>
-              IELTSの参考書やアメリカ国営放送を視聴しリスニングの強化
-              SNSの海外ユーザーの英語に関するポストで認識の習性や
-              ニュアンスの違いなど、勉強しています。
-              現在参画中の業務でも、英文のエラーメッセージが表示されたという
-              お問い合わせを頂いてもすぐに回答ができ、
-              同僚から翻訳の依頼を受けることも多くあります。
-              </p>
-
-            </div>
-          </div>
-
-
-          
-          <!-- 興味があるニュース -->
-          <div class="blanks">
-            <span id="news"></span>
-            <h1 class="cell-l big-letter100 js_typing">興味がある事</h1>
-            <div class="cell-l">
-
-              <p class="min-blanks">
-              Amazon Goという、レジ・販売員がいない店舗の導入を
-              開始した事です。
-              </p>
-
-              <p class="min-blanks">店舗内にいるお客様が持つ鞄に商品を入れた後、店舗を出ると、
-              お客様のAmazonのアカウントから
-              商品分の料金が引き落とされる仕組みでした。
-              機械学習を勉強していたので、私が得た知識が使用されているのか、
-              もしくは別の技術が使用されているのか、興味があります。
-              </p>
-
-              <p class="min-blanks">また、ハッキング集団にAmazon Goの情報が狙われた際
-              セキュリティホールの対策やクラッキングを行われた際の対策や修復等
-              どのように対処しているのか興味が尽きません。
-              例えば、システムの管理コンソール操作可能な権限を持っている且つ
-              クラッカーに協力的な人間がいれば、セキュリティホールを作ることは
-              容易だと思います。
-              しかし、セキュリティホールを作らせない事を目的に、
-              定期的に人事異動を行ったとしても、情報漏洩のリスクが高まり、
-              全体的な技術力は上昇しないと思います。
-              しかし、人事異動を行わないとすれば、不満を持っている人間により、
-              セキュリティホールを作られる事は時間の問題だと思います。
-              このように、私の考えでは完璧に近い対策を思い付く事が難しい為、
-              対策方法に興味があります。
-              </p>
-
-            </div>
-          </div>
-
-
-
-
-          <!-- 経験のあるソフト・フレームワークなど -->
-          <div class="blanks">
-            <span id="softwares_and_frameworks"></span>
-            <h1 class="big-letter100 js_typing">言語学習履歴</h1>
-            <div class="cell-l">
-
-              <p>
-              今まで学習した言語の履歴や、
-              使用経験のあるソフトウェア・フレームワークを記載しました。
-              </p>
-            
-              <h1 class="big-letter50 min-blanks">ソフトウェア使用履歴</h1>
-
-              <h1 class="big-letter50"><span class="marker">Python</span></h1>
-              <p>
-              Flask flask-paginate Flask-SocketIO Flask-WTF Django
-              scikit-learn numpy pandas slack-bolt selenium openpyxlなど
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">HTMLとCSS・JS・PHP・データベース</span></h1>
-              <p>
-              Laravel / ajax Foundation Bootstrap
-              MySQL PostgreSQL SQLite Heroku など
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">インフラ系</span></h1>
-              <p>
-              OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager
-              MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee
-              CiscoAnyConnect VMwareSSL-VPN TeamViewer など
-              </p>
-
-              <h1 class="big-letter50 min-blanks">言語学習履歴</h1>
-
-              <h1 class="big-letter50"><span class="marker">英語</span></h1>
-              <p>
-              【2019年10月〜2020年1月】
-              英語が全くできない状態で、フィリピンに留学しました。
-              語彙力・発音・リスニングに注力しました。
-              【2020年2月〜2021年3月】
-              帰国後、更なる英語力をつける為、語学学校に週3通学で通学し、
-              スピーキング・リスニング・ライティング・リーディングを
-              ネイティブと行いました。
-              【2021年4月〜】
-              TOEIC スコア655取得しました。
-              現在は洋書やアメリカのサイトにて勉強中です。
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">HTML/CSS、JS</span></h1>
-              <p>
-              【2010年〜2013年】
-              高校在学中に、独学でHTMLとCSSを学習しました。
-              【2019年10月〜】
-              留学先にて、HTML/CSSの基礎・フレームワーク、
-              JSの基礎・ajaxを学習しました。
-              サーバーにアップロードを行う際、未経験の技術を試行しました。
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">PHP</span></h1>
-              <p>
-              【2019年10月〜2020年1月】
-              HTMLからデータをPHPで取得し、加工後は、
-              SQLで新規追加・値取得・更新・削除を学習しました。
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">Python</span></h1>
-              <p>
-              【2020年3月〜】
-              独学で基礎技術を取得し、web系フレームワーク、
-              アルゴリズム・統計学を学習を学習しました。
-              自然言語処理の学習しつつ、Webから取得したファイルを
-              エクセルで加工後、Webにアップロードするまでを、
-              全てPythonで開発しました。
-              </p>
-
-              <h1 class="big-letter50"><span class="marker">SQL</span></h1>
-              <p>
-              【2019年10月〜】
-              留学先にて、授業の一環でSQL及びデータベースを勉強しました。
-              勉強後、チーム開発時にデータベースを使用する必要があった為、
-              未経験の技術を試行しました。
-              帰国後、開発時にデータベースを使用する為、
-              SQLインジェクション等を学ぶ為、MySQL・PostgreSQL、SQLite等
-              使用しました。
-              </p>
-
-            </div>
-          </div>
-          
-
-
-          <!-- 保有資格 -->
-          <div id="certification">
-            <h1 class="cell-l big-letter100 js_typing">保有資格</h1>
-            <div class="container">
-              <div class="cell-l">
-                <table border="1">
-                  <tr>
-                    <th>2021年4月</th>
-                    <td>TOEIC公開テスト スコア655取得</td>
-                  </tr>
-                  <tr>
-                    <th>2018年6月</th>
-                    <td>日本商工会議所及び各地商工会議所主催 日商簿記 ３級</td>
-                  </tr>
-                  <tr>
-                    <th>2016年12月</th>
-                    <td>介護職員初任者研修</td>
-                  </tr>
-                  <tr>
-                    <th>2012年12月</th>
-                    <td>日本情報処理検定協会 ホームページ作成検定 １級</td>
-                  </tr>
-                  <tr>
-                    <th>2012年7月</th>
-                    <td>日本情報処理検定協会 表計算 ２級</td>
-                  </tr>
-                  <tr>
-                    <th>2012年3月</th>
-                    <td>全商 パソコン入力スピード認定試験 １級</td>
-                  </tr>
-                  <tr>
-                    <th>2012年2月</th>
-                    <td>日本漢字能力検定 ３級</td>
-                  </tr>
-                  <tr>
-                    <th>2012年2月</th>
-                    <td>日本情報処理検定協会 文書デザイン検定 １級</td>
-                  </tr>
-                  <tr>
-                    <th>2012年1月</th>
-                    <td>全商 プログラミング部門 ２級</td>
-                  </tr>
-                  <tr>
-                    <th>2011年12月</th>
-                    <td>日本情報処理検定協会 プレゼンテーション作成検定 １級</td>
-                  </tr>
-                  <tr>
-                    <th>2011年11月</th>
-                    <td>文部科学省後援秘書技能検定試験 3級</td>
-                  </tr>
-                  <tr>
-                    <th>2011年9月</th>
-                    <td>全商 ビジネス情報部門 ２級</td>
-                  </tr>
-                  <tr>
-                    <th>2011年2月</th>
-                    <td>全商 ビジネス基礎 ３級</td>
-                  </tr>
-                  <tr>
-                    <th>2010年11月</th>
-                    <td>珠算・電卓実務検定 ３級</td>
-                  </tr>
-                  <tr>
-                    <th>2010年9月</th>
-                    <td>全商 情報処理検定 ３級</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="min-blanks big-letter50">
-            -END-
-          </div>
+        <div class="min-blanks big-letter50">-END-</div>
 
       </div>
       
-      <!-- JS -->
-      <script src="./js/app.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-      <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-13/js/5-1-13.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
-
     </body>
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-13/js/5-1-13.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+    
+    <script src="./js/app.js"></script>
 </html>

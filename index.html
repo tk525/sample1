@@ -23,32 +23,46 @@
 
       <!-- 背景 -->      
       <div class="bg-image">
-        <img src="./image/dark_mode.jpg" class="img-main" alt="background_image">
+        <img src="./image/dark_mode.jpg" class="img_main" alt="background_image">
       </div>
 
       <!-- メニュー -->
       <!-- バーガーメニューのライン -->
-      <div class="openbtn1"><span></span><span></span><span></span></div>
-  
-      <nav id="g-nav">
-        <div id="g-nav-list">
+      <div class="openbtn"><span></span><span></span><span></span></div>
+
+      <nav id="g_nav">
+        <div id="g_nav_list">
           <ul>
-            <li><a class="big-letter25 for_smartphone_menu" href="#me">私について</a></li>
-            <li><a class="big-letter25 for_smartphone_menu" href="#likes_and_unlikes">得意と苦手</a></li>
-            <li><a class="big-letter25 for_smartphone_menu" href="#free_times">余暇時間</a></li>
-            <li><a class="big-letter25 for_smartphone_menu" href="#news">興味がある事</a></li>
-            <li><a class="big-letter25 for_smartphone_menu" href="#softwares_and_frameworks">言語学習履歴</a></li>
-            <li><a class="big-letter25 for_smartphone_menu" href="#certification">保有資格</a></li>
+            <li><a href="#me">私について</a></li>
+            <li><a href="#likesunlikes">得意と苦手</a></li>
+            <li><a href="#free_times">余暇時間</a></li>
+            <li><a href="#news">興味がある事</a></li>
+            <li><a href="#softwares_and_frameworks">言語学習歴</a></li>
+            <li><a href="#certification">保有資格</a></li>
           </ul>
         </div>
       </nav>
-   
+
       <!-- トップに戻る -->
-      <div class="back-to-top">
-        <a href="#" class="link">
-          <img src="image/back_to_top.png" alt="back_to_top">
-        </a>
+      <div class="back_to_top" id="back_to_top">
+        <a href="#" class="back_to_top_link"></a>
       </div>
+
+      <!-- JS -->        
+      <script src="./js/jquery-3.4.1.min.js" defer></script>
+      <script src="./js/app.js" defer></script>
+      <script src="./js/shuffle-text.min.js" defer></script>
+
+      <script>
+        window.addEventListener('scroll', function () {
+          var me_top = document.querySelector('#me').getBoundingClientRect().top;
+            if (me_top <= window.innerHeight) {
+              document.getElementById("back_to_top").classList.add("input");;
+            }else{
+              document.getElementById("back_to_top").classList.remove("input");;
+            }
+        });
+      </script>
       
     </header>
     
@@ -58,83 +72,323 @@
 
         <!-- メイン表示 自己紹介 -->
         <div class="blanks">
-          <h1 class="big-letter150 js_typing">私はT-YIです</h1>
+          <h1 class="js_typing"><span class="block">私は</span><span class="block">T-YI</span><span class="block">です</span></h1>
+
+          <div class="cell_l">
+            <p class="min_blanks">
+              高校在籍時、
+              <span class="block">学校と</span>
+              <span class="block">プライベートで</span>
+              <span class="block">プログラミングの</span>
+              <span class="block">学習を</span>
+              <span class="block">行いました。</span>
+              <span class="block">卒業後は、</span>
+              <span class="block">現在の</span>
+              <span class="block">職種とは</span>
+              <span class="block">異なる業種、</span>
+              <span class="block">職種で</span>
+              <span class="block">数年</span>
+              <span class="block">勤務後、</span>
+              <span class="block">英語と</span>
+              <span class="block">プログラミングを</span>
+              <span class="block">学ぶ為に</span>
+              <span class="block">3ヶ月</span>
+              <span class="block">留学</span>
+              <span class="block">しました。</span>
+              <span class="block">帰国後、</span>
+              <span class="block">プログラミングと</span>
+              <span class="block">英語の</span>
+              <span class="block">勉強を</span>
+              <span class="block">1年間</span>
+              <span class="block">行った後、</span>
+              <span class="block">現在の</span>
+              <span class="block">企業に</span>
+              <span class="block">就職し、</span>
+              <span class="block">ITインフラ関係の</span>
+              <span class="block">案件に</span>
+              <span class="block">参画中です。</span>
+            </p>
+          </div>
+
         </div>
 
-        <div class="blanks">
-          <span id="me"></span>
-          <h2 class="cell-r big-letter100 js_typing">私について</h1>
-          <div class="cell-l">
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">高校在籍時</span></h3>
-            <p>
-            学校の授業で、プログラミング(COBOL)・Excel関数を学習しました。
-            当時ブログが流行しており、自分でレイアウトを替える
-            技術が欲しかった為、学校から帰宅してから、
-            HTML/CSSを独学で学習しておりました。
-            フロントエンドの技術を触れる度に、将来は、
-            IT企業で働きたいと考えていました。
+        <!-- 私について -->
+        <div id="me" class="blanks">
+          <h2 class="cell_r js_typing"><span class="block">私に</span><span class="block">ついて</span></h2>
+          <div class="cell_l">
+
+            <p class="cell_r min_blanks">
+              高校在籍〜現在までの
+              <span class="block">職歴、経験、学習歴や</span>
+              <span class="block">開発した成果物の</span>
+              <span class="block">内容を</span>
+              <span class="block">まとめました。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">高校卒業後～就職</span></h3>
+            <ul class="mintitle_area">
+              <li class="each_contents_each_mintitle_menu"><a href="#higschool_era">高校在籍時</a></li>
+              <li class="each_contents_each_mintitle_menu"><a href="#start_work_era">高校卒業～就職</a></li>
+              <li class="each_contents_each_mintitle_menu"><a href="#study_overseas_era">退職～留学</a></li>
+              <li class="each_contents_each_mintitle_menu"><a href="#job_hunt_era"><span class="block">留学～帰国後</span><span class="block">再就職</span></a></li>
+              <li class="each_contents_each_mintitle_menu"><a href="#work_it_era">入社後</a></li>
+            </ul>
+
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="higschool_era">高校在籍時</h3>
+              <a class="each_contents_each_mintitle_back" href="#me">項目に戻る</a>
+            </div>
+
             <p>
-            IT企業で働くために、大学や専門学校の入学を目指していましたが、
-            家庭の都合で断念しました。
-            しかし、IT企業で働くことは諦めず、少しでも次に繋げるために、
-            製造職を約3年半、介護職・障がい者支援職を約2年経験しました。
-            製造職では、社会人としてのマナーを、介護職・障がい者支援職では、
-            コミュニケーション能力を習得できたと考えています。
+              学校の授業で、
+              <span class="block">プログラミング(COBOL)、</span>
+              <span class="block">Excel関数を</span>
+              <span class="block">学習</span>
+              <span class="block">しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              当時ブログが
+              <span class="block">流行しており、</span>
+              <span class="block">自分で</span>
+              <span class="block">レイアウトを</span>
+              <span class="block">替える</span>
+              <span class="block">技術が</span>
+              <span class="block">欲しかった為、</span>
+              <span class="block">学校から</span>
+              <span class="block">帰宅後、</span>
+              <span class="block">HTML/CSSを</span>
+              <span class="block">独学で</span>
+              <span class="block">学習していました。</span>
+            </p>
+            <p class="paragraph_blank">
+              フロントエンドの
+              <span class="block">技術に</span>
+              <span class="block">触れる度、</span>
+              <span class="block">将来は、</span>
+              <span class="block">IT企業で</span>
+              <span class="block">働きたいと</span>
+              <span class="block">考えていました。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">退職～留学</span></h3>
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="start_work_era">高校卒業～就職</h3>
+              <a class="each_contents_each_mintitle_back" href="#me">項目に戻る</a>
+            </div>
+
             <p>
-            次に、IT企業で働くためには、肝心なIT知識が乏しい為、
-            プログラミングを学べる学校への入学を決めました。
-            しかし、ただ学校へ行くだけではもったいないと感じたため、
-            今後必ず必要となるであろう英語の習得も目標にしました。
-            この２つを満たす場所として、比較的費用が安く綺麗な英語が学べる、
-            フィリピンへの留学を決断しました。
+              IT企業で働くために、
+              <span class="block">大学や専門学校の</span>
+              <span class="block">入学を</span>
+              <span class="block">目指して</span>
+              <span class="block">いましたが、</span>
+              <span class="block">家庭の</span>
+              <span class="block">都合で</span>
+              <span class="block">断念しました。</span>
             </p>
-            <br>
-            <p>
-            留学先の授業は、英語1日4時間、
-            プログラミングを1日3時間というカリキュラムで学習しました。
-            英語は、主に発音・文章作成・リスニング・英単語増加で、
-            現地の英語の先生と1対1の授業でした。
-            プログラミングは、1ヶ月目にHTML/CSSとJavaScript
-            2ヶ月目はPHPを学習し、3ヶ月目はチーム開発と
-            プレゼンテーション作成の学習をしました。
+            <p class="paragraph_blank">
+              しかし、IT企業で
+              <span class="block">働く事を</span>
+              <span class="block">諦めず、</span>
+              <span class="block">少しでも</span>
+              <span class="block">次に</span>
+              <span class="block">繋げる為、</span>
+              <span class="block">製造職を</span>
+              <span class="block">約3年半、</span>
+              <span class="block">介護職、</span>
+              <span class="block">障がい者支援職を</span>
+              <span class="block">約2年程、</span>
+              <span class="block">経験しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              製造職では、
+              <span class="block">社会人としての</span>
+              <span class="block">マナー、</span>
+              <span class="block">介護職、</span>
+              <span class="block">障がい者支援職では、</span>
+              <span class="block">コミュニケーション</span>
+              <span class="block">能力を</span>
+              <span class="block">習得できたと</span>
+              <span class="block">考えています。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">留学～帰国後再就職</span></h3>
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="study_overseas_era">退職～留学</h3>
+              <a class="each_contents_each_mintitle_back" href="#me">項目に戻る</a>
+            </div>
+
             <p>
-            本来、長期留学を予定していましたが、コロナの世界的流行の影響で、
-            帰国せざるを得ない状況となりました。
-            IT知識も英語力も、中途半端と感じていた為、
-            帰国後もスキルアップに注力しました。
-            IT知識については、Javaと類似していて、
-            比較的学びやすいと言われているPythonを学習し、
-            AIにも興味があった為、機械学習も、
-            それぞれ独学で行いました。
-            学習した知識で、靴のECサイトを1ヶ月で開発し、
-            鬱病を改善するアプリを3ヶ月で開発しました。
-            合わせて英語力の強化の為に英会話学校に週3日で通いました。
-            開発後、様々な現場でITに関する知識を、
-            より深めることに集中する為、就職活動を再開し、
-            現所属会社に入社しました。
+              次に、IT企業で
+              <span class="block">働く為には、</span>
+              <span class="block">肝心な</span>
+              <span class="block">IT知識が</span>
+              <span class="block">乏しい為、</span>
+              <span class="block">プログラミングを</span>
+              <span class="block">学べる</span>
+              <span class="block">学校への</span>
+              <span class="block">入学を</span>
+              <span class="block">決めました。</span>
+            </p>
+            <p class="paragraph_blank">
+              しかし、ただ学校へ
+              <span class="block">行くだけでなく</span>
+              <span class="block">今後</span>
+              <span class="block">必ず必要になる</span>
+              <span class="block">英語の習得も</span>
+              <span class="block">目標に</span>
+              <span class="block">しました。</span>
+            </p>
+            <p>
+              この2つを満たす
+              <span class="block">場所として、</span>
+              <span class="block">比較的費用が</span>
+              <span class="block">安く</span>
+              <span class="block">綺麗な</span>
+              <span class="block">英語が</span>
+              <span class="block">学べる</span>
+              <span class="block">フィリピンへの</span>
+              <span class="block">留学を</span>
+              <span class="block">決断</span>
+              <span class="block">しました。</span>
+            </p>
+            <p class="min_blanks">
+              留学先の授業は、
+              <span class="block">英語を1日4時間、</span>
+              <span class="block">プログラミングを</span>
+              <span class="block">1日3時間という</span>
+              <span class="block">カリキュラムで</span>
+              <span class="block">学習しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              英語は、主に発音、
+              <span class="block">文章作成、</span>
+              <span class="block">リスニング、</span>
+              <span class="block">英単語学習で、</span>
+              <span class="block">現地の</span>
+              <span class="block">先生と</span>
+              <span class="block">1対1の</span>
+              <span class="block">授業でした。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">プログラミングは、</span>
+              <span class="block">1ヶ月目は</span>
+              <span class="block">HTML/CSS、</span>
+              <span class="block">JavaScript、</span>
+              <span class="block">2ヶ月目は</span>
+              <span class="block">PHPを学習し、</span>
+              <span class="block">3ヶ月目は</span>
+              <span class="block">チーム開発と</span>
+              <span class="block">プレゼンテーションの</span>
+              <span class="block">資料作成を</span>
+              <span class="block">しました。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">入社後</span></h3>
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="job_hunt_era">留学～帰国後再就職</h3>
+              <a class="each_contents_each_mintitle_back" href="#me">項目に戻る</a>
+            </div>
+
             <p>
-            現在は、サポートデスク部門の業務に参画し、
-            PCキッティングや、問い合わせ対応を行っています。
-            業務中は様々なPCの不具合に対処しており、
-            難解な不具合が改善した時に楽しさをとても感じています。
-            プライベートの時間も、開発に使う事が多く、
-            社内ポータルサイトの予定表に、現場シフト(Excelファイル)を
-            登録する作業を、全てPythonで実行できるようにしました。
-            また、その開発したコードを、外出先でも実行出来るよう、
-            SNSから命令すると実行できるようにもしました。
+              本来、長期留学を
+              <span class="block">予定していましたが、</span>
+              <span class="block">コロナの流行により、</span>
+              <span class="block">帰国せざるを得ない</span>
+              <span class="block">状況となりました。</span>
+              <span class="block">IT知識も英語力も、</span>
+              <span class="block">中途半端と感じ、</span>
+              <span class="block">帰国後も</span>
+              <span class="block">スキルアップに</span>
+              <span class="block">注力</span>
+              <span class="block">しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              IT知識については、
+              <span class="block">Javaと</span>
+              <span class="block">類似していて、</span>
+              <span class="block">比較的</span>
+              <span class="block">学びやすいと</span>
+              <span class="block">言われている</span>
+              <span class="block">Pythonを</span>
+              <span class="block">学習し、</span>
+              <span class="block">AIにも</span>
+              <span class="block">興味があった為、</span>
+              <span class="block">機械学習も、それぞれ</span>
+              <span class="block">独学で行いました。</span>
+            </p>
+            <p class="paragraph_blank">
+              学習した知識で、
+              <span class="block">靴のECサイトを</span>
+              <span class="block">1ヶ月で</span>
+              <span class="block">開発し、</span>
+              <span class="block">鬱病を改善する</span>
+              <span class="block">アプリを</span>
+              <span class="block">3ヶ月で</span>
+              <span class="block">開発しました。</span>
+              <span class="block">併せて</span>
+              <span class="block">英語力強化の為、</span>
+              <span class="block">英会話学校に週3日で</span>
+              <span class="block">通いました。</span>
+            </p>
+            <p class="paragraph_blank">
+              開発後、様々な現場で
+              <span class="block">ITに関する知識を、</span>
+              <span class="block">より深める事に</span>
+              <span class="block">集中する為、</span>
+              <span class="block">就職活動を再開し、</span>
+              <span class="block">現所属会社に</span>
+              <span class="block">入社しました。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="work_it_era">入社後</h3>
+              <a class="each_contents_each_mintitle_back" href="#me">項目に戻る</a>
+            </div>
+
+            <p>
+              現在は、
+              <span class="block">サポートデスク部門の</span>
+              <span class="block">業務に</span>
+              <span class="block">参画し、</span>
+              <span class="block">キッティングや、</span>
+              <span class="block">問い合わせ対応を</span>
+              <span class="block">行っています。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">業務中は</span>
+              <span class="block">様々な</span>
+              <span class="block">PCの</span>
+              <span class="block">不具合に</span>
+              <span class="block">対処し、</span>
+              <span class="block">難解な</span>
+              <span class="block">不具合が</span>
+              <span class="block">改善した時に</span>
+              <span class="block">楽しさを</span>
+              <span class="block">とても</span>
+              <span class="block">感じています。</span>
+            </p>
+            <p class="paragraph_blank">
+              プライベートの
+              <span class="block">時間も、</span>
+              <span class="block">開発に使う事が多く、</span>
+              <span class="block">社内ポータルサイトの</span>
+              <span class="block">予定表に、現場シフト</span>
+              <span class="block">(Excelファイル)</span>
+              <span class="block">登録する</span>
+              <span class="block">作業を、</span>
+              <span class="block">全てPythonで</span>
+              <span class="block">実行可能に</span>
+              <span class="block">しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">また、</span>
+              <span class="block">その開発した</span>
+              <span class="block">コードを、</span>
+              <span class="block">外出先でも</span>
+              <span class="block">実行可能に</span>
+              <span class="block">する為、</span>
+              <span class="block">SNSから</span>
+              <span class="block">命令すると</span>
+              <span class="block">実行するように</span>
+              <span class="block">しました。</span>
             </p>
 
           </div>
@@ -143,66 +397,262 @@
 
 
         <!-- 好きな物と嫌いな物 -->
-        <div class="blanks">
-          <span id="likes_and_unlikes"></span>
-          <h2 class="cell-l big-letter100 js_typing">得意と苦手</h2>
-          <div class="cell-l">
+        <div id="likesunlikes" class="blanks">
+          <h2 class="cell_l js_typing"><span class="block">得意と</span><span class="block">苦手</span></h2>
+          <div class="cell_l">
 
-            <h3 class="min-blanks big-letter50">好きなものは、挑戦・コーディング・海外に関する事です。</h3>
-            <h4 class="big-letter50"><span class="marker">挑戦について</span></h4>
-            <p>
-            留学中に、インターネットの地図や物理的な地図が使用不可で、
-            現在地不明な状態になった事があります。
-            やってみなければ結果は分からないと思い、自分の直感を頼りに
-            進んだところ、帰宅する事が出来ました。
-            その経験により、自分を信じて未経験のことに挑戦する事の楽しさと、
-            リスクを考える面白さを学びました。
-            この経験や感覚は、初めて確認されたエラーが表示した際も同様に
-            楽しみつつ、日々挑戦しております。
+            <p class="min_blanks">
+              私の苦手なことや
+              <span class="block">得意な事について、</span>
+              <span class="block">まとめました。</span>
             </p>
 
-            <h4 class="big-letter50 min-blanks"><span class="marker">プログラミングについて</span></h4>
+            <ul class="mintitle_area">
+              <h3 class="big_letter50 ">好きなもの</h3>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#try">挑戦</a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#coding">コーディング</a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#overseas">海外に関する事</a></li>
+          
+              <h3 class="big_letter50">苦手なもの</h3>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#workout">運動</a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#spendtime">時間の浪費</a></li>
+            </ul>
+            
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="try">挑戦について</h4>
+              <a class="each_contents_each_mintitle_back" href="#likesunlikes">項目に戻る</a>
+            </div>
+
             <p>
-            開発の案が思い浮かんでしまうと、土日祝日はもちろん、
-            平日の移動時間・お昼休憩・帰宅後もご飯食べずにコーディングや、
-            プログラミングの方法を考える程、プログラミング作業が好きです。
-            留学中にリゾート地に遊びに行った際、PCを持ち込み、
-            海を眺めながらコーディングを行っていました。
-            友人からは少し呆れられましたが、自身はとても満足しました。
+              留学中に、
+              <span class="block">インターネットの</span>
+              <span class="block">地図や</span>
+              <span class="block">物理的な</span>
+              <span class="block">地図が</span>
+              <span class="block">使用不可で、</span>
+              <span class="block">現在地不明な</span>
+              <span class="block">状態に</span>
+              <span class="block">なりました。</span>
+              <span class="block">しかし、</span>
+              <span class="block">やってみなければ</span>
+              <span class="block">結果は</span>
+              <span class="block">分からない</span>
+              <span class="block">と思い、</span>
+              <span class="block">自分の</span>
+              <span class="block">直感を</span>
+              <span class="block">頼りに</span>
+              <span class="block">進んだ結果、</span>
+              <span class="block">帰宅する事が</span>
+              <span class="block">出来ました。</span>
+            </p>
+            <p class="paragraph_blank">
+              その経験により、
+              <span class="block">自分を</span>
+              <span class="block">信じて</span>
+              <span class="block">未経験の事へ</span>
+              <span class="block">挑戦する事の</span>
+              <span class="block">楽しさと、</span>
+              <span class="block">リスクを</span>
+              <span class="block">考える</span>
+              <span class="block">面白さを</span>
+              <span class="block">学びました。</span>
+            </p>
+            <p class="min_blanks">
+              <span class="block">この経験や感覚は、</span>
+              <span class="block">初めて</span>
+              <span class="block">確認した</span>
+              <span class="block">エラーが</span>
+              <span class="block">表示した際も</span>
+              <span class="block">同様に</span>
+              <span class="block">楽しみつつ、</span>
+              <span class="block">日々挑戦</span>
+              <span class="block">しています。</span>
             </p>
 
-            <h4 class="big-letter50 min-blanks"><span class="marker">海外に関する事について</span></h4>
+            <div class="each_contents_each_mintitle_area">
+              <h4 id="coding" class="big_letter50 marker">
+                <span class="block">コーディングに</span>
+                <span class="block">ついて</span></h4>
+              <a class="each_contents_each_mintitle_back" href="#likesunlikes">項目に戻る</a>
+            </div>
+
             <p>
-            自分の想像を超える現象を見たり経験する事が好きなので、
-            日本では絶対にありえない事をする海外に、良くも悪くも
-            面白さを感じているので、海外の情報好きです。
-            例えばテスラ社のCEOがTwitterの株主になり、従業員を
-            大量解雇したことです。結果、Twitterのトレンドの内容が激変し、
-            ユーザーからは称賛の声が多数上がっていると記事を見ました。
-            Twitter側である程度印象操作を行っているとは思っていましたが、
-            厳重注意程度で事が終息すると思っていましたが、
-            大量に従業員を解雇すると思っておらず、実行力に対しての驚きと、
-            自分の予想とは違う結果に面白さを感じました。
-            上記の理由により、日頃から海外に関する情報の収集し、
-            常に違う視点を持つようにしています。
+              開発の案が
+              <span class="block">思い浮かぶと、</span>
+              <span class="block">土日祝日はもちろん、</span>
+              <span class="block">平日の</span>
+              <span class="block">移動時間、</span>
+              <span class="block">お昼休憩、</span>
+              <span class="block">帰宅後も</span>
+              <span class="block">コーディングや、</span>
+              <span class="block">エラーの</span>
+              <span class="block">改善方法を</span>
+              <span class="block">考える程、</span>
+              <span class="block">コーディング作業が</span>
+              <span class="block">好きです。</span>
+            </p>
+            <p class="paragraph_blank">
+              留学中に
+              <span class="block">リゾート地に</span>
+              <span class="block">訪れた際、</span>
+              <span class="block">PCを</span>
+              <span class="block">持ち込み、</span>
+              <span class="block">海を</span>
+              <span class="block">眺めながら</span>
+              <span class="block">コーディングを</span>
+              <span class="block">しました。</span>
+              <span class="block">友人は</span>
+              <span class="block">少し</span>
+              <span class="block">呆れていましたが、</span>
+              <span class="block">とても</span>
+              <span class="block">満足しました。</span>
             </p>
 
-            <h3 class="min-blanks big-letter50">苦手なものは、運動、時間の浪費です。</h3>
-            <h4 class="big-letter50"><span class="marker">運動について</span></h4>
+            <div class="each_contents_each_mintitle_area">
+              <h4 id="overseas" class="big_letter50 marker">海外に関する事について</h4>
+              <a class="each_contents_each_mintitle_back" href="#likesunlikes">項目に戻る</a>
+            </div>
+
             <p>
-            運動は全般苦手です。例えば、私の元に飛んできたボールは
-            全て場外に転がしてしまう程、苦手です。
-            水泳もいくらやっても泳げなかった為、学校の授業は
-            なるべく目立たないようにしていました。
+              自分の想像を
+              <span class="block">超える現象を</span>
+              <span class="block">見たり、</span>
+              <span class="block">経験する事が</span>
+              <span class="block">好きなので、</span>
+              <span class="block">日本では</span>
+              <span class="block">ありえない事をする</span>
+              <span class="block">海外に、</span>
+              <span class="block">良くも悪くも</span>
+              <span class="block">面白さを</span>
+              <span class="block">感じるので、</span>
+              <span class="block">海外の</span>
+              <span class="block">情報が</span>
+              <span class="block">好きです。</span>
             </p>
 
-            <h4 class="big-letter50 min-blanks"><span class="marker">時間の浪費について</span></h4>
+            <p class="min_blanks">
+              例えば、
+              <span class="block">イスラエルの</span>
+              <span class="block">ある会社が</span>
+              <span class="block">3Dプリンターで</span>
+              <span class="block">食用の魚の</span>
+              <span class="block">切り身を</span>
+              <span class="block">作ったことです。</span>
+            </p>
+
             <p>
-            何もせず、無意味に過ごす事が苦手です。
-            例えば、TOEICのスコアが手元に届くまで
-            1ヶ月自由な時間がありました。
-            その際に、生産的な事を行って時間を過ごしたかった為、
-            自然言語処理の勉強をしていました。
+              この記事を
+              <span class="block">見るまで、</span>
+              <span class="block">3Dプリンターは</span>
+              <span class="block">家を建てる事、</span>
+              <span class="block">オブジェクト</span>
+              <span class="block">作成しか、</span>
+              <span class="block">ありませんでした。</span>
+            </p>
+            <p class="paragraph_blank">
+              しかし、人間が
+              <span class="block">食べる物まで</span>
+              <span class="block">作る事が</span>
+              <span class="block">出来た</span>
+              <span class="block">という事実は、</span>
+              <span class="block">自身の考えに</span>
+              <span class="block">柔軟性が</span>
+              <span class="block">不足していた点の</span>
+              <span class="block">再認識と</span>
+              <span class="block">併せて、</span>
+              <span class="block">新たな視点を</span>
+              <span class="block">獲得することが</span>
+              <span class="block">でき、</span>
+              <span class="block">技術の進歩への</span>
+              <span class="block">期待に</span>
+              <span class="block">胸が</span>
+              <span class="block">ふくらみます。</span>
+            </p>
+            <p class="paragraph_blank">
+              また、
+              <span class="block">仕事や</span>
+              <span class="block">私生活中でも、</span>
+              <span class="block">解決が</span>
+              <span class="block">難しい</span>
+              <span class="block">問題に</span>
+              <span class="block">直面した際、</span>
+              <span class="block">海外の</span>
+              <span class="block">記事を見て、</span>
+              <span class="block">自身で</span>
+              <span class="block">想像した</span>
+              <span class="block">理論で</span>
+              <span class="block">考えを</span>
+              <span class="block">改めてみると、</span>
+              <span class="block">解決策の</span>
+              <span class="block">ヒントや</span>
+              <span class="block">直前まで</span>
+              <span class="block">至る事が</span>
+              <span class="block">何度か</span>
+              <span class="block">ありました。</span>
+            </p>
+
+            <p class="min_blanks">
+            上記の理由から、
+            <span class="block">日頃から</span>
+            <span class="block">海外に関する</span>
+            <span class="block">情報の</span>
+            <span class="block">収集を行い、</span>
+            <span class="block">常に</span>
+            <span class="block">違う視点を</span>
+            <span class="block">持つように</span>
+            <span class="block">しています。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="workout">運動について</h4>
+              <a class="each_contents_each_mintitle_back" href="#likesunlikes">項目に戻る</a>
+            </div>
+
+            <p>
+              運動は全般苦手です。
+              <span class="block">例えば、私の元に</span>
+              <span class="block">飛んできたボールは</span>
+              <span class="block">全て場外に</span>
+              <span class="block">転がす程、</span>
+              <span class="block">苦手です。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">水泳も、</span>
+              <span class="block">いくら手足を</span>
+              <span class="block">動かしても</span>
+              <span class="block">泳げなかった為、</span>
+              <span class="block">学校の授業は</span>
+              <span class="block">なるべく</span>
+              <span class="block">目立たないように</span>
+              <span class="block">していました。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 id="spendtime" class="big_letter50 marker">時間の浪費について</h4>
+              <a class="each_contents_each_mintitle_back" href="#likesunlikes">項目に戻る</a>
+            </div>
+
+            <p>
+              何もせず、
+              <span class="block">無意味に</span>
+              <span class="block">過ごす事が</span>
+              <span class="block">苦手です。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">例えば、</span>
+              <span class="block">TOEICの</span>
+              <span class="block">スコアが</span>
+              <span class="block">手元に</span>
+              <span class="block">届くまで</span>
+              <span class="block">1ヶ月、</span>
+              <span class="block">自由な時間が</span>
+              <span class="block">ありました。</span>
+              <span class="block">その際、</span>
+              <span class="block">生産的な事を</span>
+              <span class="block">行いたかった為、</span>
+              <span class="block">自然言語処理の</span>
+              <span class="block">勉強を</span>
+              <span class="block">していました。</span>
             </p>
 
           </div>
@@ -211,33 +661,93 @@
 
 
         <!-- 休日・平日の余暇時間 -->
-        <div class="blanks">
-          <span id="free_times"></span>
-          <h2 class="cell-r big-letter100 js_typing">余暇時間</h2>
-          <div class="cell-l">
-
-            <br>
-            <p>
-            主に、英語の勉強や開発中のアプリケーション改善方法の
-            考案及び模索を行っています。
+        <div id="free_times" class="blanks">
+          <h2 class="cell_r js_typing">余暇時間</h2>
+          <div class="cell_l">
+            
+            <p class="min_blanks">
+              主に、
+              <span class="block">英語の</span>
+              <span class="block">勉強や</span>
+              <span class="block">開発中の</span>
+              <span class="block">アプリケーション</span>
+              <span class="block">改善方法の</span>
+              <span class="block">考案及び</span>
+              <span class="block">模索を</span>
+              <span class="block">行っています。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">開発について</span></h3>
+            <ul class="mintitle_area">
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#learning_code">開発について</a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="learning_eng">英語について</a></li>
+            </ul>
+
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="learning_code">開発について</h3>
+              <a class="each_contents_each_mintitle_back" href="#free_times">項目に戻る</a>
+            </div>
+
             <p>
-            世の中に同じ物は無い、オリジナルな物を開発する発想で、
-            日々模索し、コーディングをしています。
-            現在は、VBAでJavaScriptのようなゲームが作成可能と聞いて、
-            VBAでイラストが障害物を避ける横スクロールのゲームを作成中です。
+              世の中に
+              <span class="block">同じ物は無い、</span>
+              <span class="block">オリジナルな物を</span>
+              <span class="block">開発する</span>
+              <span class="block">発想で、</span>
+              <span class="block">日々模索し、</span>
+              <span class="block">コーディングを</span>
+              <span class="block">しています。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">現在は、</span>
+              <span class="block">JavaScriptに</span>
+              <span class="block">似ており、</span>
+              <span class="block">ゲームが</span>
+              <span class="block">作成可能と</span>
+              <span class="block">聞いた</span>
+              <span class="block">VBAで、</span>
+              <span class="block">イラストが</span>
+              <span class="block">障害物を</span>
+              <span class="block">避ける</span>
+              <span class="block">横スクロールの</span>
+              <span class="block">ゲームを</span>
+              <span class="block">作成中です。</span>
             </p>
 
-            <h3 class="big-letter50 min-blanks"><span class="marker">英語について</span></h3>
+            <div class="each_contents_each_mintitle_area">
+              <h3 class="big_letter50 marker" id="learning_eng">英語について</h3>
+              <a class="each_contents_each_mintitle_back" href="#free_times">項目に戻る</a>
+            </div>
+
             <p>
-            IELTSの参考書やアメリカ国営放送を視聴しリスニングの強化
-            SNSの海外ユーザーの英語に関するポストで認識の習性や
-            ニュアンスの違いなど、勉強しています。
-            現在参画中の業務でも、英文のエラーメッセージが表示されたという
-            お問い合わせを頂いてもすぐに回答ができ、
-            同僚から翻訳の依頼を受けることも多くあります。
+              IELTSの
+              <span class="block">参考書や</span>
+              <span class="block">アメリカ国営放送を</span>
+              <span class="block">視聴して</span>
+              <span class="block">リスニングの</span>
+              <span class="block">強化、</span>
+              <span class="block">SNSの</span>
+              <span class="block">海外ユーザーの</span>
+              <span class="block">英語に関する</span>
+              <span class="block">ポストで</span>
+              <span class="block">認識の</span>
+              <span class="block">習性や</span>
+              <span class="block">ニュアンスの</span>
+              <span class="block">違いを、</span>
+              <span class="block">勉強しています。</span>
+            </p>
+            <p class="paragraph_blank">
+              現在参画中の
+              <span class="block">業務でも、</span>
+              <span class="block">英文の</span>
+              <span class="block">エラーメッセージが</span>
+              <span class="block">表示されたという</span>
+              <span class="block">お問い合わせを</span>
+              <span class="block">頂いても</span>
+              <span class="block">即答し、</span>
+              <span class="block">同僚から</span>
+              <span class="block">翻訳の依頼を</span>
+              <span class="block">受けることも</span>
+              <span class="block">多くあります。</span>
             </p>
 
           </div>
@@ -246,36 +756,116 @@
 
               
         <!-- 興味があるニュース -->
-        <div class="blanks">
-          <span id="news"></span>
-          <h2 class="cell-l big-letter100 js_typing">興味がある事</h2>
-          <div class="cell-l">
+        <div id="news" class="blanks">
+          <h2 class="cell_l js_typing">興味が
+            <span class="block">ある事</span></h2>
+          <div class="cell_l">
 
-            <p class="min-blanks">
-            Amazon Goという、レジ・販売員がいない店舗の導入を
-            開始した事です。
+            <p class="min_blanks">
+              Amazon Goという、
+              <span class="block">レジ・販売員がいない</span>
+              <span class="block">店舗の導入を</span>
+              <span class="block">開始した事です。</span>
             </p>
 
-            <p class="min-blanks">店舗内にいるお客様が持つ鞄に商品を入れた後、店舗を出ると、
-            お客様のAmazonのアカウントから
-            商品分の料金が引き落とされる仕組みでした。
-            機械学習を勉強していたので、私が得た知識が使用されているのか、
-            もしくは別の技術が使用されているのか、興味があります。
+            <p class="min_blanks">
+              店舗内にいる
+              <span class="block">お客様が</span>
+              <span class="block">持つ鞄に</span>
+              <span class="block">商品を</span>
+              <span class="block">入れた後、</span>
+              <span class="block">店舗を</span>
+              <span class="block">出ると、</span>
+              <span class="block">お客様の</span>
+              <span class="block">Amazonの</span>
+              <span class="block">アカウントから</span>
+              <span class="block">商品分の</span>
+              <span class="block">料金が</span>
+              <span class="block">引き落とされる</span>
+              <span class="block">仕組み</span>
+              <span class="block">でした。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">機械学習を</span>
+              <span class="block">勉強していたので、</span>
+              <span class="block">私が得た知識が</span>
+              <span class="block">使用されているのか、</span>
+              <span class="block">もしくは</span>
+              <span class="block">別の技術が</span>
+              <span class="block">使用されているのか、</span>
+              <span class="block">興味が</span>
+              <span class="block">あります。</span>
             </p>
 
-            <p class="min-blanks">また、ハッキング集団にAmazon Goの情報が狙われた際
-            セキュリティホールの対策やクラッキングを行われた際の対策や修復等
-            どのように対処しているのか興味が尽きません。
-            例えば、システムの管理コンソール操作可能な権限を持っている且つ
-            クラッカーに協力的な人間がいれば、セキュリティホールを作ることは
-            容易だと思います。
-            しかし、セキュリティホールを作らせない事を目的に、
-            定期的に人事異動を行ったとしても、情報漏洩のリスクが高まり、
-            全体的な技術力は上昇しないと思います。
-            しかし、人事異動を行わないとすれば、不満を持っている人間により、
-            セキュリティホールを作られる事は時間の問題だと思います。
-            このように、私の考えでは完璧に近い対策を思い付く事が難しい為、
-            対策方法に興味があります。
+            <p class="min_blanks">
+              また、ハッキング集団に
+              <span class="block">Amazon Goの</span>
+              <span class="block">情報が</span>
+              <span class="block">狙われた際の、</span>
+              <span class="block">セキュリティホールの</span>
+              <span class="block">対策や</span>
+              <span class="block">クラッキングを</span>
+              <span class="block">行われた際の</span>
+              <span class="block">対策や</span>
+              <span class="block">修復等、</span>
+              <span class="block">どのように</span>
+              <span class="block">対処しているのか</span>
+              <span class="block">興味が</span>
+              <span class="block">尽きません。</span>
+            </p>
+            <p class="paragraph_blank">
+              例えば、
+              <span class="block">システムの</span>
+              <span class="block">管理コンソールへ</span>
+              <span class="block">操作可能な</span>
+              <span class="block">権限を</span>
+              <span class="block">持っている</span>
+              <span class="block">且つ、</span>
+              <span class="block">クラッカーに</span>
+              <span class="block">協力的な</span>
+              <span class="block">人間がいれば、</span>
+              <span class="block">セキュリティホールを</span>
+              <span class="block">作ることは</span>
+              <span class="block">容易だと</span>
+              <span class="block">思います。</span>
+            </p>
+            <p class="paragraph_blank">
+              しかし、
+              <span class="block">セキュリティホールを</span>
+              <span class="block">作らせない事を</span>
+              <span class="block">目的に、</span>
+              <span class="block">定期的に</span>
+              <span class="block">人事異動を</span>
+              <span class="block">行ったとしても、</span>
+              <span class="block">情報漏洩の</span>
+              <span class="block">リスクが</span>
+              <span class="block">高まり、</span>
+              <span class="block">全体的な</span>
+              <span class="block">技術力は</span>
+              <span class="block">上昇しないと</span>
+              <span class="block">思います。</span>
+            </p>
+            <p>
+              人事異動を
+              <span class="block">行わないとすれば、</span>
+              <span class="block">不満を</span>
+              <span class="block">持っている</span>
+              <span class="block">人間により、</span>
+              <span class="block">セキュリティホールを</span>
+              <span class="block">作られる事は</span>
+              <span class="block">時間の問題だと</span>
+              <span class="block">思います。</span>
+            </p>
+            <p class="min_blanks">
+              <span class="block">このように、</span>
+              <span class="block">私の考えでは</span>
+              <span class="block">完璧に近い</span>
+              <span class="block">対策を</span>
+              <span class="block">思い付く事が</span>
+              <span class="block">難しい為、</span>
+              <span class="block">対策方法に</span>
+              <span class="block">興味が</span>
+              <span class="block">あります。</span>
             </p>
 
           </div>
@@ -285,89 +875,302 @@
 
 
         <!-- 経験のあるソフト・フレームワークなど -->
-        <div class="blanks">
-          <span id="softwares_and_frameworks"></span>
-          <h2 class="big-letter100 js_typing">言語学習履歴</h2>
-          <div class="cell-l">
+        <div id="softwares_and_frameworks" class="blanks">
+          <h2 class= js_typing">
+            <span class="block">言語</span>
+            <span class="block">学習歴</span>
+          </h2>
+          <div class="cell_l">
 
-            <p>
-            今まで学習した言語の履歴や、
-            使用経験のあるソフトウェア・フレームワークを記載しました。
+            <p class="min_blanks">
+              今まで学習した
+              <span class="block">言語の履歴や、</span>
+              <span class="block">使用経験のある</span>
+              <span class="block">ソフトウェア、</span>
+              <span class="block">フレームワークを</span>
+              <span class="block">記載しました。</span>
             </p>
                 
-            <h3 class="big-letter50 min-blanks">ソフトウェア使用履歴</h3>
+            <ul class="mintitle_area">
+              <h3 class="big_letter50 ">
+                ソフトウェア
+                <span class="block">使用歴</span>
+              </h3>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#python">
+                Python
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#html_css_js">
+                HTML、
+                <span class="block">CSS、</span>
+                <span class="block">Javascript</span>
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#php_db">
+                PHP、
+                <span class="block">データベース</span>
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#infra">
+                インフラ系
+              </a></li>
 
-            <h4 class="big-letter50"><span class="marker">Python</span></h4>
+              <h3 class="big_letter50 ">言語学習歴</h3>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#english">
+                英語
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#html_css_js">
+                HTML、
+                <span class="block">CSS、</span>
+                <span class="block">Javascript</span>
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#php">
+                PHP
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#python">
+                Python
+              </a></li>
+              <li class="each_contents_each_mintitle_menu min-link"><a href="#sql">
+                SQL
+              </a></li>
+            </ul>
+
+            <h3 class="big_letter80 min_blanks">
+              <span class="block">ソフトウェア</span>
+              <span class="block">使用歴</span>
+            </h3>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="python">Python</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
             <p>
-            Flask flask-paginate Flask-SocketIO Flask-WTF Django
-            scikit-learn numpy pandas slack-bolt selenium openpyxlなど
+              Flask、flask-paginate、Flask-SocketIO、Flask-WTF、Django、
+              scikit-learn、numpy、pandas、slack-bolt、seleniumopenpyxl など
+            </p>
+            
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="html_css_js">HTML、CSS、Javascript</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+            <p>
+              Foundation、Bootstrap、Ajax など
             </p>
 
-            <h4 class="big-letter50"><span class="marker">HTMLとCSS・JS・PHP・データベース</span></h4>
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="php_db">PHP、データベース</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
             <p>
-            Laravel / ajax Foundation Bootstrap
-            MySQL PostgreSQL SQLite Heroku など
+              Laravel、MySQL、PostgreSQL、SQLite、Heroku など
             </p>
 
-            <h4 class="big-letter50"><span class="marker">インフラ系</span></h4>
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="infra">インフラ系</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">◼️資産情報収集</h5>
             <p>
-            OTRS ISMCloudone TerioCloud WSS SolitonKeyMagager
-            MS365 mobiconnect / VBBS SymantecEndpointProtection McAfee
-            CiscoAnyConnect VMwareSSL-VPN TeamViewer など
+              OTRS、ISMCloudone、Skysea、mobiconnect など
             </p>
 
-            <h3 class="big-letter50 min-blanks">言語学習履歴</h3>
-
-            <h4 class="big-letter50"><span class="marker">英語</span></h4>
+            <h5 class="paragraph_blank">◼️セキュリティ</h5>
             <p>
-            【2019年10月〜2020年1月】
-            英語が全くできない状態で、フィリピンに留学しました。
-            語彙力・発音・リスニングに注力しました。
-            【2020年2月〜2021年3月】
-            帰国後、更なる英語力をつける為、語学学校に週3通学で通学し、
-            スピーキング・リスニング・ライティング・リーディングを
-            ネイティブと行いました。
-            【2021年4月〜】
-            TOEIC スコア655取得しました。
-            現在は洋書やアメリカのサイトにて勉強中です。
+              <span class="block">ウィルスバスター </span>
+              <span class="block">ビジネス</span>
+              <span class="block">セキュリティサービス、</span>
+              <span class="block">SymantecEndpoint</span>
+              <span class="block">Protection、</span>
+              <span class="block">Symantec Web Security Service、</span>
+              McAfee など
             </p>
 
-            <h4 class="big-letter50"><span class="marker">HTML/CSS、JS</span></h4>
+            <h5 class="paragraph_blank">◼️SSO、VPN</h5>
             <p>
-            【2010年〜2013年】
-            高校在学中に、独学でHTMLとCSSを学習しました。
-            【2019年10月〜】
-            留学先にて、HTML/CSSの基礎・フレームワーク、
-            JSの基礎・ajaxを学習しました。
-            サーバーにアップロードを行う際、未経験の技術を試行しました。
+              SolitonKeyMagager、GlobalProtection、CiscoAnyConnect、
+              <span class="block">VMwareSSL-VPN、</span>
+              <span class="block">beat-access</span>
+              <span class="block"> など</span>
             </p>
 
-            <h4 class="big-letter50"><span class="marker">PHP</span></h4>
+            <h5 class="paragraph_blank">◼️その他ソフトウェア</h5>
             <p>
-            【2019年10月〜2020年1月】
-            HTMLからデータをPHPで取得し、加工後は、
-            SQLで新規追加・値取得・更新・削除を学習しました。
+              Microsoft Office 365、TeamViewer など
             </p>
 
-            <h4 class="big-letter50"><span class="marker">Python</span></h4>
+            <h5 class="paragraph_blank">◼️特定業種が
+              <span class="block">使用する</span>
+              <span class="block">ソフトウェア</span></h5>
             <p>
-            【2020年3月〜】
-            独学で基礎技術を取得し、web系フレームワーク、
-            アルゴリズム・統計学を学習を学習しました。
-            自然言語処理の学習しつつ、Webから取得したファイルを
-            エクセルで加工後、Webにアップロードするまでを、
-            全てPythonで開発しました。
+              TerioCloud、AutoCAD、
+              <span class="block">メビウス、</span>
+              <span class="block">デキスパート、</span>
+              <span class="block">みつも郎</span>
+              <span class="block"> など</span>
             </p>
 
-            <h4 class="big-letter50"><span class="marker">SQL</span></h4>
+            <h3 class="big_letter80 min_blanks">言語学習歴</h3>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="english">英語</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">
+              ◼️2019年10月〜
+              <span class="block">2020年1月</span>
+            </h5>
             <p>
-            【2019年10月〜】
-            留学先にて、授業の一環でSQL及びデータベースを勉強しました。
-            勉強後、チーム開発時にデータベースを使用する必要があった為、
-            未経験の技術を試行しました。
-            帰国後、開発時にデータベースを使用する為、
-            SQLインジェクション等を学ぶ為、MySQL・PostgreSQL、SQLite等
-            使用しました。
+              英語が全く
+              <span class="block">できない状態で、</span>
+              <span class="block">フィリピンに</span>
+              <span class="block">留学しました。</span>
+              <span class="block">語彙力、</span>
+              <span class="block">発音、</span>
+              <span class="block">リスニングに</span>
+              <span class="block">注力しました。</span>
+            </p>
+
+            <h5 class="paragraph_blank">
+              ◼️2020年2月〜
+              <span class="block">2021年3月</span>
+            </h5>
+            <p>
+              帰国後、
+              <span class="block">更なる英語力を</span>
+              <span class="block">身につける為、</span>
+              <span class="block">語学学校に</span>
+              <span class="block">週3で</span>
+              <span class="block">通学し、</span>
+              <span class="block">スピーキング、</span>
+              <span class="block">リスニング、</span>
+              <span class="block">ライティング、</span>
+              <span class="block">リーディングを</span>
+              <span class="block">ネイティブと</span>
+              <span class="block">行いました。</span>
+            </p>
+
+            <h5 class="paragraph_blank">◼️2021年4月〜</h5>
+            <p>
+              TOEIC スコア
+              <span class="block">655取得し、</span>
+              <span class="block">現在は</span>
+              <span class="block">洋書や</span>
+              <span class="block">アメリカの</span>
+              <span class="block">サイトで</span>
+              <span class="block">勉強中です。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="html_css_js">HTML CSS Javascript</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">◼️2010年〜2013年</h5>
+            <p>
+              高校在学中に、
+              <span class="block">独学で</span>
+              <span class="block">HTMLとCSSを</span>
+              <span class="block">学習しました。</span>
+            </p>
+                
+            <h5 class="paragraph_blank">◼️2019年10月〜</h5>
+            <p>
+              留学先にて、
+              <span class="block">HTML/CSSの基礎、</span>
+              <span class="block">フレームワーク、</span>
+              <span class="block">JSの基礎、</span>
+              <span class="block">ajaxを</span>
+              <span class="block">学習しました。</span>
+            </p>
+            <p>
+              <span class="block">サーバーへの</span>
+              <span class="block">アップロード時、</span>
+              <span class="block">未経験の技術を</span>
+              <span class="block">試行</span>
+              <span class="block">しました。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="php">PHP</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">
+              ◼️2019年10月〜
+              <span class="block">2020年1月</span>
+            </h5>
+            <p>
+              HTMLからデータを
+              <span class="block">PHPで取得し、</span>
+              <span class="block">加工後は、</span>
+              <span class="block">SQLで</span>
+              <span class="block">新規追加、</span>
+              <span class="block">値取得、</span>
+              <span class="block">更新、</span>
+              <span class="block">削除を</span>
+              <span class="block">学習しました。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="python">Python</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">◼️2020年3月〜</h5>
+            <p>
+              独学で
+              <span class="block">基礎技術を</span>
+              <span class="block">取得し、</span>
+              <span class="block">web系の</span>
+              <span class="block">フレームワーク、</span>
+              <span class="block">アルゴリズム、</span>
+              <span class="block">統計学の</span>
+              <span class="block">学習を</span>
+              <span class="block">学習しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">自然言語処理の</span>
+              <span class="block">学習しつつ、</span>
+              <span class="block">Webから</span>
+              <span class="block">取得したファイルを</span>
+              <span class="block">エクセルで加工後、</span>
+              <span class="block">Webへの</span>
+              <span class="block">アップロードまでを、</span>
+              <span class="block">全てPythonで</span>
+              <span class="block">開発しました。</span>
+            </p>
+
+            <div class="each_contents_each_mintitle_area">
+              <h4 class="big_letter50 marker" id="sql">SQL</h4>
+              <a class="each_contents_each_mintitle_back" href="#softwares_and_frameworks">項目に戻る</a>
+            </div>
+
+            <h5 class="paragraph_blank">◼️2019年10月〜</h5>
+            <p>
+              留学先にて、
+              <span class="block">授業の一環で</span>
+              <span class="block">SQL及び</span>
+              <span class="block">データベースを</span>
+              <span class="block">勉強しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">勉強後、</span>
+              <span class="block">チーム開発時に</span>
+              <span class="block">データベースを</span>
+              <span class="block">使用する必要が</span>
+              <span class="block">あった為、</span>
+              <span class="block">未経験の技術を</span>
+              <span class="block">試行しました。</span>
+            </p>
+            <p class="paragraph_blank">
+              <span class="block">帰国後、</span>
+              <span class="block">SQLインジェクション</span>
+              <span class="block">などを学ぶため、</span>
+              <span class="block">MySQL、</span>
+              <span class="block">SQLite、</span>
+              <span class="block">PostgreSQL等で</span>
+              <span class="block">成果物を</span>
+              <span class="block">開発しました。</span>
+              </span>
             </p>
 
           </div>
@@ -377,87 +1180,81 @@
 
         <!-- 保有資格 -->
         <div id="certification">
-          <h2 class="cell-l big-letter100 js_typing">保有資格</h2>
+          <h2 class="cell_l js_typing">
+            保有
+            <span class="block">資格</span>
+          </h2>
           <div class="container">
-            <div class="cell-l">
+            <div class="cell_l">
               <table border="1">
                 <tr>
-                  <th class="for_smartphone_certification">2021年 4月</th>
-                  <td class="for_smartphone_certification">TOEIC公開テスト スコア655取得</td>
+                  <th>2021年 4月</th>
+                  <td>TOEIC公開テスト スコア655取得</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2018年 6月</th>
-                  <td class="for_smartphone_certification">日本商工会議所及び各地商工会議所主催 日商簿記 ３級</td>
+                  <th>2018年 6月</th>
+                  <td>日本商工会議所及び各地商工会議所主催 日商簿記 ３級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2016年 12月</th>
-                  <td class="for_smartphone_certification">介護職員初任者研修</td>
+                  <th>2016年 12月</th>
+                  <td>介護職員初任者研修</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 12月</th>
-                  <td class="for_smartphone_certification">日本情報処理検定協会 ホームページ作成検定 １級</td>
+                  <th>2012年 12月</th>
+                  <td>日本情報処理検定協会 ホームページ作成検定 １級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 7月</th>
-                  <td class="for_smartphone_certification">日本情報処理検定協会 表計算 ２級</td>
+                  <th>2012年 7月</th>
+                  <td>日本情報処理検定協会 表計算 ２級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 3月</th>
-                  <td class="for_smartphone_certification">全商 パソコン入力スピード認定試験 １級</td>
+                  <th>2012年 3月</th>
+                  <td>全商 パソコン入力スピード認定試験 １級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 2月</th>
-                  <td class="for_smartphone_certification">日本漢字能力検定 ３級</td>
+                  <th>2012年 2月</th>
+                  <td>日本漢字能力検定 ３級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 2月</th>
-                  <td class="for_smartphone_certification">日本情報処理検定協会 文書デザイン検定 １級</td>
+                  <th>2012年 2月</th>
+                  <td>日本情報処理検定協会 文書デザイン検定 １級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2012年 1月</th>
-                  <td class="for_smartphone_certification">全商 プログラミング部門 ２級</td>
+                  <th>2012年 1月</th>
+                  <td>全商 プログラミング部門 ２級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2011年 12月</th>
-                  <td class="for_smartphone_certification">日本情報処理検定協会 プレゼンテーション作成検定 １級</td>
+                  <th>2011年 12月</th>
+                  <td>日本情報処理検定協会 プレゼンテーション作成検定 １級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2011年 11月</th>
-                  <td class="for_smartphone_certification">文部科学省後援秘書技能検定試験 3級</td>
+                  <th>2011年 11月</th>
+                  <td>文部科学省後援秘書技能検定試験 3級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2011年 9月</th>
-                  <td class="for_smartphone_certification">全商 ビジネス情報部門 ２級</td>
+                  <th>2011年 9月</th>
+                  <td>全商 ビジネス情報部門 ２級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2011年 2月</th>
-                  <td class="for_smartphone_certification">全商 ビジネス基礎 ３級</td>
+                  <th>2011年 2月</th>
+                  <td>全商 ビジネス基礎 ３級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2010年 11月</th>
-                  <td class="for_smartphone_certification">珠算・電卓実務検定 ３級</td>
+                  <th>2010年 11月</th>
+                  <td>珠算・電卓実務検定 ３級</td>
                 </tr>
                 <tr>
-                  <th class="for_smartphone_certification">2010年 9月</th>
-                  <td class="for_smartphone_certification">全商 情報処理検定 ３級</td>
+                  <th>2010年 9月</th>
+                  <td>全商 情報処理検定 ３級</td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
 
-        <div class="min-blanks big-letter50">-END-</div>
-
+        <div class="min_blanks big_letter50">-END-</div>
       </div>
       
     </body>
-    
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-13/js/5-1-13.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
-    
-    <script src="./js/app.js"></script>
+  
 </html>

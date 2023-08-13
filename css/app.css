@@ -1,24 +1,27 @@
+/* 背景画ドラッグ禁止 */
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+  filter: brightness(40%);
+}
+
 .display {
   text-align: center;
-  width: 65%;
-  height: 250px;
-  margin: auto;
+  margin: 30vh 20vw;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-   user-select: none;
+  user-select: auto;
 }
-body{
-  background-color: rgb(255, 0, 0);
+body p, body a, body h1, body h2, body h3, body h5, body th, body td, body ul, body li, .marker{
+  color: #fff!important;
+  font-size: 27px;
+  font-family: 'Zen Maru Gothic', sans-serif!important;
 }
 
-p {
-  color: #fff;
-  font-size: 27px;
-  font-family: 'Zen Maru Gothic', sans-serif;
-}
 
 
 
@@ -32,140 +35,152 @@ p {
   left: 0;
   z-index: -1;
 }
-.img-main{    
+.img_main{    
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0px;
 
-  /* スマホ用画面幅 仮 */
-  min-height: 140vh;
 }
 
 
 
 /* 新しいセクター */
 .blanks {
-  padding-bottom: 400px;
+  margin-bottom: 50vh;
+}
+.min_blanks {
+  margin-top: 3em;
+}
+/* テキスト間 空白 */
+.paragraph_blank{
+  margin-top: 1em;
 }
 
-.min-blanks {
-  display: inline-block;
-  margin-top: 50px;
+
+/* 文字サイズ 名前*/
+h1 {
+  font-size: 100px!important;
+}
+/* 文字サイズ コンテンツ*/
+h2 {
+  font-size: 75px!important;
+}
+/* 文字サイズ メニュー文字*/
+#g_nav_list a {
+  font-size: 20px!important;
+}
+/* 文字サイズ 項目に戻るリンク */
+.each_contents_each_mintitle_area a {
+  font-size: 15px!important;
 }
 
-
-
-/* 文字サイズ特大 */
-.big-letter150 {
-  color: #fff;
-  font: 100px "Vibur";
-  font-family: 'Zen Maru Gothic', sans-serif;
-}
-/* 文字サイズ大 */
-.big-letter100 {
-  color: #fff;
-  font: 75px "Vibur";
-  font-family: 'Zen Maru Gothic', sans-serif;
+/* 文字サイズやや大 */
+.big_letter80 {
+  font-size: 40px;
 }
 /* 文字サイズ大きめ */
-.big-letter50 {
-  color: #fff;
-  font: 28px "Vibur";
-  font-family: 'Zen Maru Gothic', sans-serif;
-}
-/* 文字サイズ標準あたり */
-.big-letter25 {
-  color: #fff;
-  font: 20px "Vibur";
-  font-family: 'Zen Maru Gothic', sans-serif;
+.big_letter50 {
+  font-size: 28px;
 }
 
 
 
 /* 文字右よせ */
-.cell-r{
+.cell_r{
   vertical-align: top;
   text-align: right;
 }
 /* 文字左よせ */
-.cell-l{
+.cell_l{
   vertical-align: top;
   text-align: left;
 }
 
+/* 文字分割用 */
+.block{
+  display: inline-block;
+}
 
 
 /* マーカー */
 .marker{
   display: inline-block;
-  background-color: rgba(248, 255, 105, 0.505);
-  color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
+  background-color: rgba(154, 205, 50, 0.517);
+  padding: 5px;
+  margin: 3em 0em 0em 0em;
 }
 
 
 
-/* 保有資格 エクセル式 左右寄せ */
-/* 表の枠 */
-th{
-  padding: 10px;
-  color: #fff;
-  font-size: 27px;
-  font-family: 'Zen Maru Gothic', sans-serif;
+/* 各コンテンツ メニュー */
+ul.mintitle_area{
+  position: relative;
+  padding: 30px;
+  border: solid 1px #ffffff;
+  margin-top: 3em;
 }
-td{
-  padding: 10px;
-  color: #fff;
-  font-size: 27px;
-  font-family: 'Zen Maru Gothic', sans-serif;
+ul.mintitle_area h3{
+  padding: 20px 0px 0px 0px;
 }
-/* スマホで縦並びに変更 */
-.for_smartphone_certification.implement{
-  padding: 10px;
-  color: #fff;
-  font-size: 27px;
-  font-family: 'Zen Maru Gothic', sans-serif;
+ul.mintitle_area:before{
+  border: solid 1px #ffffff;
+  content: "項目";  /* 好きな文字を記述 */
+  position: absolute;
   display: block;
+  top: -25px;
+  left: 20px;
+  background: #0c0c0c;
+  padding: 0 10px;
 }
-.for_smartphone_certification.implement{
-  padding: 10px;
-  color: #fff;
-  font-size: 27px;
-  font-family: 'Zen Maru Gothic', sans-serif;
-  display: block;
+
+
+
+/* 各コンテンツ ミニタイトル用 */
+.each_contents_each_mintitle_menu{
+  margin-left: 1em;
+}
+.each_contents_each_mintitle_back {
+  position: absolute;
+  display: inline-block;
+  bottom: 0px;
+  right: 0px;
+}
+.each_contents_each_mintitle_area{
+  position: relative;
 }
 
 
 
 /* トップに戻る */
-.back-to-top{
+.back_to_top{
+  opacity: 0;
+}
+.back_to_top.input{
+  border-radius: 30px;
+  opacity: 1;
+  display: block;
   position:fixed;
-  right:30px;
-  bottom:30px;
+  right: 3em;
+  bottom: 3em;
 }
-.back-to-top img{
-  width: 7vw;
+.back_to_top img{
+  width: 4vw;
 }
-.link{
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 15px;
-  font-family: 'Zen Maru Gothic', sans-serif;
+.back_to_top_link{
+  display: block;
+  border-radius: 50%;
+  background-image: url("../image/back_to_top.png");
+  background-size:contain;
+  width: 2em;
+  height: 2em;
 }
-.link:hover{
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
 
 
 
 /* メニュー */
-#g-nav{
+#g_nav{
   position:fixed;
   z-index: 1;
 
@@ -174,93 +189,148 @@ td{
   width:15%;
   height: 100vh;/*ナビの高さ*/
   background:rgba(120, 120, 120, 0.525);
-
-  transition: all 0.5s;
 }
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
+#g_nav.panelactive{
   left: 0;
 }
 /*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
+#g_nav.panelactive #g_nav_list{
   position: fixed;
   z-index: 1; 
-  width: 12%;
-  left: 13px;
-  height: 100vh;
+  width: 15%;
+  height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 /*ナビゲーション*/
-#g-nav ul {
+#g_nav ul {
   position: absolute;
   z-index: 1;
   width: 100%;
   top: 7%;
 }
 /*リストのレイアウト設定*/
-#g-nav li{
+#g_nav li{
   list-style: none;
   text-align: center;
   margin-top: 35%;
 }
-#g-nav li a{
+#g_nav li a{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 10px;
+  margin: 0.5em;
+  padding: 0.5em;
   letter-spacing: 0.1em; /*文字間隔*/
 }
 
 
-/* ボタン */
-.openbtn1{
-position:fixed;
-  z-index: 2;
-  top:10px;
-  left: 10px;
+
+/* メニュー ボタン */
+.openbtn{
+  position: relative;
   cursor: pointer;
-  width: 50px;
-  height:50px;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+  z-index: 2;
+  margin: 1em;
+  position:fixed;
 }
-/* ×に変化 */  
-.openbtn1 span{
-  display: inline-block;
-  transition: all 0.4s;
-  position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: rgb(102, 102, 102);
-  width: 45%;
-}
-/* バーガーラインの各線ポジション */
-.openbtn1 span:nth-of-type(1) {
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #fff;
+    width: 45%;
+  }
+.openbtn span:nth-of-type(1) {
   top:15px; 
 }
-.openbtn1 span:nth-of-type(2) {
+.openbtn span:nth-of-type(2) {
   top:23px;
 }
-.openbtn1 span:nth-of-type(3) {
+.openbtn span:nth-of-type(3) {
   top:31px;
 }
-/* クロス時の各線ポジション */
-.openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
 }
-.openbtn1.active span:nth-of-type(2) {
+.openbtn.active span:nth-of-type(2) {
   opacity: 0;
 }
-.openbtn1.active span:nth-of-type(3){
-  top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
 }
 
-/* スマホ用にメニュー文字縦並び */
-.for_smartphone_menu.implement{
-  writing-mode: vertical-rl;
+
+
+/* 保有資格 表の枠 */
+th, td{
+  padding: 0.5em
 }
+
+
+
+
+/* スマホ用 */
+@media (max-width: 1080px) {
+  /* ディスプレイ */
+  .display{
+    margin: 30vh 15vw;
+  }
+
+  /* トップに戻る */
+  .back_to_top.input{
+    right: 0.5em;
+    bottom: 2em;
+  }
+
+  /* スマホ用にメニュー文字縦並び */
+  #g_nav{
+    width: 100%;
+    background: rgb(120, 120, 120);
+  }
+  #g_nav.panelactive #g_nav_list{
+    width: 100%;
+  }
+  #g_nav li{
+    margin: 2em;
+  }
+
+
+  /* マーカー */
+  .marker{
+  margin: 3em 0em 1em 0em;
+  }
+
+  
+  /* 保有資格 年月、資格名 縦並び */
+  .container th, .container td{
+    padding: 0.5em;
+    font-size: 27px;
+    display: block;
+  }
+/* 保有資格 年月 */
+.container th{
+  background-color: rgba(84, 84, 84, 0.697);
+}
+
+#softwares_and_frameworks h5 span.block{
+  margin-left: 1em;
+}
+
+}
+
+
+

@@ -1,0 +1,336 @@
+/* 背景画ドラッグ禁止 */
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+  filter: brightness(40%);
+}
+
+.display {
+  text-align: center;
+  margin: 30vh 20vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: auto;
+}
+body p, body a, body h1, h2, h3, th, td, ul, li, .marker{
+  color: #fff!important;
+  font-size: 27px;
+  font-family: 'Zen Maru Gothic', sans-serif!important;
+}
+
+
+
+
+/* 背景画像 */
+.bg-image{
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.img-main{    
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+
+  /* スマホ用画面幅 仮 */
+  min-height: 140vh;
+}
+
+
+
+/* 新しいセクター */
+.blanks {
+  margin-bottom: 50vh;
+}
+
+.min-blanks {
+  margin-top: 3em;
+}
+
+/* 言語学習歴 ソフトウェア使用歴、言語学習歴 ミニタイトル空白 */
+.likeunline_mintitle_blank{
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+/* 得意と苦手 項目エリア */
+.likeunlike_mintitle_area {
+  background-color: #ffffff7d;
+  padding: 1em;
+
+}
+
+
+
+
+/* 文字サイズ特大 */
+.big-letter150 {
+  font: 100px "Vibur";
+}
+/* 文字サイズ大 */
+.big-letter100 {
+  font: 75px "Vibur";
+}
+/* 文字サイズやや大 */
+.big-letter80 {
+  font: 40px "Vibur";
+}
+/* 文字サイズ大きめ */
+.big-letter50 {
+  font: 28px "Vibur";
+}
+/* 文字サイズ標準あたり */
+.big-letter25 {
+  font: 20px "Vibur";
+}
+/* 文字サイズ ミニ */
+.letter15 {
+  font: 15px "Vibur";
+}
+
+
+
+/* 文字右よせ */
+.cell-r{
+  vertical-align: top;
+  text-align: right;
+}
+/* 文字左よせ */
+.cell-l{
+  vertical-align: top;
+  text-align: left;
+}
+
+
+
+/* マーカー */
+.marker{
+  display: inline-block;
+  background-color: rgba(154, 205, 50, 0.517);
+  padding: 5px;
+}
+
+
+
+/* 得意と不得意 ミニタイトル用 */
+.likeunlike-mintitle{
+  margin-left: 1em;
+}
+.likeunlike-min-blanks {
+  position: absolute;
+  display: inline-block;
+  bottom: 0px;
+  right: 0px;
+}
+.likeunlike-mintitle-each{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 保有資格 エクセル式 左右寄せ */
+/* 表の枠 */
+th, td{
+  padding: 0.5em;
+}
+
+
+
+
+/* トップに戻る */
+.back-to-top{
+  opacity: 0;
+}
+.back-to-top.input{
+  border-radius: 30px;
+  opacity: 1;
+  display: block;
+  position:fixed;
+  right: 3em;
+  bottom: 3em;
+}
+.back-to-top img{
+  width: 4vw;
+}
+.back-to-top-link{
+  display: block;
+  border-radius: 50%;
+  background-image: url("../image/back_to_top.png");
+  background-size:contain;
+  width: 2em;
+  height: 2em;
+}
+
+
+
+
+/* メニュー */
+#g-nav{
+  position:fixed;
+  z-index: 1;
+
+  top:0px;
+  left: -120%;
+  width:15%;
+  height: 100vh;/*ナビの高さ*/
+  background:rgba(120, 120, 120, 0.525);
+
+  /* transition: all 0.5s; */
+}
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  left: 0;
+}
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  position: fixed;
+  z-index: 1; 
+  width: 15%;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/*ナビゲーション*/
+#g-nav ul {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 7%;
+}
+/*リストのレイアウト設定*/
+#g-nav li{
+  list-style: none;
+  text-align: center;
+  margin-top: 35%;
+}
+#g-nav li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0.5em;
+  padding: 0.5em;
+  letter-spacing: 0.1em; /*文字間隔*/
+}
+
+
+/* ボタン */
+.openbtn{
+position:fixed;
+  z-index: 2;
+  top: 3vh;
+  left: 3vw;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  display: block;
+  border-radius: 50%;
+  background-size: contain;
+
+}
+/* ×に変化 */  
+.openbtn span{
+  display: inline-block;
+  position: absolute;
+  height: 0.3em;
+  border-radius: 1em;
+  background-color: rgb(102, 102, 102);
+  width: 100%;
+}
+/* バーガーラインの各線ポジション */
+.openbtn span:nth-of-type(1) {
+  top:0.5em; 
+}
+.openbtn span:nth-of-type(2) {
+  top:1.5em;
+}
+.openbtn span:nth-of-type(3) {
+  top:2.5em;
+}
+/* クロス時の各線ポジション */
+.openbtn.active span:nth-of-type(1) {
+  transform: translateY(6px) rotate(-45deg);
+  width: 100%;
+}
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn.active span:nth-of-type(3){
+  top: 2em;
+  transform: translateY(-6px) rotate(45deg);
+  width: 100%;
+}
+
+
+
+/* 文字分割用 */
+.block{
+  display: block;
+}
+
+
+/* 言語学習履歴 ミニ項目エリア */
+.saf_min_title{
+  margin-top: 50px;
+}
+
+/* 得意と不得意 概要 リンク集 */
+.likeunlike_about_link{
+  /* display: flex; */
+}
+/* 得意と不得意 概要 空白 */
+.likeunlike_about_blank{
+  margin-top: 1em;
+}
+ul.mintitle_area{
+  position: relative;
+  padding: 15px 15px 15px 30px;
+  border: solid 1px #ffffff;
+  margin-top: 3em;
+}
+ul.mintitle_area:before{
+  border: solid 1px #ffffff;
+  content: "項目";  /* 好きな文字を記述 */
+  position: absolute;
+  display: block;
+  top: -25px;
+  left: 20px;
+  background: #0c0c0c;
+  padding: 0 10px;
+}
+
+
+
+
+@media (max-width: 1080px) {
+/* 保有資格 年月、資格名 縦並び */
+.container th, .container td{
+  padding: 0.5em;
+  font-size: 27px;
+  display: block;
+}
+/* 保有資格 年月 */
+.container th{
+  background-color: rgba(84, 84, 84, 0.697);
+}
+/* スマホ用にメニュー文字縦並び */
+#g-nav{
+  width: 100%;
+  background: rgb(120, 120, 120);
+}
+#g-nav.panelactive #g-nav-list{
+  width: 100%;
+}
+#g-nav li{
+  margin: 2em;
+}
+
+}
